@@ -7,15 +7,15 @@ module onehot_to_position_decoder (
 
     always @(onehot_row) begin
         casex (onehot_row)
-            7'b1xxxxxxx: column = 0;
-            7'b01xxxxxx: column = 1;
-            7'b001xxxxx: column = 2;
-            7'b0001xxxx: column = 3;
-            7'b00001xxx: column = 4;
-            7'b000001xx: column = 5;
-            7'b0000001x: column = 6;
-            7'b00000001: column = 7;
-            default: column = x;
+            8'b1xxxxxxx: column = 0;
+            8'b01xxxxxx: column = 1;
+            8'b001xxxxx: column = 2;
+            8'b0001xxxx: column = 3;
+            8'b00001xxx: column = 4;
+            8'b000001xx: column = 5;
+            8'b0000001x: column = 6;
+            8'b00000001: column = 7;
+            default: column = {3{1'bx}};
         endcase
     end
     

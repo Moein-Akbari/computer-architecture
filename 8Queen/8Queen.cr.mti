@@ -1,1 +1,69 @@
+C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/shift_register.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/shift_register.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module shift_register
 
+Top level modules:
+	shift_register
+
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/is_safe.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/is_safe.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module is_safe
+
+Top level modules:
+	is_safe
+
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module eight_queen
+
+Top level modules:
+	eight_queen
+
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module decoder
+
+Top level modules:
+	decoder
+
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v {0 vlog\ -work\ work\ -stats=none\ C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v\nModel\ Technology\ ModelSim\ -\ Intel\ FPGA\ Edition\ vlog\ 2020.1\ Compiler\ 2020.02\ Feb\ 28\ 2020\n--\ Compiling\ module\ counter\n**\ Error\ (suppressible):\ C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(19):\ (vlog-13299)\ Undefined\ variable:\ 'clk'.\n**\ Error:\ (vlog-13069)\ C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(20):\ near\ \"\{\":\ syntax\ error,\ unexpected\ '\{',\ expecting\ '\;'.\n**\ Error:\ C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(2):\ (vlog-2730)\ Undefined\ variable:\ 'clk'.\n**\ Error:\ C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(2):\ (vlog-13294)\ Identifier\ must\ be\ declared\ with\ a\ port\ mode:\ clk.\n\n {5.0 8.0} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/onehot_to_position_decoder.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/onehot_to_position_decoder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module onehot_to_position_decoder
+
+Top level modules:
+	onehot_to_position_decoder
+
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_controller.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_controller.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/multiplexer.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/multiplexer.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module multiplexer
+
+Top level modules:
+	multiplexer
+
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v {0 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module datapath
+** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v(5): (vlog-2730) Undefined variable: 'column_out'.
+** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v(5): (vlog-13294) Identifier must be declared with a port mode: column_out.
+
+} {4.0 6.0} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/controller.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/controller.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module controller
+
+Top level modules:
+	controller
+
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module abs
+
+Top level modules:
+	abs
+
+} {} {}}

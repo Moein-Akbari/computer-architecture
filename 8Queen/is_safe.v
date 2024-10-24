@@ -13,14 +13,14 @@ module is_safe (
     assign row_difference = row1 - row2;
     assign column_difference = column1 - column2;
     
-    abs absolute_row_3bit #3 
+    abs #(3) absolute_row_3bit 
         (.value(absolute_row_difference), .number(row_difference));
-    abs absolute_column_3bit #3 
+    abs #(3) absolute_column_3bit
         (.value(absolute_column_difference), .number(column_difference));
     
     assign same_row = (row1 == row2);
     assign same_column = (column1 == column2);
     assign diagonal = (absolute_row_difference == absolute_column_difference);
     
-    assign safe = ~(same_row || same_column || diagonal)
+    assign safe = ~(same_row || same_column || diagonal);
 endmodule

@@ -6,5 +6,5 @@ module abs (
     input [N:1] number;
     output [N:1] value;
 
-    assign value = number >= 0 ? number : -number
+    assign value = number >= 0 ? number : -number;
 endmodule
