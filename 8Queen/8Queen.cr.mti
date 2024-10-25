@@ -12,112 +12,24 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	is_safe
 
-} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v {0 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module decoder
-** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(12): (vlog-2110) Illegal reference to memory "out".
-** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(12): Illegal LHS of assignment.
-** Error (suppressible): C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(12): (vlog-2997) Cannot assign a packed type 'reg[7:0]' to an unpacked type 'reg $[0:7]'.
-** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(16): (vlog-2110) Illegal reference to memory "out".
-** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(16): Illegal LHS of assignment.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(16): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(16): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(16): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(16): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(16): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(16): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(16): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(16): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Error (suppressible): C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(16): (vlog-2997) Case item comparison:  Cannot assign a packed type 'reg[255:0]' to an unpacked type 'reg $[0:7]'.
-** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(17): (vlog-2110) Illegal reference to memory "out".
-** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(17): Illegal LHS of assignment.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(17): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(17): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(17): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(17): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(17): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(17): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(17): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(17): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Error (suppressible): C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(17): (vlog-2997) Case item comparison:  Cannot assign a packed type 'reg[255:0]' to an unpacked type 'reg $[0:7]'.
-** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(18): (vlog-2110) Illegal reference to memory "out".
-** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(18): Illegal LHS of assignment.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(18): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(18): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(18): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(18): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(18): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(18): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(18): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(18): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Error (suppressible): C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(18): (vlog-2997) Case item comparison:  Cannot assign a packed type 'reg[255:0]' to an unpacked type 'reg $[0:7]'.
-** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(19): (vlog-2110) Illegal reference to memory "out".
-** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(19): Illegal LHS of assignment.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(19): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(19): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(19): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(19): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(19): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(19): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(19): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(19): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Error (suppressible): C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(19): (vlog-2997) Case item comparison:  Cannot assign a packed type 'reg[255:0]' to an unpacked type 'reg $[0:7]'.
-** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(20): (vlog-2110) Illegal reference to memory "out".
-** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(20): Illegal LHS of assignment.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(20): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(20): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(20): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(20): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(20): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(20): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(20): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(20): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Error (suppressible): C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(20): (vlog-2997) Case item comparison:  Cannot assign a packed type 'reg[255:0]' to an unpacked type 'reg $[0:7]'.
-** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(21): (vlog-2110) Illegal reference to memory "out".
-** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(21): Illegal LHS of assignment.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(21): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(21): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(21): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(21): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(21): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(21): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(21): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(21): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Error (suppressible): C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(21): (vlog-2997) Case item comparison:  Cannot assign a packed type 'reg[255:0]' to an unpacked type 'reg $[0:7]'.
-** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(22): (vlog-2110) Illegal reference to memory "out".
-** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(22): Illegal LHS of assignment.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(22): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(22): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(22): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(22): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(22): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(22): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(22): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(22): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Error (suppressible): C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(22): (vlog-2997) Case item comparison:  Cannot assign a packed type 'reg[255:0]' to an unpacked type 'reg $[0:7]'.
-** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(23): (vlog-2110) Illegal reference to memory "out".
-** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(23): Illegal LHS of assignment.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(23): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(23): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(23): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(23): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(23): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(23): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(23): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Warning: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(23): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
-** Error (suppressible): C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(23): (vlog-2997) Case item comparison:  Cannot assign a packed type 'reg[255:0]' to an unpacked type 'reg $[0:7]'.
-
-} {4.0 6.0 7.0 9.0 18.0 20.0 29.0 31.0 40.0 42.0 51.0 53.0 62.0 64.0 73.0 75.0 84.0 86.0} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-
-} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module eight_queen
 
 Top level modules:
-	eight_queen
+	decoder
 
-} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v {0 vlog\ -work\ work\ -stats=none\ C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v\nModel\ Technology\ ModelSim\ -\ Intel\ FPGA\ Edition\ vlog\ 2020.1\ Compiler\ 2020.02\ Feb\ 28\ 2020\n--\ Compiling\ module\ counter\n**\ Error\ (suppressible):\ C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(19):\ (vlog-13299)\ Undefined\ variable:\ 'clk'.\n**\ Error:\ (vlog-13069)\ C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(20):\ near\ \"\{\":\ syntax\ error,\ unexpected\ '\{',\ expecting\ '\;'.\n**\ Error:\ C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(2):\ (vlog-2730)\ Undefined\ variable:\ 'clk'.\n**\ Error:\ C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(2):\ (vlog-13294)\ Identifier\ must\ be\ declared\ with\ a\ port\ mode:\ clk.\n\n {5.0 8.0} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/onehot_to_position_decoder.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/onehot_to_position_decoder.v
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/onehot_to_position_decoder.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/onehot_to_position_decoder.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module onehot_to_position_decoder
 
@@ -134,31 +46,31 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	multiplexer
 
-} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v {0 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module datapath
-** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v(5): (vlog-2730) Undefined variable: 'column_out'.
-** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v(5): (vlog-13294) Identifier must be declared with a port mode: column_out.
-
-} {4.0 6.0} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/controller.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/controller.v
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/controller.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/controller.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module controller
 
 Top level modules:
 	controller
 
-} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs.v
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v {0 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module datapath
+** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v(5): (vlog-2730) Undefined variable: 'column_out'.
+** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v(5): (vlog-13294) Identifier must be declared with a port mode: column_out.
+
+} {4.0 6.0} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module abs
 
 Top level modules:
 	abs
 
-} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v {0 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module datapath
-** Error: (vlog-13036) C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v(69): near "++": Operator only allowed in SystemVerilog.
-** Error: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v(113): (vlog-2730) Undefined variable: 'reset'.
-** Error: (vlog-13069) C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v(140): near "endmodule": syntax error, unexpected endmodule, expecting ';' or ','.
 
-} {4.0 7.0} {}}
+Top level modules:
+	datapath
+
+} {} {}}

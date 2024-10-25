@@ -1,5 +1,6 @@
 module datapath (
     clk,
+    reset,
     enable_output,
     
     // Decoder
@@ -24,7 +25,9 @@ module datapath (
     // Output
     out_bus
 );
-    input enable_output, 
+    input clk,
+          reset,
+          enable_output,
           shift_right, 
           counter_reset, 
           count_up, 
@@ -40,7 +43,7 @@ module datapath (
 
     output [7:0] out_bus;
 
-    wire right_register_shift [0:7];
+    wire [0:7] right_register_shift;
     wire [7:0] register_outputs [0:7];
     
     wire [2:0] last_queen_row;
@@ -66,7 +69,7 @@ module datapath (
 
     genvar i;
     generate
-        for (i = 0; i < 8; i++) begin
+        for (i = 0; i < 8; i = i + 1) begin
             shift_right sr (
                 .clk(clk),
                 .reset(reset),
@@ -110,7 +113,7 @@ module datapath (
     );
     
 
-    assign last_queen_counter_reset = reset || counter_reset;
+    assign last_queen_counter_reset = (reset || counter_reset);
     counter last_queen_row_counter(
         .clk(clk),
         .reset(last_queen_counter_reset),
@@ -134,7 +137,7 @@ module datapath (
         .value(other_queen_row)
     );
 
-    assign out_bus = enable_output ? last_queen_row_data : {8{1'bz}}
+    assign out_bus = enable_output ? last_queen_row_data : {8{1'bz}};
 
 
 endmodule
