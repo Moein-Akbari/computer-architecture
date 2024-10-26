@@ -1,6 +1,7 @@
 module controller (
     clk,
     start,
+    user_reset,
 
     // Datapath outputs
     cout,
@@ -39,6 +40,7 @@ module controller (
     
     input clk,
         start,
+        user_reset,
         cout,
         down_counter_zero,
         last_queen_counter_zero,
@@ -57,7 +59,7 @@ module controller (
         done;
     
     always @(posedge clk) begin
-        if (reset)
+        if (user_reset)
             present_state <= IDLE;
         else
             present_state <= next_state;
@@ -119,7 +121,9 @@ module controller (
         count_down = 1'b0;
         count = 1'b0;
         load_counter = 1'b0;
-        
+        ready = 1'b0;
+        done = 1'b0;
+
         case (present_state)
             IDLE: ready = 1'b1;
             RESET: reset = 1'b1;

@@ -19,6 +19,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	eight_queen_testbench
 
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module eight_queen
+
+Top level modules:
+	eight_queen
+
 } {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module stack
@@ -32,13 +39,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	decoder
-
-} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module eight_queen
-
-Top level modules:
-	eight_queen
 
 } {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -71,25 +71,11 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	datapath
 
-} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/controller.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/controller.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module controller
-
-Top level modules:
-	controller
-
 } {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module abs
 
 Top level modules:
 	abs
-
-} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module datapath
-
-Top level modules:
-	datapath
 
 } {} {}}

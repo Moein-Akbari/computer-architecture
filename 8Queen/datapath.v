@@ -54,7 +54,6 @@ module datapath (
     wire [7:0] other_queen_row_data;
     wire [2:0] other_queen_column;
 
-    wire last_queen_row_counter_zero_flag;
     wire [3:0] last_queen_counter_value;
     wire last_queen_counter_reset;
 
@@ -124,7 +123,7 @@ module datapath (
         .data(ZERO),
         .count_up(count_up),
         .count_down(count_down),
-        .zero(last_queen_row_counter_zero_flag),
+        .zero(last_queen_counter_zero), //TODO: Unstable change
         .msb(cout),
         .value(last_queen_counter_value)
     );

@@ -1,7 +1,7 @@
 module eight_queen_testbench ();
     reg clk,
         start, 
-        reset;
+        user_reset;
     wire [7:0] out_bus;
     
     wire
@@ -10,8 +10,8 @@ module eight_queen_testbench ();
 
     eight_queen eq (
         .clk(clk),
-        .start(start), 
-        .reset(reset), 
+        .start(start),
+        .user_reset(user_reset),
         .ready(ready),
         .done(done),
         .out_bus(out_bus)
@@ -24,14 +24,15 @@ module eight_queen_testbench ();
     end
 
     initial begin
-        reset = 0;
+        user_reset = 0;
         # 50;
-        reset = 1;
+        user_reset = 1;
         # 50;
-        reset = 0;
+        user_reset = 0;
         # 50;
 
         start = 1;
         #10000;
+        $stop;
     end
 endmodule

@@ -1,16 +1,17 @@
 module eight_queen (
     clk,
     start, 
-    reset, 
+    user_reset,
     ready,
     done,
     out_bus
 );
-    input clk, start, reset;
+    input clk, start, user_reset;
     output ready, done;
     output [7:0] out_bus;
     
     wire
+        reset,
         enable_output,
         shift_right,
         counter_reset,
@@ -29,7 +30,7 @@ module eight_queen (
     controller eight_queen_controller(
         .clk(clk),
         .start(start),
-
+        .user_reset(user_reset),
         // Datapath outputs
         .cout(cout),
         .down_counter_zero(down_counter_zero),
