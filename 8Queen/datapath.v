@@ -66,7 +66,7 @@ module datapath (
     decoder register_shift_decoder(
         .enable(shift_right),
         .binary(last_queen_row),
-        .out()
+        .out(right_register_shift)
     );
 
     genvar i;
@@ -143,6 +143,7 @@ module datapath (
         .value(other_queen_row)
     );
 
+    assign last_cell = last_queen_row_data[0];
     assign out_bus = enable_output ? last_queen_row_data : {8{1'bz}};
 
 

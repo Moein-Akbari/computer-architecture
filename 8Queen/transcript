@@ -1,16 +1,7 @@
-# Compile of stack.v was successful.
-# Compile of stack_controller.v was successful.
-# Compile of stack_datapath.v was successful.
-# Compile of onehot_to_position_decoder.v was successful.
-# Compile of is_safe.v was successful.
-# Compile of abs.v was successful.
-# Compile of datapath.v was successful.
-# Compile of controller.v was successful.
-# Compile of eight_queen.v was successful.
-# Compile of shift_register.v was successful.
+# Load canceled
 vsim -gui work.eight_queen_testbench
 # vsim -gui work.eight_queen_testbench 
-# Start time: 13:01:29 on Oct 26,2024
+# Start time: 14:10:59 on Oct 26,2024
 # Loading work.eight_queen_testbench
 # Loading work.eight_queen
 # Loading work.controller
@@ -25,13 +16,8 @@ vsim -gui work.eight_queen_testbench
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
 #    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
 # ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 120
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
 # WARNING: No extended dataflow license exists
-# Compile of multiplexer.v was successful.
-# Compile of decoder.v was successful.
-# Compile of counter.v was successful.
-# Compile of eight_queen_testbench.v was successful.
-# 14 compiles, 0 failed with no errors.
 add wave -position insertpoint  \
 sim:/eight_queen_testbench/clk \
 sim:/eight_queen_testbench/start \
@@ -39,83 +25,12 @@ sim:/eight_queen_testbench/user_reset \
 sim:/eight_queen_testbench/out_bus \
 sim:/eight_queen_testbench/ready \
 sim:/eight_queen_testbench/done
+run
+run
+run
+run
 add wave -position insertpoint  \
 sim:/eight_queen_testbench/eq/eight_queen_controller/present_state
-run -all
-# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v(36)
-#    Time: 10150 ps  Iteration: 0  Instance: /eight_queen_testbench
-# Break in Module eight_queen_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v line 36
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.eight_queen_testbench
-# Loading work.decoder
-# Loading work.counter
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
-#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 120
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-run
-run
-run
-run
-# Compile of stack.v was successful.
-# Compile of stack_controller.v was successful.
-# Compile of stack_datapath.v was successful.
-# Compile of onehot_to_position_decoder.v was successful.
-# Compile of is_safe.v was successful.
-# Compile of abs.v was successful.
-# Compile of datapath.v was successful.
-# Compile of controller.v was successful.
-# Compile of eight_queen.v was successful.
-# Compile of shift_register.v was successful.
-# Compile of multiplexer.v was successful.
-# Compile of decoder.v was successful.
-# Compile of counter.v was successful.
-# Compile of eight_queen_testbench.v was successful.
-# 14 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.eight_queen_testbench
-# Loading work.eight_queen
-# Loading work.controller
-# Loading work.datapath
-# Loading work.decoder
-# Loading work.multiplexer
-# Loading work.onehot_to_position_decoder
-# Loading work.is_safe
-# Loading work.abs
-# Loading work.counter
-# Loading work.shift_register
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
-#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 120
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v(36)
-#    Time: 10150 ps  Iteration: 0  Instance: /eight_queen_testbench
-# Break in Module eight_queen_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v line 36
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
-#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 120
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-run
-run
-run
-run
-run
 add wave -position insertpoint  \
 sim:/eight_queen_testbench/eq/eight_queen_controller/next_state
 restart -f
@@ -123,7 +38,7 @@ restart -f
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
 #    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
 # ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 120
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
 run
 # GetModuleFileName: The specified module could not be found.
 # 
@@ -131,16 +46,17 @@ run
 run
 run
 run
-add wave -position insertpoint  \
-sim:/eight_queen_testbench/eq/eight_queen_datapath/cout
-add wave -position insertpoint  \
-sim:/eight_queen_testbench/eq/eight_queen_datapath/down_counter_zero
+run
+run -all
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v(36)
+#    Time: 10150 ps  Iteration: 0  Instance: /eight_queen_testbench
+# Break in Module eight_queen_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v line 36
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
 #    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
 # ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 120
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
 run
 # GetModuleFileName: The specified module could not be found.
 # 
@@ -148,7 +64,29 @@ run
 run
 run
 run
-run
+run -all
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v(36)
+#    Time: 10150 ps  Iteration: 0  Instance: /eight_queen_testbench
+# Break in Module eight_queen_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v line 36
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v(36)
+#    Time: 10150 ps  Iteration: 0  Instance: /eight_queen_testbench
+# Break in Module eight_queen_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v line 36
 add wave -position insertpoint  \
 sim:/eight_queen_testbench/eq/eight_queen_datapath/last_queen_counter_zero
 restart -f
@@ -156,14 +94,14 @@ restart -f
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
 #    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
 # ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 120
-run
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
+run -all
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
-run
-run
-run
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v(36)
+#    Time: 10150 ps  Iteration: 0  Instance: /eight_queen_testbench
+# Break in Module eight_queen_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v line 36
 # Compile of stack.v was successful.
 # Compile of stack_controller.v was successful.
 # Compile of stack_datapath.v was successful.
@@ -172,19 +110,40 @@ run
 # Compile of abs.v was successful.
 # Compile of datapath.v was successful.
 # Compile of controller.v was successful.
-quit -sim
-# End time: 13:39:27 on Oct 26,2024, Elapsed time: 0:37:58
-# Errors: 0, Warnings: 3
 # Compile of eight_queen.v was successful.
 # Compile of shift_register.v was successful.
 # Compile of multiplexer.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.eight_queen
+# Loading work.controller
+# Loading work.datapath
+# Loading work.multiplexer
+# Loading work.onehot_to_position_decoder
+# Loading work.is_safe
+# Loading work.abs
+# Loading work.shift_register
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
 # Compile of decoder.v was successful.
 # Compile of counter.v was successful.
 # Compile of eight_queen_testbench.v was successful.
 # 14 compiles, 0 failed with no errors.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+quit -sim
+# End time: 14:22:40 on Oct 26,2024, Elapsed time: 0:11:41
+# Errors: 0, Warnings: 4
 vsim -gui work.eight_queen_testbench
 # vsim -gui work.eight_queen_testbench 
-# Start time: 13:39:39 on Oct 26,2024
+# Start time: 14:22:57 on Oct 26,2024
 # Loading work.eight_queen_testbench
 # Loading work.eight_queen
 # Loading work.controller
@@ -199,7 +158,7 @@ vsim -gui work.eight_queen_testbench
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
 #    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
 # ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 120
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
 # WARNING: No extended dataflow license exists
 add wave -position insertpoint  \
 sim:/eight_queen_testbench/clk \
@@ -208,9 +167,60 @@ sim:/eight_queen_testbench/user_reset \
 sim:/eight_queen_testbench/out_bus \
 sim:/eight_queen_testbench/ready \
 sim:/eight_queen_testbench/done
-add wave -position insertpoint sim:/eight_queen_testbench/eq/eight_queen_controller/*
 add wave -position insertpoint  \
-sim:/eight_queen_testbench/eq/eight_queen_controller/next_state
+sim:/eight_queen_testbench/eq/eight_queen_controller/present_state
+add wave -position insertpoint  \
+sim:/eight_queen_testbench/eq/eight_queen_controller/last_queen_counter_zero
+run
+run
+run
+run
+run
+run
+# Compile of stack.v was successful.
+# Compile of stack_controller.v was successful.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+quit -sim
+# End time: 14:25:52 on Oct 26,2024, Elapsed time: 0:02:55
+# Errors: 0, Warnings: 3
+# Compile of eight_queen_testbench.v was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -gui work.eight_queen_testbench
+# vsim -gui work.eight_queen_testbench 
+# Start time: 14:25:59 on Oct 26,2024
+# Loading work.eight_queen_testbench
+# Loading work.eight_queen
+# Loading work.controller
+# Loading work.datapath
+# Loading work.decoder
+# Loading work.multiplexer
+# Loading work.onehot_to_position_decoder
+# Loading work.is_safe
+# Loading work.abs
+# Loading work.counter
+# Loading work.shift_register
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/eight_queen_testbench/clk \
+sim:/eight_queen_testbench/start \
+sim:/eight_queen_testbench/user_reset \
+sim:/eight_queen_testbench/out_bus \
+sim:/eight_queen_testbench/ready \
+sim:/eight_queen_testbench/done
 run
 run
 run
@@ -221,7 +231,7 @@ restart -f
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
 #    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
 # ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 120
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
 run
 # GetModuleFileName: The specified module could not be found.
 # 
@@ -230,15 +240,31 @@ run
 run
 run
 add wave -position insertpoint  \
-sim:/eight_queen_testbench/eq/eight_queen_datapath/down_counter_zero
+sim:/eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_data
 add wave -position insertpoint  \
-sim:/eight_queen_testbench/eq/eight_queen_datapath/safe
+sim:/eight_queen_testbench/eq/eight_queen_datapath/other_queen_row_data
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
 #    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
 # ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 120
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+add wave -position insertpoint  \
+sim:/eight_queen_testbench/eq/eight_queen_datapath/last_queen_row
+add wave -position insertpoint  \
+sim:/eight_queen_testbench/eq/eight_queen_datapath/other_queen_row
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
 run
 # GetModuleFileName: The specified module could not be found.
 # 
@@ -246,3 +272,103 @@ run
 run
 run
 run
+run
+run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
+# Compile of stack.v was successful.
+# Compile of stack_controller.v was successful.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# 14 compiles, 0 failed with no errors.
+quit -sim
+# End time: 14:37:50 on Oct 26,2024, Elapsed time: 0:11:51
+# Errors: 0, Warnings: 4
+vsim -gui work.eight_queen_testbench
+# vsim -gui work.eight_queen_testbench 
+# Start time: 14:38:13 on Oct 26,2024
+# Loading work.eight_queen_testbench
+# Loading work.eight_queen
+# Loading work.controller
+# Loading work.datapath
+# Loading work.decoder
+# Loading work.multiplexer
+# Loading work.onehot_to_position_decoder
+# Loading work.is_safe
+# Loading work.abs
+# Loading work.counter
+# Loading work.shift_register
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/eight_queen_testbench/clk \
+sim:/eight_queen_testbench/start \
+sim:/eight_queen_testbench/user_reset \
+sim:/eight_queen_testbench/out_bus \
+sim:/eight_queen_testbench/ready \
+sim:/eight_queen_testbench/done
+add wave -position insertpoint  \
+sim:/eight_queen_testbench/eq/eight_queen_controller/present_state
+run
+run
+run
+run
+run
+run -all
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v(36)
+#    Time: 1000150 ps  Iteration: 0  Instance: /eight_queen_testbench
+# Break in Module eight_queen_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v line 36
+add wave -position insertpoint  \
+sim:/eight_queen_testbench/eq/eight_queen_datapath/register_outputs
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v(36)
+#    Time: 1000150 ps  Iteration: 0  Instance: /eight_queen_testbench
+# Break in Module eight_queen_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v line 36
+run
+run
+add wave -position insertpoint  \
+sim:/eight_queen_testbench/eq/eight_queen_datapath/safety/same_row \
+sim:/eight_queen_testbench/eq/eight_queen_datapath/safety/same_column \
+sim:/eight_queen_testbench/eq/eight_queen_datapath/safety/diagonal
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v(36)
+#    Time: 1000150 ps  Iteration: 0  Instance: /eight_queen_testbench
+# Break in Module eight_queen_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v line 36
+quit -sim
+# End time: 14:52:14 on Oct 26,2024, Elapsed time: 0:14:01
+# Errors: 0, Warnings: 3

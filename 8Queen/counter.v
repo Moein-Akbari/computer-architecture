@@ -24,5 +24,5 @@ module counter (
     end
 
     assign msb = value[N-1];
-    assign zero = &value;
+    assign zero = ~(|value);
 endmodule

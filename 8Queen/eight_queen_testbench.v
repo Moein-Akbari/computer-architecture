@@ -32,7 +32,7 @@ module eight_queen_testbench ();
         # 50;
 
         start = 1;
-        #10000;
+        #1000000;
         $stop;
     end
 endmodule
