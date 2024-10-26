@@ -79,19 +79,14 @@ module controller (
             IDLE: next_state = start ? RESET : IDLE;
             RESET: next_state = CHECK_FINISH;
             CHECK_FINISH: next_state = 
-                (cout == 0 && last_queen_counter_zero == 0)
-                ? COMPARE
-                : (cout == 0 && last_queen_counter_zero == 1)
-                    ? NEXT_ROW
-                    : DONE;
+                (cout == 0 && last_queen_counter_zero == 0) ? COMPARE :
+                (cout == 0 && last_queen_counter_zero == 1) ? NEXT_ROW :
+                DONE;
             COMPARE: next_state = 
-                (safe == 1 && down_counter_zero == 0)
-                ? CHECK_SAFETY
-                : (safe == 1 && down_counter_zero == 1) 
-                    ? NEXT_ROW
-                    : (last_cell == 0)
-                        ? SHIFT
-                        : BACK_TRACK;
+                (safe == 1 && down_counter_zero == 0) ? CHECK_SAFETY :
+                (safe == 1 && down_counter_zero == 1) ? NEXT_ROW : 
+                (last_cell == 0) ? SHIFT :
+                BACK_TRACK;
             CHECK_SAFETY: next_state = COMPARE;
             SHIFT: next_state = CHECK_FINISH;
             BACK_TRACK: next_state = WAIT;
