@@ -3,8 +3,9 @@ module abs (
     number
 );
     parameter N = 3;
-    input [N-1:0] number;
+    input signed [N-1:0] number;
     output [N-1:0] value;
-
-    assign value = (number >= 0) ? number : -number;
+    wire positivity;
+    assign positivity = (number >= 0);
+    assign value = positivity ? number : -number;
 endmodule

@@ -78,12 +78,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	datapath
 
-} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs.v
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs_testbench.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs_testbench.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module abs
+-- Compiling module abs_testbench
 
 Top level modules:
-	abs
+	abs_testbench
 
 } {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
