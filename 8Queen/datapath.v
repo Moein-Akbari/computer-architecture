@@ -59,7 +59,10 @@ module datapath (
     wire last_queen_counter_reset;
 
     wire [2:0] other_queen_counter_data;
-
+    
+    wire ZERO;
+    assign ZERO = 1'b0;
+    wire TRASH;
 
     decoder register_shift_decoder(
         .enable(shift_right),
@@ -70,7 +73,7 @@ module datapath (
     genvar i;
     generate
         for (i = 0; i < 8; i = i + 1) begin
-            shift_right sr (
+            shift_register sr (
                 .clk(clk),
                 .reset(reset),
                 .shift_right(right_register_shift[i]),
@@ -117,6 +120,8 @@ module datapath (
     counter last_queen_row_counter(
         .clk(clk),
         .reset(last_queen_counter_reset),
+        .load(ZERO),
+        .data(ZERO),
         .count_up(count_up),
         .count_down(count_down),
         .zero(last_queen_row_counter_zero_flag),
@@ -132,8 +137,10 @@ module datapath (
         .reset(reset),
         .load(load_counter),
         .data(other_queen_counter_data),
+        .count_up(ZERO),
         .count_down(count),
         .zero(down_counter_zero),
+        .msb(TRASH),
         .value(other_queen_row)
     );
 
