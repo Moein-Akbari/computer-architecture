@@ -20,7 +20,7 @@ module eight_queen_testbench ();
     // Clock signal with 10ns period.
     initial begin
         clk = 1;
-        forever #(10 / 2) clk = ~clk;
+        forever #(4 / 2) clk = ~clk;
     end
 
     initial begin
@@ -32,7 +32,13 @@ module eight_queen_testbench ();
         # 50;
 
         start = 1;
-        #1000000;
-        $stop;
+    end
+
+    always @(posedge clk) begin
+        if (done == 1) begin
+            #100;
+            $display("Simulation stopped at time %0t because DONE signal is high.", $time);
+            $stop; // or use $finish if you want to end the simulation
+        end
     end
 endmodule

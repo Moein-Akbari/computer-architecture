@@ -35,7 +35,9 @@ module controller (
         WAIT = 4'd7,
         DONE = 4'd8,
         NEXT_ROW = 4'd9,
-        TRANSMIT = 4'd10;
+        TRANSMIT = 4'd10,
+        DOUBLE_CHECK = 4'd11;
+        
     reg [3:0] next_state, present_state;
     
     input clk,
@@ -89,11 +91,12 @@ module controller (
                 BACK_TRACK;
             CHECK_SAFETY: next_state = COMPARE;
             SHIFT: next_state = CHECK_FINISH;
-            BACK_TRACK: next_state = WAIT;
+            BACK_TRACK: next_state = DOUBLE_CHECK;
             WAIT: next_state = CHECK_FINISH;
             DONE: next_state = TRANSMIT;
             NEXT_ROW: next_state = CHECK_FINISH;
-            TRANSMIT: next_state = cout == 0 ? TRANSMIT : IDLE;
+            TRANSMIT: next_state = (cout == 0) ? TRANSMIT : IDLE;
+            DOUBLE_CHECK: next_state = (last_cell == 1) ? BACK_TRACK : WAIT;
             default: next_state = IDLE;
         endcase
     end
