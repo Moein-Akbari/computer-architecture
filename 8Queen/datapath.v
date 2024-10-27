@@ -123,7 +123,7 @@ module datapath (
         .data(ZERO),
         .count_up(count_up),
         .count_down(count_down),
-        .zero(last_queen_counter_zero), //TODO: Unstable change
+        .zero(last_queen_counter_zero),
         .msb(cout),
         .value(last_queen_counter_value)
     );

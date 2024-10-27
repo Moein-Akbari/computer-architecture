@@ -12,6 +12,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	is_safe
 
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_testbench.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_testbench.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module stack_testbench
+
+Top level modules:
+	stack_testbench
+
 } {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module decoder_testbench
@@ -40,15 +47,8 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	decoder
 
-} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack.v {2 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack.v
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-** Warning: (vlog-6) -- Waiting for lock by "Lenovo@DESKTOP-32OPIDI, pid = 17396
-". Lockfile is "C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/work/_lock".
--- Compiling module abs
-
-Top level modules:
-	abs
 -- Compiling module stack
 
 Top level modules:
@@ -96,13 +96,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	stack_datapath
 
-} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/controller.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/controller.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module controller
-
-Top level modules:
-	controller
-
 } {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs_testbench.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs_testbench.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module abs_testbench
@@ -110,12 +103,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	abs_testbench
 
-} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module decoder_testbench
+-- Compiling module abs
 
 Top level modules:
-	decoder_testbench
+	abs
 
 } {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020

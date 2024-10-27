@@ -81,13 +81,13 @@ module controller (
             IDLE: next_state = start ? RESET : IDLE;
             RESET: next_state = CHECK_FINISH;
             CHECK_FINISH: next_state = 
-                (cout == 0 && last_queen_counter_zero == 0) ? COMPARE :
-                (cout == 0 && last_queen_counter_zero == 1) ? NEXT_ROW :
+                (~cout && ~last_queen_counter_zero) ? COMPARE :
+                (~cout && last_queen_counter_zero) ? NEXT_ROW :
                 DONE;
             COMPARE: next_state = 
-                (safe == 1 && down_counter_zero == 0) ? CHECK_SAFETY :
-                (safe == 1 && down_counter_zero == 1) ? NEXT_ROW : 
-                (last_cell == 0) ? SHIFT :
+                (safe && ~down_counter_zero) ? CHECK_SAFETY :
+                (safe && down_counter_zero) ? NEXT_ROW : 
+                (~last_cell) ? SHIFT :
                 BACK_TRACK;
             CHECK_SAFETY: next_state = COMPARE;
             SHIFT: next_state = CHECK_FINISH;
@@ -95,8 +95,8 @@ module controller (
             WAIT: next_state = CHECK_FINISH;
             DONE: next_state = TRANSMIT;
             NEXT_ROW: next_state = CHECK_FINISH;
-            TRANSMIT: next_state = (cout == 0) ? TRANSMIT : IDLE;
-            DOUBLE_CHECK: next_state = (last_cell == 1) ? BACK_TRACK : WAIT;
+            TRANSMIT: next_state = (~cout) ? TRANSMIT : IDLE;
+            DOUBLE_CHECK: next_state = (last_cell) ? BACK_TRACK : WAIT;
             default: next_state = IDLE;
         endcase
     end
