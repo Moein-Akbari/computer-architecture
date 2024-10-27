@@ -1,6 +1,6 @@
-# Compile of stack.v failed with 3 errors.
-# Compile of stack_controller.v was successful.
-# Compile of stack_datapath.v failed with 4 errors.
+# Compile of stack.v failed with 14 errors.
+# Compile of stack_controller.v failed with 1 errors.
+# Compile of stack_datapath.v was successful.
 # Compile of onehot_to_position_decoder.v was successful.
 # Compile of is_safe.v was successful.
 # Compile of abs.v was successful.
@@ -16,10 +16,58 @@
 # Compile of stack_testbench.v was successful.
 # Compile of register.v was successful.
 # Compile of stack_decoder.v was successful.
-# 18 compiles, 2 failed with 7 errors.
+# 18 compiles, 2 failed with 15 errors.
 vsim -gui work.eight_queen_testbench
 # vsim -gui work.eight_queen_testbench 
-# Start time: 10:01:03 on Oct 27,2024
+# Start time: 12:11:08 on Oct 27,2024
+# Loading work.eight_queen_testbench
+# Loading work.eight_queen
+# Loading work.controller
+# Loading work.datapath
+# Loading work.decoder
+# Loading work.multiplexer
+# Loading work.onehot_to_position_decoder
+# Loading work.is_safe
+# Loading work.abs
+# Loading work.counter
+# Loading work.shift_register
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
+add wave -position insertpoint sim:/eight_queen_testbench/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlft60xh8t".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft60xh8t
+run
+run
+run
+run
+run
+run
+run -all
+# Simulation stopped at time 55260 because DONE signal is high.
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v(41)
+#    Time: 55260 ps  Iteration: 0  Instance: /eight_queen_testbench
+# Break in Module eight_queen_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v line 41
+# Compile of stack.v failed with 14 errors.
+# Compile of stack_controller.v failed with 1 errors.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # Loading work.eight_queen_testbench
 # Loading work.eight_queen
 # Loading work.controller
@@ -39,21 +87,58 @@ vsim -gui work.eight_queen_testbench
 #    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/register_shift_decoder File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 66
 # ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
 #    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
-add wave -position insertpoint  \
-sim:/eight_queen_testbench/clk \
-sim:/eight_queen_testbench/start \
-sim:/eight_queen_testbench/user_reset \
-sim:/eight_queen_testbench/out_bus \
-sim:/eight_queen_testbench/ready \
-sim:/eight_queen_testbench/done
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
-#           Attempting to use alternate WLF file "./wlft7meqs4".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft7meqs4
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
 run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of stack_decoder.v was successful.
+# Compile canceled.
+# 18 out of 18 compiles, 2 failed with 15 errors.
+# Compile of stack.v failed with 14 errors.
+# Compile of stack_controller.v failed with 1 errors.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.eight_queen
+# Loading work.controller
+# Loading work.datapath
+# Loading work.decoder
+# Loading work.multiplexer
+# Loading work.onehot_to_position_decoder
+# Loading work.is_safe
+# Loading work.abs
+# Loading work.counter
+# Loading work.shift_register
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'binary'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/register_shift_decoder File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (8) for port 'out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/register_shift_decoder File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of stack_decoder.v was successful.
+# 18 compiles, 2 failed with 15 errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.eight_queen_testbench
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
 #    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
 # ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'binary'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(3).
@@ -63,3 +148,783 @@ restart -f
 # ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
 #    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
 run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of stack.v failed with 14 errors.
+# Compile of stack_controller.v failed with 1 errors.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.onehot_to_position_decoder
+# Loading work.is_safe
+# Loading work.abs
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'binary'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/register_shift_decoder File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (8) for port 'out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/register_shift_decoder File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of shift_register.v was successful.
+# Compile canceled.
+# 10 out of 18 compiles, 2 failed with 15 errors.
+# Compile of stack.v failed with 14 errors.
+# Compile of stack_controller.v failed with 1 errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.eight_queen
+# Loading work.controller
+# Loading work.datapath
+# Loading work.shift_register
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'binary'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/register_shift_decoder File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (8) for port 'out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/register_shift_decoder File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of multiplexer.v was successful.
+# Compile canceled.
+# 11 out of 18 compiles, 2 failed with 15 errors.
+quit -sim
+# End time: 12:19:41 on Oct 27,2024, Elapsed time: 0:08:33
+# Errors: 0, Warnings: 6
+# Compile of stack.v failed with 14 errors.
+# Compile of stack_controller.v failed with 1 errors.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of stack_decoder.v was successful.
+# Compile of decoder_testbench.v was successful.
+# 19 compiles, 2 failed with 15 errors.
+vsim -gui work.decoder_testbench
+# vsim -gui work.decoder_testbench 
+# Start time: 12:24:18 on Oct 27,2024
+# Loading work.decoder_testbench
+# Loading work.decoder
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_testbench/uut File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v Line: 5
+add wave -position insertpoint  \
+sim:/decoder_testbench/enable \
+sim:/decoder_testbench/binary \
+sim:/decoder_testbench/out
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlftxdddif".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftxdddif
+run
+run
+run
+run
+run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_testbench/uut File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v Line: 5
+# Compile of stack.v failed with 14 errors.
+# Compile of stack_controller.v failed with 1 errors.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of stack_decoder.v was successful.
+# Compile of decoder_testbench.v was successful.
+# 19 compiles, 2 failed with 15 errors.
+# Compile of stack.v failed with 14 errors.
+# Compile of stack_controller.v failed with 1 errors.
+# Compile of stack_datapath.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.decoder_testbench
+# Loading work.decoder
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of stack_decoder.v was successful.
+# Compile of decoder_testbench.v was successful.
+# 19 compiles, 2 failed with 15 errors.
+# Compile of stack.v failed with 14 errors.
+# Compile of stack_controller.v failed with 1 errors.
+# Compile of stack.v failed with 14 errors.
+# Compile of stack_controller.v failed with 1 errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.decoder_testbench
+# Loading work.decoder
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (9) for port 'out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_testbench/uut File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v Line: 5
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of stack_decoder.v was successful.
+# Compile of decoder_testbench.v was successful.
+# 19 compiles, 2 failed with 15 errors.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of stack_decoder.v was successful.
+# Compile of decoder_testbench.v was successful.
+# 19 compiles, 2 failed with 15 errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.decoder_testbench
+# Loading work.decoder
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'binary'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_testbench/uut File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v Line: 5
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (9) for port 'out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_testbench/uut File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v Line: 5
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'binary'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_testbench/uut File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v Line: 5
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (9) for port 'out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_testbench/uut File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v Line: 5
+# Load canceled
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of stack.v failed with 14 errors.
+# Compile of stack_controller.v failed with 1 errors.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'binary'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_testbench/uut File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v Line: 5
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (9) for port 'out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_testbench/uut File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v Line: 5
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of stack_decoder.v was successful.
+# Compile of decoder_testbench.v was successful.
+# 19 compiles, 2 failed with 15 errors.
+add wave -position end  sim:/decoder_testbench/uut/out
+run -all
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.decoder_testbench
+# Loading work.decoder
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'binary'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_testbench/uut File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v Line: 5
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (15) for port 'out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_testbench/uut File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v Line: 5
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'binary'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_testbench/uut File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v Line: 5
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (15) for port 'out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_testbench/uut File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v Line: 5
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'binary'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_testbench/uut File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v Line: 5
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (15) for port 'out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_testbench/uut File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v Line: 5
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position end  sim:/decoder_testbench/uut/binary
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'binary'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_testbench/uut File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v Line: 5
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (15) for port 'out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_testbench/uut File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v Line: 5
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of stack.v failed with 14 errors.
+# Compile of stack_controller.v failed with 1 errors.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'binary'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_testbench/uut File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v Line: 5
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (15) for port 'out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_testbench/uut File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v Line: 5
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful with warnings.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of stack_decoder.v was successful.
+# Compile of decoder_testbench.v was successful.
+# 19 compiles, 2 failed with 15 errors.
+quit -sim
+# End time: 13:02:08 on Oct 27,2024, Elapsed time: 0:37:50
+# Errors: 0, Warnings: 4
+vsim -gui work.decoder_testbench
+# vsim -gui work.decoder_testbench 
+# Start time: 13:02:21 on Oct 27,2024
+# Loading work.decoder_testbench
+# Loading work.decoder
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (15) for port 'out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_testbench/uut File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v Line: 5
+add wave -position insertpoint  \
+sim:/decoder_testbench/enable \
+sim:/decoder_testbench/binary \
+sim:/decoder_testbench/out
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlftnybqnm".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftnybqnm
+run -all
+# Compile of stack.v failed with 14 errors.
+# Compile of stack_controller.v failed with 1 errors.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful with warnings.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.decoder
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (15) for port 'out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /decoder_testbench/uut File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v Line: 5
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of stack_decoder.v was successful.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of decoder_testbench.v was successful.
+# 19 compiles, 2 failed with 15 errors.
+quit -sim
+vsim -gui work.decoder_testbench
+# End time: 13:04:29 on Oct 27,2024, Elapsed time: 0:02:08
+# Errors: 0, Warnings: 3
+# vsim -gui work.decoder_testbench 
+# Start time: 13:04:29 on Oct 27,2024
+# Loading work.decoder_testbench
+# Loading work.decoder
+add wave -position insertpoint  \
+sim:/decoder_testbench/enable \
+sim:/decoder_testbench/binary \
+sim:/decoder_testbench/out
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlfti86di4".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfti86di4
+# Load canceled
+run -all
+quit -sim
+# End time: 13:05:24 on Oct 27,2024, Elapsed time: 0:00:55
+# Errors: 0, Warnings: 3
+# Load canceled
+# Compile of stack.v failed with 14 errors.
+# Compile of stack_controller.v failed with 1 errors.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful with warnings.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of stack_decoder.v was successful.
+# Compile of decoder_testbench.v was successful.
+# 19 compiles, 2 failed with 15 errors.
+vsim -gui work.decoder_testbench
+# vsim -gui work.decoder_testbench 
+# Start time: 13:06:35 on Oct 27,2024
+# Loading work.decoder_testbench
+# Loading work.decoder
+add wave -position insertpoint  \
+sim:/decoder_testbench/enable \
+sim:/decoder_testbench/binary \
+sim:/decoder_testbench/out
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlft2cq5ci".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft2cq5ci
+run -all
+# Compile of stack.v failed with 14 errors.
+# Compile of stack_controller.v failed with 1 errors.
+quit -sim
+# End time: 13:08:14 on Oct 27,2024, Elapsed time: 0:01:39
+# Errors: 0, Warnings: 4
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+vsim -gui work.decoder_testbench
+# vsim -gui work.decoder_testbench 
+# Start time: 13:08:21 on Oct 27,2024
+# Loading work.decoder_testbench
+# Loading work.decoder
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+add wave -position insertpoint  \
+sim:/decoder_testbench/enable \
+sim:/decoder_testbench/binary \
+sim:/decoder_testbench/out
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlft80fsev".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft80fsev
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful with warnings.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of stack_decoder.v was successful.
+# Compile of decoder_testbench.v was successful.
+# 19 compiles, 2 failed with 15 errors.
+run -all
+add wave -position insertpoint  \
+sim:/decoder_testbench/WIDTH
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.decoder_testbench
+# Loading work.decoder
+run -all
+restart -f
+quit -sim
+# End time: 13:09:43 on Oct 27,2024, Elapsed time: 0:01:22
+# Errors: 0, Warnings: 1
+# Compile of stack.v failed with 14 errors.
+# Compile of stack_controller.v failed with 1 errors.
+# Compile of stack_datapath.v was successful.
+vsim -gui work.decoder_testbench
+# vsim -gui work.decoder_testbench 
+# Start time: 13:10:00 on Oct 27,2024
+# Loading work.decoder_testbench
+# Loading work.decoder
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+add wave -position insertpoint  \
+sim:/decoder_testbench/WIDTH \
+sim:/decoder_testbench/enable \
+sim:/decoder_testbench/binary \
+sim:/decoder_testbench/out
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlft6bjt3k".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft6bjt3k
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful with warnings.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+run -all
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of stack_decoder.v was successful.
+# Compile of decoder_testbench.v was successful.
+# 19 compiles, 2 failed with 15 errors.
+quit -sim
+# End time: 13:11:15 on Oct 27,2024, Elapsed time: 0:01:15
+# Errors: 0, Warnings: 4
+# Compile of stack.v failed with 14 errors.
+# Compile of stack_controller.v failed with 1 errors.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful with warnings.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of stack_decoder.v was successful.
+# Compile of decoder_testbench.v failed with 1 errors.
+# 19 compiles, 3 failed with 16 errors.
+# Compile of stack.v failed with 14 errors.
+# Compile of stack_controller.v failed with 1 errors.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of stack_decoder.v was successful.
+# Compile of decoder_testbench.v was successful.
+# 19 compiles, 2 failed with 15 errors.
+vsim -gui work.decoder_testbench
+# vsim -gui work.decoder_testbench 
+# Start time: 13:12:41 on Oct 27,2024
+# Loading work.decoder_testbench
+# Loading work.decoder
+add wave -position insertpoint  \
+sim:/decoder_testbench/WIDTH \
+sim:/decoder_testbench/enable \
+sim:/decoder_testbench/binary \
+sim:/decoder_testbench/out
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlftsb61mx".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftsb61mx
+run -all
+vsim -gui work.eight_queen_testbench
+# End time: 13:13:26 on Oct 27,2024, Elapsed time: 0:00:45
+# Errors: 0, Warnings: 5
+# vsim -gui work.eight_queen_testbench 
+# Start time: 13:13:26 on Oct 27,2024
+# Loading work.eight_queen_testbench
+# Loading work.eight_queen
+# Loading work.controller
+# Loading work.datapath
+# Loading work.decoder
+# Loading work.multiplexer
+# Loading work.onehot_to_position_decoder
+# Loading work.is_safe
+# Loading work.abs
+# Loading work.counter
+# Loading work.shift_register
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
+add wave -position insertpoint  \
+sim:/eight_queen_testbench/clk \
+sim:/eight_queen_testbench/start \
+sim:/eight_queen_testbench/user_reset \
+sim:/eight_queen_testbench/out_bus \
+sim:/eight_queen_testbench/ready \
+sim:/eight_queen_testbench/done
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlftft0e9b".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftft0e9b
+run -all
+# Compile of stack.v failed with 14 errors.
+# Compile of stack_controller.v failed with 1 errors.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.eight_queen_testbench
+# Loading work.eight_queen
+# Loading work.controller
+# Loading work.datapath
+# Loading work.decoder
+# Loading work.multiplexer
+# Loading work.onehot_to_position_decoder
+# Loading work.is_safe
+# Loading work.abs
+# Loading work.counter
+# Loading work.shift_register
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of stack_decoder.v was successful.
+# Compile canceled.
+# 18 out of 19 compiles, 2 failed with 15 errors.
+quit -sim
+# End time: 13:15:27 on Oct 27,2024, Elapsed time: 0:02:01
+# Errors: 0, Warnings: 4
+# Break key hit
+vsim -gui work.decoder_testbench
+# vsim -gui work.decoder_testbench 
+# Start time: 13:15:37 on Oct 27,2024
+# Loading work.decoder_testbench
+# Loading work.decoder
+add wave -position insertpoint  \
+sim:/decoder_testbench/WIDTH \
+sim:/decoder_testbench/enable \
+sim:/decoder_testbench/binary \
+sim:/decoder_testbench/out
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlftfhqd1q".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftfhqd1q
+run -all
+# Compile of stack.v failed with 14 errors.
+# Compile of stack_controller.v failed with 1 errors.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of stack_decoder.v was successful.
+# Compile of decoder_testbench.v was successful.
+# 19 compiles, 2 failed with 15 errors.
+quit -sim
+# End time: 13:16:45 on Oct 27,2024, Elapsed time: 0:01:08
+# Errors: 0, Warnings: 2
+# Compile of stack.v failed with 14 errors.
+# Compile of stack_controller.v failed with 1 errors.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+vsim -gui work.decoder_testbench
+# vsim -gui work.decoder_testbench 
+# Start time: 13:16:56 on Oct 27,2024
+# Loading work.decoder_testbench
+# Loading work.decoder
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+add wave -position insertpoint  \
+sim:/decoder_testbench/WIDTH \
+sim:/decoder_testbench/enable \
+sim:/decoder_testbench/binary \
+sim:/decoder_testbench/out
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlftsh5181".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftsh5181
+# Compile of stack_decoder.v was successful.
+# Compile of decoder_testbench.v was successful.
+# 19 compiles, 2 failed with 15 errors.
+run -all
+vsim -gui work.eight_queen_testbench
+# End time: 13:17:33 on Oct 27,2024, Elapsed time: 0:00:37
+# Errors: 0, Warnings: 4
+# vsim -gui work.eight_queen_testbench 
+# Start time: 13:17:33 on Oct 27,2024
+# Loading work.eight_queen_testbench
+# Loading work.eight_queen
+# Loading work.controller
+# Loading work.datapath
+# Loading work.decoder
+# Loading work.multiplexer
+# Loading work.onehot_to_position_decoder
+# Loading work.is_safe
+# Loading work.abs
+# Loading work.counter
+# Loading work.shift_register
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
+add wave -position insertpoint  \
+sim:/eight_queen_testbench/clk \
+sim:/eight_queen_testbench/start \
+sim:/eight_queen_testbench/user_reset \
+sim:/eight_queen_testbench/out_bus \
+sim:/eight_queen_testbench/ready \
+sim:/eight_queen_testbench/done
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlft4eczsy".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft4eczsy
+run -all
+# Simulation stopped at time 55260 because DONE signal is high.
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v(41)
+#    Time: 55260 ps  Iteration: 0  Instance: /eight_queen_testbench
+# Break in Module eight_queen_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v line 41

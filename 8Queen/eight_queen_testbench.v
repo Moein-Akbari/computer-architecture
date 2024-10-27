@@ -20,7 +20,7 @@ module eight_queen_testbench ();
     // Clock signal with 10ns period.
     initial begin
         clk = 1;
-        forever #(4 / 2) clk = ~clk;
+        forever #(10 / 2) clk = ~clk;
     end
 
     initial begin
