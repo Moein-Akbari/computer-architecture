@@ -23,8 +23,8 @@ module stack_datapath (
     wire [0:DEPTH-1] register_load;
     wire [SIZE-1:0] register_outputs [0:DEPTH-1];
 
-    wire [$clog2(DEPTH):0] push_pointer;
-    wire [$clog2(DEPTH):0] pop_pointer;
+    wire [$clog2(DEPTH) - 1:0] push_pointer;
+    wire [$clog2(DEPTH) - 1:0] pop_pointer;
     
     assign pop_pointer = push_pointer - 1;
 
@@ -41,7 +41,7 @@ module stack_datapath (
         .value(push_pointer)
     );
     
-    decoder #($clog2(DEPTH)) stack_decoder ( // TODO: Use floor / ceiling
+    decoder #($clog2(DEPTH)) stack_decoder (
         .enable(push),
         .binary(push_pointer),
         .out(register_load)
@@ -60,7 +60,9 @@ module stack_datapath (
         end
     endgenerate
 
-    multiplexer #(SIZE) stack_multiplexer (
+    assign bus_out = pop ? mux_output : {SIZE{1'bz}};
+    
+    multiplexer #($clog2(DEPTH), SIZE) stack_multiplexer (
         .select(pop_pointer),
         .inputs(register_outputs),
         .out(mux_output)

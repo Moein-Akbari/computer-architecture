@@ -46,7 +46,8 @@ module stack_controller (
                 (user_pop && ~zero) ? POP :
                 (user_pop && zero) ? UNDERFLOW :
                 (user_push && ~msb) ? PUSH :
-                OVERFLOW;
+                (user_push && msb) ? OVERFLOW :
+                IDLE;
             PUSH: next_state = IDLE;
             POP: next_state = IDLE;
             OVERFLOW: next_state = IDLE;
