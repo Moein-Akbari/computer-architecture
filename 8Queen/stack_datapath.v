@@ -10,7 +10,7 @@ module stack_datapath (
 
     // Controller-outputs
     push,
-    pop,
+    pop
 );
     parameter DEPTH = 8, SIZE = 6;
     input clk, reset, push, pop;
@@ -41,7 +41,7 @@ module stack_datapath (
         .value(push_pointer)
     );
     
-    stack_decoder #($clog2(DEPTH)) stack_decoder_instance ( // TODO: Use floor / ceiling
+    decoder #($clog2(DEPTH)) stack_decoder ( // TODO: Use floor / ceiling
         .enable(push),
         .binary(push_pointer),
         .out(register_load)

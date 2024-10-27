@@ -1,15 +1,20 @@
 module stack_testbench();
-    reg clk, reset, push, pop;
-    reg [5:0] in_data;
-    wire [5:0] out_data;
+    reg clk, reset, user_push, user_pop;
+    reg [5:0] bus_in;
+    
+    wire [5:0] bus_out;
+    wire overflow, underflow, ready;
 
     stack #(8,6) my_stack(
-        clk,
-        reset,
-        push,
-        in_data,
-        pop,
-        out_data
+        .clk(clk),
+        .reset(reset),
+        .user_push(user_push),
+        .bus_in(bus_in),
+        .user_pop(user_pop),
+        .overflow(overflow),
+        .underflow(underflow),
+        .ready(ready),
+        .bus_out(bus_out)
     );
 
     initial begin
@@ -21,12 +26,12 @@ module stack_testbench();
         reset = 1;
         #20 reset = 0;
         
-        in_data = {3'd0, 3'd0};
-        push = 1;
-        #8 push = 0;
+        bus_in = {3'd0, 3'd0};
+        user_push = 1;
+        #8 user_push = 0;
         #10
-        in_data = {3'd1, 3'd6};
-        push = 1;
-        #8 push = 0;
+        bus_in = {3'd1, 3'd6};
+        user_push = 1;
+        #10 user_push = 0;
     end
 endmodule

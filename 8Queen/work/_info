@@ -10,7 +10,7 @@ z2
 cModel Technology
 dC:/intelFPGA/20.1
 vabs
-Z0 !s110 1730022409
+Z0 !s110 1730024230
 !i10b 1
 !s100 >@VHD4J31HCdZcjAFRSXi3
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -20,20 +20,20 @@ Z3 dC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen
 w1729954703
 8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs.v
 FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs.v
-!i122 1324
+!i122 1444
 Z4 L0 1 11
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1730022408.000000
+Z6 !s108 1730024229.000000
 !s107 C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs.v|
 !i113 1
 Z7 o-work work
 Z8 tCvgOpt 0
 vabs_testbench
-Z9 !s110 1730022420
+Z9 !s110 1730024232
 !i10b 1
 !s100 M7I3=ZW3_g6Tb9SHhml6=1
 R1
@@ -43,13 +43,13 @@ R3
 w1729948658
 8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs_testbench.v
 FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs_testbench.v
-!i122 1333
+!i122 1453
 R4
 R5
 r1
 !s85 0
 31
-Z10 !s108 1730022420.000000
+Z10 !s108 1730024232.000000
 !s107 C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs_testbench.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/abs_testbench.v|
 !i113 1
@@ -66,20 +66,20 @@ R3
 w1729952686
 8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/controller.v
 FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/controller.v
-!i122 1326
+!i122 1446
 L0 1 139
 R5
 r1
 !s85 0
 31
-Z11 !s108 1730022409.000000
+Z11 !s108 1730024230.000000
 !s107 C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/controller.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/controller.v|
 !i113 1
 R7
 R8
 vcounter
-Z12 !s110 1730022419
+R9
 !i10b 1
 !s100 [`SC3d34no:;2^74OgHfW1
 R1
@@ -89,13 +89,13 @@ R3
 w1729940137
 8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v
 FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v
-!i122 1331
+!i122 1451
 L0 1 28
 R5
 r1
 !s85 0
 31
-Z13 !s108 1730022419.000000
+Z12 !s108 1730024231.000000
 !s107 C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v|
 !i113 1
@@ -112,7 +112,7 @@ R3
 w1729940838
 8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v
 FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v
-!i122 1325
+!i122 1445
 L0 1 150
 R5
 r1
@@ -125,30 +125,30 @@ R11
 R7
 R8
 vdecoder
-R12
+Z13 !s110 1730024231
 !i10b 1
-!s100 ;QnCI@1oL71DdGFhT23193
+!s100 1fbBg1^z4bI>kG@VZ=^B?2
 R1
-IjJWOHJbZizz;Jj@Y9na1V1
+I`PbF1KCfaR=6=Q:1m:hAk3
 R2
 R3
-w1730022390
+w1730022488
 8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v
 FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v
-!i122 1330
-L0 1 38
+!i122 1450
+Z14 L0 1 16
 R5
 r1
 !s85 0
 31
-R13
+R12
 !s107 C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder.v|
 !i113 1
 R7
 R8
 vdecoder_testbench
-Z14 !s110 1730022421
+Z15 !s110 1730024233
 !i10b 1
 !s100 [h?WniL>M:[Q7M0DKdi;S0
 R1
@@ -158,20 +158,20 @@ R3
 w1730022134
 8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v
 FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v
-!i122 1337
+!i122 1456
 L0 1 25
 R5
 r1
 !s85 0
 31
-!s108 1730022421.000000
+!s108 1730024233.000000
 !s107 C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/decoder_testbench.v|
 !i113 1
 R7
 R8
 veight_queen
-R0
+R13
 !i10b 1
 !s100 BzZOJ?Q@5?cTjDZg^nz;E0
 R1
@@ -181,7 +181,7 @@ R3
 w1729934820
 8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v
 FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v
-!i122 1327
+!i122 1447
 L0 1 84
 R5
 r1
@@ -204,20 +204,20 @@ R3
 w1730018449
 8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v
 FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v
-!i122 1332
+!i122 1452
 L0 1 44
 R5
 r1
 !s85 0
 31
-R13
+R10
 !s107 C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v|
 !i113 1
 R7
 R8
 vis_safe
-Z15 !s110 1730022408
+Z16 !s110 1730024229
 !i10b 1
 !s100 g5iR]Q`mZ9i@LP^>HG=eZ2
 R1
@@ -227,7 +227,7 @@ R3
 w1729953841
 8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/is_safe.v
 FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/is_safe.v
-!i122 1323
+!i122 1443
 L0 1 26
 R5
 r1
@@ -240,7 +240,7 @@ R6
 R7
 R8
 vmultiplexer
-!s110 1730022417
+R13
 !i10b 1
 !s100 SM3jHHL9[oO6j9Bd0D6oG2
 R1
@@ -250,20 +250,20 @@ R3
 w1730011295
 8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/multiplexer.v
 FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/multiplexer.v
-!i122 1329
+!i122 1449
 L0 1 12
 R5
 r1
 !s85 0
 31
-!s108 1730022416.000000
+R12
 !s107 C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/multiplexer.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/multiplexer.v|
 !i113 1
 R7
 R8
 vonehot_to_position_decoder
-R15
+R16
 !i10b 1
 !s100 A=kbXHfnH9c83:L774`ai0
 R1
@@ -273,7 +273,7 @@ R3
 w1729776569
 8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/onehot_to_position_decoder.v
 FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/onehot_to_position_decoder.v
-!i122 1322
+!i122 1442
 L0 1 22
 R5
 r1
@@ -286,7 +286,7 @@ R6
 R7
 R8
 vregister
-R9
+R15
 !i10b 1
 !s100 jF9L5hWoP4nYb<ozQWgo=2
 R1
@@ -296,7 +296,7 @@ R3
 w1730009747
 8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v
 FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v
-!i122 1335
+!i122 1455
 L0 1 19
 R5
 r1
@@ -309,7 +309,7 @@ R10
 R7
 R8
 vshift_register
-!s110 1730022411
+R13
 !i10b 1
 !s100 F^=H4T]MeQk>6n01i6IlL1
 R1
@@ -319,76 +319,76 @@ R3
 w1729776871
 8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/shift_register.v
 FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/shift_register.v
-!i122 1328
+!i122 1448
 L0 1 20
 R5
 r1
 !s85 0
 31
-!s108 1730022411.000000
+R12
 !s107 C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/shift_register.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/shift_register.v|
 !i113 1
 R7
 R8
 vstack
-!s110 1729971249
+!s110 1730024228
 !i10b 1
-!s100 ]F0bji_80lF]Tl>KoRLb?1
+!s100 12@0@SPLMk]AQLe<RYaI60
 R1
-Ime4zD:bQ>Re17I4U;gLig3
+IX[:d:>S:7D8A7ClbmfgQc1
 R2
 R3
-w1729970630
+w1730024145
 8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack.v
 FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack.v
-!i122 972
-L0 1 34
+!i122 1439
+L0 1 47
 R5
 r1
 !s85 0
 31
-!s108 1729971249.000000
+Z17 !s108 1730024228.000000
 !s107 C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack.v|
 !i113 1
 R7
 R8
 vstack_controller
-!s110 1730010641
+R16
 !i10b 1
-!s100 VgB>SgWN=4k<cY]kgbN[Q0
+!s100 2nW3HJZ=4bX2RCA<U5zR?0
 R1
-IAl?6^lX_NRLRFFCQl<CdE0
+I6L2UG`zhJ8P70URM9MaOX0
 R2
 R3
-w1730009137
+w1730023436
 8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_controller.v
 FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_controller.v
-!i122 987
-L0 1 3
+!i122 1440
+L0 1 80
 R5
 r1
 !s85 0
 31
-!s108 1730010641.000000
+R17
 !s107 C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_controller.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_controller.v|
 !i113 1
 R7
 R8
 vstack_datapath
-R15
+R16
 !i10b 1
-!s100 UK3FM;QOM9z=7O^82=eIQ0
+!s100 FA^9jIccnRIa?@0mH@5M41
 R1
-IPUAJie5l;7fg88Rl[NID<3
+IbA8BXHQ9?oIFPzHz3JY<o0
 R2
 R3
-w1730011635
+w1730024223
 8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v
 FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v
-!i122 1321
+!i122 1441
 L0 1 68
 R5
 r1
@@ -401,7 +401,7 @@ R6
 R7
 R8
 vstack_decoder
-R14
+!s110 1730022421
 !i10b 1
 !s100 fjEC_a_4;>lb928X9jZzd0
 R1
@@ -412,12 +412,12 @@ w1730011232
 8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_decoder.v
 FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_decoder.v
 !i122 1336
-L0 1 16
+R14
 R5
 r1
 !s85 0
 31
-R10
+!s108 1730022420.000000
 !s107 C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_decoder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_decoder.v|
 !i113 1
@@ -426,16 +426,16 @@ R8
 vstack_testbench
 R9
 !i10b 1
-!s100 mG7hTjC4<fo[V]BCC`PRh3
+!s100 7X]mMgXoFMYh_XIL3EOMZ0
 R1
-I6SzPzDWQoAP]So6C;5mH[0
+I89V<f6gPUVSGf0c<YM5FK1
 R2
 R3
-w1729971247
+w1730024068
 8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_testbench.v
 FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_testbench.v
-!i122 1334
-L0 1 32
+!i122 1454
+L0 1 37
 R5
 r1
 !s85 0
