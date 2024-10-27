@@ -115,20 +115,32 @@ module datapath (
     );
     
 
-    assign last_queen_counter_reset = (reset || counter_reset);
-    counter last_queen_row_counter(
+    // assign last_queen_counter_reset = (reset || counter_reset);
+    // counter last_queen_row_counter(
+    //     .clk(clk),
+    //     .reset(last_queen_counter_reset),
+    //     .load(ZERO),
+    //     .data(ZERO),
+    //     .count_up(count_up),
+    //     .count_down(count_down),
+    //     .zero(last_queen_counter_zero),
+    //     .msb(cout),
+    //     .value(last_queen_counter_value)
+    // );
+    // assign last_queen_row = last_queen_counter_value[2:0];
+    
+    stack #(8, 6) last_queen_stack (
         .clk(clk),
-        .reset(last_queen_counter_reset),
-        .load(ZERO),
-        .data(ZERO),
-        .count_up(count_up),
-        .count_down(count_down),
-        .zero(last_queen_counter_zero),
-        .msb(cout),
-        .value(last_queen_counter_value)
+        .reset(reset),
+        .user_push(count_up),
+        .bus_in(stack_in),
+        .user_pop(user_pop),
+        .overflow(overflow),
+        .underflow(underflow),
+        .ready(ready),
+        .bus_out(stack_out)
     );
-    assign last_queen_row = last_queen_counter_value[2:0];
-
+    
 
     assign other_queen_counter_data = last_queen_row - 3'b001;
     counter #(3) other_queen_row_counter(

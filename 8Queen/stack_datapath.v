@@ -60,8 +60,9 @@ module stack_datapath (
         end
     endgenerate
 
-    assign bus_out = pop ? mux_output : {SIZE{1'bz}};
-    
+    // assign bus_out = pop ? mux_output : {SIZE{1'bz}};
+    // Sorry, but to access the top of the stack without poping or giving TOP siganel.
+    assign bus_out = mux_output;
     multiplexer #($clog2(DEPTH), SIZE) stack_multiplexer (
         .select(pop_pointer),
         .inputs(register_outputs),
