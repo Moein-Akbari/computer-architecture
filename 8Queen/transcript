@@ -16,56 +16,14 @@
 # Compile of stack_testbench.v was successful.
 # Compile of register.v was successful.
 # Compile of decoder_testbench.v was successful.
-# 18 compiles, 0 failed with no errors.
-vsim -gui work.eight_queen_testbench
-# vsim -gui work.eight_queen_testbench 
-# Start time: 21:49:45 on Oct 27,2024
-# Loading work.eight_queen_testbench
-# Loading work.eight_queen
-# Loading work.controller
-# Loading work.datapath
-# Loading work.decoder
-# Loading work.multiplexer
-# Loading work.onehot_to_position_decoder
-# Loading work.is_safe
-# Loading work.abs
-# Loading work.counter
-# Loading work.shift_register
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
-#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
-run -all
-# Simulation stopped at time 55260 because DONE signal is high.
-# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v(41)
-#    Time: 55260 ps  Iteration: 0  Instance: /eight_queen_testbench
-# Break in Module eight_queen_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v line 41
-add wave -position insertpoint  \
-sim:/eight_queen_testbench/clk \
-sim:/eight_queen_testbench/start \
-sim:/eight_queen_testbench/user_reset \
-sim:/eight_queen_testbench/out_bus \
-sim:/eight_queen_testbench/ready \
-sim:/eight_queen_testbench/done
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
-#           Attempting to use alternate WLF file "./wlft1ejyv2".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft1ejyv2
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'eight_queen_controller'.  Expected 19, found 18.
-#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen.v Line: 30
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /eight_queen_testbench/eq/eight_queen_datapath/last_queen_row_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/datapath.v Line: 119
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Simulation stopped at time 55260 because DONE signal is high.
-# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v(41)
-#    Time: 55260 ps  Iteration: 0  Instance: /eight_queen_testbench
-# Break in Module eight_queen_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/eight_queen_testbench.v line 41
-quit -sim
-# End time: 21:51:05 on Oct 27,2024, Elapsed time: 0:01:20
-# Errors: 0, Warnings: 3
+# Compile of stacked_controller.v was successful.
+# Compile of stacked_datapath.v failed with 4 errors.
+# Compile of stacked_eight_queen.v was successful.
+# Compile of increamenter.v failed with 5 errors.
+# 22 compiles, 2 failed with 9 errors.
+# Compile of stacked_datapath.v failed with 4 errors.
+# Compile of increamenter.v failed with 1 errors.
+# 2 compiles, 2 failed with 5 errors.
+# Compile of increamenter.v was successful.
+# Compile of stacked_datapath.v failed with 4 errors.
+# Compile of stacked_datapath.v was successful.
