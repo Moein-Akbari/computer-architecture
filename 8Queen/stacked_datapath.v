@@ -15,6 +15,7 @@ module stacked_datapath (
     // Controller-inputs
     cout,
     down_counter_zero,
+    row_zero,    
     last_column,
     safe,
     stack_ready,
@@ -22,7 +23,8 @@ module stacked_datapath (
 
     // Outputs
     ready, 
-    done
+    done,
+    out_bus
 );
     input clk, reset;
     input 
@@ -39,11 +41,14 @@ module stacked_datapath (
         cout,
         down_counter_zero,
         last_column,
+        row_zero,
         safe,
         stack_ready,
         underflow,
         ready,
         done;
+
+    output [7:0] out_bus;
 
     wire [0:7] register_loads;
     wire [7:0] register_outputs [0:7];
@@ -59,10 +64,12 @@ module stacked_datapath (
     
     wire [5:0] last_queen_position; // [5:3] row, [2:0] col
     wire [5:0] stack_top;
+
     assign last_queen_row = stack_top[2:0];
     assign last_queen_column = stack_top[5:3];
     wire [5:0] last_queen_updated_position;
 
+    assign row_zero = ~(|last_queen_row); 
 
     decoder row_decoder (
         .enable(register_load),
@@ -90,7 +97,7 @@ module stacked_datapath (
                 .reset(reset),
                 .load(register_loads[i]),
                 .bus_in(last_queen_row_data),
-                .bus_out(register_outputs)
+                .bus_out(register_outputs[i])
             );
         end
     endgenerate
@@ -148,4 +155,5 @@ module stacked_datapath (
     );
 
     assign last_column = &last_queen_column;
+    assign out_bus = enable_output ? last_queen_row_data : {8{1'bz}};
 endmodule
