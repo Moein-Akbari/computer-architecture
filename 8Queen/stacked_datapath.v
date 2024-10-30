@@ -11,6 +11,7 @@ module stacked_datapath (
     pop,
     increament_row,
     increament_column,
+    load_updated_position,
 
     // Controller-inputs
     cout,
@@ -35,7 +36,8 @@ module stacked_datapath (
         push,
         pop,
         increament_row,
-        increament_column;
+        increament_column,
+        load_updated_position;
 
     output
         cout,
@@ -64,6 +66,8 @@ module stacked_datapath (
     
     wire [5:0] last_queen_position; // [5:3] row, [2:0] col
     wire [5:0] stack_top;
+
+    wire [5:0] stack_input;
 
     assign last_queen_row = stack_top[2:0];
     assign last_queen_column = stack_top[5:3];
@@ -111,7 +115,7 @@ module stacked_datapath (
         .clk(clk),
         .reset(reset),
         .user_push(push),
-        .bus_in(last_queen_position),
+        .bus_in(stack_input),
         .user_pop(pop),
         .overflow(),
         .underflow(underflow),
@@ -132,6 +136,14 @@ module stacked_datapath (
         .out(last_queen_updated_position[2:0]),
         .carry_out(cout)
     );
+
+    register updated_position (
+        .clk(clk),
+        .reset(reset),
+        .load(load_updated_position),
+        .bus_in(last_queen_updated_position),
+        .bus_out(stack_input)
+    ); 
 
     assign other_queen_counter_data = last_queen_row - 3'b001;
     counter #(3) other_queen_row_counter(

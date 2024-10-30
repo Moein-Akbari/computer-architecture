@@ -22,6 +22,7 @@ module stacked_controller (
     pop,
     increament_row,
     increament_column,
+    load_updated_position,
 
     // Outputs
     ready,
@@ -42,8 +43,9 @@ module stacked_controller (
         COLUMN_INCREASE = 4'd10,
         EMPTY_STACK = 4'd11,
         POP = 4'd12,
-        WAIT_FOR_POP = 4'd13;
-    
+        WAIT_FOR_POP = 4'd13,
+        PUSH = 4'd14;
+
 
     input 
         clk,
@@ -67,7 +69,8 @@ module stacked_controller (
         pop,
         increament_row,
         increament_column,
-
+        load_updated_position,
+        
         // Outputs
         ready,
         no_answer,
@@ -91,10 +94,12 @@ module stacked_controller (
         or safe or
         down_counter_zero
         or last_column or
-        stack_ready or underflow 
+        stack_ready 
+        or underflow or
+        present_state
     ) begin
         case (present_state)
-            IDLE: next_state = start ? reset : IDLE;
+            IDLE: next_state = start ? RESET : IDLE;
             RESET: next_state = CHECK_FINISH;
             CHECK_FINISH: next_state = 
                 (~row_zero && ~cout) ? SAFETY_CHECK : 
@@ -115,19 +120,22 @@ module stacked_controller (
             COLUMN_INCREASE: next_state = WAIT_FOR_POP; // TODO: Probably fails
             EMPTY_STACK: next_state = underflow ? IDLE : EMPTY_STACK;
             POP: next_state = stack_ready ? BACK_TRACK : POP;
-            WAIT_FOR_POP: next_state = stack_ready ? NEXT_ROW : WAIT_FOR_POP;
+            WAIT_FOR_POP: next_state = stack_ready ? PUSH : WAIT_FOR_POP;
+            PUSH: next_state = WAIT_FOR_PUSH;
             default: next_state = IDLE;
         endcase
     end
 
-        always @(
+    always @(
         start
         or row_zero or
         cout
         or safe or
         down_counter_zero
         or last_column or
-        stack_ready or underflow 
+        stack_ready 
+        or underflow or
+        present_state
     ) begin
         reset = 1'b0;
         enable_output = 1'b0;
@@ -147,10 +155,10 @@ module stacked_controller (
             PREVIOUS_QUEEN: count = 1'b1;
             NO_ANSWER: no_answer = 1'b1;
             WAIT_FOR_PUSH: ;
-            NEXT_ROW: {increament_row, push, register_load} = 3'b111;
+            NEXT_ROW: {increament_row, push, register_load, load_updated_position} = 4'b1111; // TODO: Sus
             DONE: done = 1'b1;
             BACK_TRACK: ;
-            COLUMN_INCREASE: {increament_column, pop} = 2'b11;
+            COLUMN_INCREASE: {increament_column, pop, load_updated_position} = 3'b111;
             EMPTY_STACK: {enable_output, pop} = 2'b11;
             POP: pop = 1'b1;
             WAIT_FOR_POP: ;

@@ -10,5 +10,5 @@ module increamenter(
     output [N-1:0] out;
     output carry_out;
 
-    assign {carry_out, out} = enable_output ? in + 1'b1 : {1'b0, out}; 
+    assign {carry_out, out} = enable_output ? in + 1'b1 : {1'b0, in}; 
 endmodule
