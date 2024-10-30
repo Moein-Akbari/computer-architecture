@@ -63,3 +63,5 @@ run -all
 # ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen_testbench.v(43)
 #    Time: 99770 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench
 # Break in Module stacked_eight_queen_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen_testbench.v line 43
+# End time: 16:35:54 on Oct 30,2024, Elapsed time: 0:02:32
+# Errors: 0, Warnings: 5
