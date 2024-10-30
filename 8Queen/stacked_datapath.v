@@ -13,6 +13,7 @@ module stacked_datapath (
     increament_column,
     load_updated_position,
     reset_column,
+    reset_to_seven,
 
     // Controller-inputs
     cout,
@@ -39,7 +40,8 @@ module stacked_datapath (
         increament_row,
         increament_column,
         load_updated_position,
-        reset_column;
+        reset_column,
+        reset_to_seven;
 
     output
         cout,
@@ -75,6 +77,7 @@ module stacked_datapath (
     assign last_queen_row = stack_top[5:3];
     assign last_queen_column = stack_top[2:0];
     wire [5:0] last_queen_updated_position;
+    wire [2:0] other_queen_counter_input;
 
     assign row_zero = ~(|last_queen_row); 
 
@@ -132,14 +135,14 @@ module stacked_datapath (
         .enable_output(increament_row),
         .in(last_queen_row),
         .out(last_queen_updated_position[5:3]),
-        .carry_out()
+        .carry_out(cout)
     );
 
     increamenter column_increamenter (
         .enable_output(increament_column),
         .in(column_increamenter_input),
         .out(last_queen_updated_position[2:0]),
-        .carry_out(cout)
+        .carry_out()
     );
 
     register updated_position (
@@ -149,13 +152,14 @@ module stacked_datapath (
         .bus_in(last_queen_updated_position),
         .bus_out(stack_input)
     ); 
-
+    
+    assign other_queen_counter_input = reset_to_seven ? 3'b111 : other_queen_counter_data;
     assign other_queen_counter_data = last_queen_row - 3'b001;
     counter #(3) other_queen_row_counter(
         .clk(clk),
         .reset(reset),
         .load(load_counter),
-        .data(other_queen_counter_data),
+        .data(other_queen_counter_input),
         .count_up(),
         .count_down(count),
         .zero(down_counter_zero),
@@ -172,5 +176,5 @@ module stacked_datapath (
     );
 
     assign last_column = &last_queen_column;
-    assign out_bus = enable_output ? last_queen_row_data : {8{1'bz}};
+    assign out_bus = enable_output ? other_queen_row_data : {8{1'bz}};
 endmodule

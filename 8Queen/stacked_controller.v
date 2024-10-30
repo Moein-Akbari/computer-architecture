@@ -24,6 +24,7 @@ module stacked_controller (
     increament_column,
     load_updated_position,
     reset_column,
+    reset_to_seven,
 
     // Outputs
     ready,
@@ -42,7 +43,7 @@ module stacked_controller (
         DONE = 5'd8,
         BACK_TRACK = 5'd9,
         COLUMN_INCREASE = 5'd10,
-        EMPTY_STACK = 5'd11,
+        TRANSMIT = 5'd11,
         POP = 5'd12,
         WAIT_FOR_POP = 5'd13,
         PUSH = 5'd14,
@@ -73,7 +74,8 @@ module stacked_controller (
         increament_row,
         increament_column,
         load_updated_position,
-        
+        reset_to_seven,
+
         // Outputs
         ready,
         no_answer,
@@ -118,11 +120,12 @@ module stacked_controller (
             PREVIOUS_QUEEN: next_state = SAFETY_CHECK;
             NO_ANSWER: next_state = IDLE;
             WAIT_FOR_PUSH: next_state = stack_ready ? CHECK_FINISH : WAIT_FOR_PUSH;
-            NEXT_ROW: next_state = WAIT_FOR_PUSH;
-            DONE: next_state = EMPTY_STACK;
+            NEXT_ROW: next_state = cout ? DONE : WAIT_FOR_PUSH;
+            DONE: next_state = TRANSMIT;
             BACK_TRACK: next_state = last_column ? POP : COLUMN_INCREASE;
-            COLUMN_INCREASE: next_state = WAIT_FOR_POP; // TODO: Probably fails
-            EMPTY_STACK: next_state = underflow ? IDLE : EMPTY_STACK;
+            COLUMN_INCREASE: next_state = WAIT_FOR_POP;
+            // TRANSMIT: next_state = underflow ? IDLE : TRANSMIT;
+            TRANSMIT: next_state = down_counter_zero ? IDLE : TRANSMIT;
             POP: next_state = WAIT_FOR_POP_BACK_TRACK;
             WAIT_FOR_POP_BACK_TRACK: next_state = stack_ready ? BACK_TRACK : WAIT_FOR_POP_BACK_TRACK;
             WAIT_FOR_POP: next_state = stack_ready ? PUSH : WAIT_FOR_POP;
@@ -155,6 +158,9 @@ module stacked_controller (
         load_updated_position = 1'b0;
         reset_column = 1'b0;
         ready = 1'b0;
+        done = 1'b0;
+        no_answer = 1'b0;
+        reset_to_seven = 1'b0;
 
         case (present_state)
             IDLE: ready = 1'b1;
@@ -165,10 +171,10 @@ module stacked_controller (
             NO_ANSWER: no_answer = 1'b1;
             WAIT_FOR_PUSH: ;
             NEXT_ROW: {reset_column, increament_row, push, load_updated_position} = 4'b1111; // TODO: Sus
-            DONE: done = 1'b1;
+            DONE: {done, load_counter, reset_to_seven} = 3'b111;
             BACK_TRACK: ;
             COLUMN_INCREASE: {increament_column, pop, load_updated_position} = 3'b111;
-            EMPTY_STACK: {enable_output, pop} = 2'b11;
+            TRANSMIT: {enable_output, count} = 2'b11;
             POP: pop = 1'b1;
             WAIT_FOR_POP_BACK_TRACK: ;
             LOAD_TO_REGISTER: {register_load} = 1'b1;
@@ -176,5 +182,4 @@ module stacked_controller (
             PUSH: push = 1'b1;
         endcase
     end
-
 endmodule

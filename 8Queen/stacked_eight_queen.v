@@ -29,7 +29,8 @@ module stacked_eight_queen (
         stack_ready,
         underflow,
         load_updated_position,
-        reset_column;
+        reset_column,
+        reset_to_seven;
 
     stacked_datapath datapath (
         .clk(clk),
@@ -53,7 +54,8 @@ module stacked_eight_queen (
         .done(done),
         .out_bus(out_bus),
         .load_updated_position(load_updated_position),
-        .reset_column(reset_column)
+        .reset_column(reset_column),
+        .reset_to_seven(reset_to_seven)
     );
 
     stacked_controller controller (
@@ -80,6 +82,7 @@ module stacked_eight_queen (
         .no_answer(no_answer),
         .done(done),
         .load_updated_position(load_updated_position),
-        .reset_column(reset_column)
+        .reset_column(reset_column),
+        .reset_to_seven(reset_to_seven)
     );
 endmodule
