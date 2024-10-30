@@ -12,6 +12,7 @@ module stacked_datapath (
     increament_row,
     increament_column,
     load_updated_position,
+    reset_column,
 
     // Controller-inputs
     cout,
@@ -37,7 +38,8 @@ module stacked_datapath (
         pop,
         increament_row,
         increament_column,
-        load_updated_position;
+        load_updated_position,
+        reset_column;
 
     output
         cout,
@@ -58,7 +60,8 @@ module stacked_datapath (
     wire [2:0] last_queen_row;
     wire [7:0] last_queen_row_data;
     wire [2:0] last_queen_column;
- 
+    wire [2:0] column_increamenter_input;
+
     wire [2:0] other_queen_row;
     wire [2:0] other_queen_column;
     wire [7:0] other_queen_row_data;
@@ -69,8 +72,8 @@ module stacked_datapath (
 
     wire [5:0] stack_input;
 
-    assign last_queen_row = stack_top[2:0];
-    assign last_queen_column = stack_top[5:3];
+    assign last_queen_row = stack_top[5:3];
+    assign last_queen_column = stack_top[2:0];
     wire [5:0] last_queen_updated_position;
 
     assign row_zero = ~(|last_queen_row); 
@@ -93,10 +96,12 @@ module stacked_datapath (
         .out(other_queen_row_data)
     );
 
+    assign column_increamenter_input = reset_column ? 3'b000 : last_queen_column; 
+
     genvar i;
     generate
         for (i = 0; i < 8; i = i + 1) begin
-            register r (
+            register #(8) r (
                 .clk(clk),
                 .reset(reset),
                 .load(register_loads[i]),
@@ -132,7 +137,7 @@ module stacked_datapath (
 
     increamenter column_increamenter (
         .enable_output(increament_column),
-        .in(last_queen_column),
+        .in(column_increamenter_input),
         .out(last_queen_updated_position[2:0]),
         .carry_out(cout)
     );

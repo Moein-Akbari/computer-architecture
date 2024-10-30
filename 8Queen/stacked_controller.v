@@ -11,7 +11,7 @@ module stacked_controller (
     safe,
     stack_ready,
     underflow,
-
+    
     // Datapath-inputs
     reset,
     enable_output,
@@ -23,6 +23,7 @@ module stacked_controller (
     increament_row,
     increament_column,
     load_updated_position,
+    reset_column,
 
     // Outputs
     ready,
@@ -30,21 +31,23 @@ module stacked_controller (
     done
 );
     localparam
-        IDLE = 4'd0,
-        RESET = 4'd1,
-        CHECK_FINISH = 4'd2,
-        SAFETY_CHECK = 4'd3,
-        PREVIOUS_QUEEN = 4'd4,
-        NO_ANSWER = 4'd5,
-        WAIT_FOR_PUSH = 4'd6,
-        NEXT_ROW = 4'd7,
-        DONE = 4'd8,
-        BACK_TRACK = 4'd9,
-        COLUMN_INCREASE = 4'd10,
-        EMPTY_STACK = 4'd11,
-        POP = 4'd12,
-        WAIT_FOR_POP = 4'd13,
-        PUSH = 4'd14;
+        IDLE = 5'd0,
+        RESET = 5'd1,
+        CHECK_FINISH = 5'd2,
+        SAFETY_CHECK = 5'd3,
+        PREVIOUS_QUEEN = 5'd4,
+        NO_ANSWER = 5'd5,
+        WAIT_FOR_PUSH = 5'd6,
+        NEXT_ROW = 5'd7,
+        DONE = 5'd8,
+        BACK_TRACK = 5'd9,
+        COLUMN_INCREASE = 5'd10,
+        EMPTY_STACK = 5'd11,
+        POP = 5'd12,
+        WAIT_FOR_POP = 5'd13,
+        PUSH = 5'd14,
+        LOAD_TO_REGISTER = 5'd15,
+        WAIT_FOR_POP_BACK_TRACK = 5'd16;
 
 
     input 
@@ -74,11 +77,12 @@ module stacked_controller (
         // Outputs
         ready,
         no_answer,
-        done;
+        done,
+        reset_column;
 
 
-    reg [3:0] present_state;
-    reg [3:0] next_state;
+    reg [4:0] present_state;
+    reg [4:0] next_state;
 
     always @(posedge clk) begin
         if (user_reset)
@@ -103,12 +107,12 @@ module stacked_controller (
             RESET: next_state = CHECK_FINISH;
             CHECK_FINISH: next_state = 
                 (~row_zero && ~cout) ? SAFETY_CHECK : 
-                (row_zero && ~cout)  ? NEXT_ROW :
+                (row_zero && ~cout)  ? LOAD_TO_REGISTER :
                 (~row_zero && cout)  ? DONE :
                 NO_ANSWER;
             SAFETY_CHECK: next_state =
                 (safe && ~down_counter_zero) ? PREVIOUS_QUEEN :
-                (safe && down_counter_zero) ? NEXT_ROW :
+                (safe && down_counter_zero) ? LOAD_TO_REGISTER :
                 (~safe && last_column) ? BACK_TRACK :
                 COLUMN_INCREASE;
             PREVIOUS_QUEEN: next_state = SAFETY_CHECK;
@@ -119,9 +123,11 @@ module stacked_controller (
             BACK_TRACK: next_state = last_column ? POP : COLUMN_INCREASE;
             COLUMN_INCREASE: next_state = WAIT_FOR_POP; // TODO: Probably fails
             EMPTY_STACK: next_state = underflow ? IDLE : EMPTY_STACK;
-            POP: next_state = stack_ready ? BACK_TRACK : POP;
+            POP: next_state = WAIT_FOR_POP_BACK_TRACK;
+            WAIT_FOR_POP_BACK_TRACK: next_state = stack_ready ? BACK_TRACK : WAIT_FOR_POP_BACK_TRACK;
             WAIT_FOR_POP: next_state = stack_ready ? PUSH : WAIT_FOR_POP;
             PUSH: next_state = WAIT_FOR_PUSH;
+            LOAD_TO_REGISTER: next_state = NEXT_ROW;
             default: next_state = IDLE;
         endcase
     end
@@ -146,7 +152,10 @@ module stacked_controller (
         pop = 1'b0;
         increament_row = 1'b0;
         increament_column = 1'b0;
-        
+        load_updated_position = 1'b0;
+        reset_column = 1'b0;
+        ready = 1'b0;
+
         case (present_state)
             IDLE: ready = 1'b1;
             RESET: reset = 1'b1;
@@ -155,13 +164,16 @@ module stacked_controller (
             PREVIOUS_QUEEN: count = 1'b1;
             NO_ANSWER: no_answer = 1'b1;
             WAIT_FOR_PUSH: ;
-            NEXT_ROW: {increament_row, push, register_load, load_updated_position} = 4'b1111; // TODO: Sus
+            NEXT_ROW: {reset_column, increament_row, push, load_updated_position} = 4'b1111; // TODO: Sus
             DONE: done = 1'b1;
             BACK_TRACK: ;
             COLUMN_INCREASE: {increament_column, pop, load_updated_position} = 3'b111;
             EMPTY_STACK: {enable_output, pop} = 2'b11;
             POP: pop = 1'b1;
+            WAIT_FOR_POP_BACK_TRACK: ;
+            LOAD_TO_REGISTER: {register_load} = 1'b1;
             WAIT_FOR_POP: ;
+            PUSH: push = 1'b1;
         endcase
     end
 

@@ -1404,3 +1404,1749 @@ run
 run
 run
 run
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/stack_input
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'datapath'.  Expected 21, found 20.
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen.v Line: 33
+# ** Warning: (vsim-3722) C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen.v(33): [TFMPC] - Missing connection for port 'load_updated_position'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[0]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[0]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[1]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[1]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[2]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[2]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[3]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[3]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[4]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[4]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[5]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[5]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[6]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[6]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[7]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[7]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'controller'.  Expected 23, found 22.
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen.v Line: 56
+# ** Warning: (vsim-3722) C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen.v(56): [TFMPC] - Missing connection for port 'load_updated_position'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/last_queen_position
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/last_queen_updated_position
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'datapath'.  Expected 21, found 20.
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen.v Line: 33
+# ** Warning: (vsim-3722) C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen.v(33): [TFMPC] - Missing connection for port 'load_updated_position'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[0]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[0]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[1]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[1]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[2]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[2]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[3]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[3]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[4]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[4]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[5]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[5]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[6]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[6]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[7]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[7]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'controller'.  Expected 23, found 22.
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen.v Line: 56
+# ** Warning: (vsim-3722) C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen.v(56): [TFMPC] - Missing connection for port 'load_updated_position'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+# Compile of stack.v was successful.
+# Compile of stack_controller.v was successful.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.onehot_to_position_decoder
+# Loading work.stack
+# Loading work.stack_controller
+# Loading work.stack_datapath
+# Loading work.is_safe
+# Loading work.abs
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'datapath'.  Expected 21, found 20.
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen.v Line: 33
+# ** Warning: (vsim-3722) C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen.v(33): [TFMPC] - Missing connection for port 'load_updated_position'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[0]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[0]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[1]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[1]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[2]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[2]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[3]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[3]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[4]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[4]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[5]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[5]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[6]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[6]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[7]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[7]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'controller'.  Expected 23, found 22.
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen.v Line: 56
+# ** Warning: (vsim-3722) C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen.v(56): [TFMPC] - Missing connection for port 'load_updated_position'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+run
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of decoder_testbench.v was successful.
+# Compile of stacked_controller.v was successful.
+# Compile of stacked_datapath.v was successful.
+run
+# Compile of stacked_eight_queen.v was successful.
+# Compile of increamenter.v was successful.
+# Compile of stacked_eight_queen_testbench.v was successful.
+# 23 compiles, 0 failed with no errors.
+quit -sim
+# End time: 12:15:19 on Oct 30,2024, Elapsed time: 0:44:32
+# Errors: 0, Warnings: 23
+vsim -gui work.stacked_eight_queen_testbench
+# vsim -gui work.stacked_eight_queen_testbench 
+# Start time: 12:15:30 on Oct 30,2024
+# Loading work.stacked_eight_queen_testbench
+# Loading work.stacked_eight_queen
+# Loading work.stacked_datapath
+# Loading work.decoder
+# Loading work.multiplexer
+# Loading work.onehot_to_position_decoder
+# Loading work.stack
+# Loading work.stack_controller
+# Loading work.stack_datapath
+# Loading work.counter
+# Loading work.increamenter
+# Loading work.register
+# Loading work.is_safe
+# Loading work.abs
+# Loading work.stacked_controller
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'datapath'.  Expected 21, found 20.
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen.v Line: 33
+# ** Warning: (vsim-3722) C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen.v(33): [TFMPC] - Missing connection for port 'load_updated_position'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[0]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[0]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[1]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[1]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[2]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[2]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[3]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[3]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[4]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[4]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[5]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[5]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[6]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[6]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[7]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[7]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'controller'.  Expected 23, found 22.
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen.v Line: 56
+# ** Warning: (vsim-3722) C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen.v(56): [TFMPC] - Missing connection for port 'load_updated_position'.
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/clk \
+sim:/stacked_eight_queen_testbench/start \
+sim:/stacked_eight_queen_testbench/user_reset \
+sim:/stacked_eight_queen_testbench/out_bus \
+sim:/stacked_eight_queen_testbench/ready \
+sim:/stacked_eight_queen_testbench/done \
+sim:/stacked_eight_queen_testbench/no_answer
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlftwjnvf0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftwjnvf0
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/controller/present_state
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/load_updated_position
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/last_queen_updated_position
+run
+run
+run
+run
+run
+run
+run
+# Compile of stack.v was successful.
+# Compile of stack_controller.v was successful.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+quit -sim
+# End time: 12:18:43 on Oct 30,2024, Elapsed time: 0:03:13
+# Errors: 0, Warnings: 24
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Load canceled
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of decoder_testbench.v was successful.
+# Compile of stacked_controller.v was successful.
+# Compile of stacked_datapath.v was successful.
+# Compile of stacked_eight_queen.v was successful.
+# Compile of increamenter.v was successful.
+# Compile of stacked_eight_queen_testbench.v was successful.
+# 23 compiles, 0 failed with no errors.
+vsim -gui work.stacked_eight_queen_testbench
+# vsim -gui work.stacked_eight_queen_testbench 
+# Start time: 12:19:08 on Oct 30,2024
+# Loading work.stacked_eight_queen_testbench
+# Loading work.stacked_eight_queen
+# Loading work.stacked_datapath
+# Loading work.decoder
+# Loading work.multiplexer
+# Loading work.onehot_to_position_decoder
+# Loading work.stack
+# Loading work.stack_controller
+# Loading work.stack_datapath
+# Loading work.counter
+# Loading work.increamenter
+# Loading work.register
+# Loading work.is_safe
+# Loading work.abs
+# Loading work.stacked_controller
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'datapath'.  Expected 21, found 20.
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen.v Line: 33
+# ** Warning: (vsim-3722) C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen.v(33): [TFMPC] - Missing connection for port 'load_updated_position'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[0]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[0]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[1]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[1]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[2]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[2]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[3]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[3]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[4]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[4]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[5]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[5]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[6]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[6]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[7]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[7]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Error (suppressible): (vsim-3389) Port 'load_updated_position' not found in the connected module (12th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_controller_instance File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack.v Line: 24
+# ** Error (suppressible): (vsim-3389) Port 'load_updated_position' not found in the connected module (9th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack.v Line: 39
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'controller'.  Expected 23, found 22.
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/controller File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen.v Line: 56
+# ** Warning: (vsim-3722) C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen.v(56): [TFMPC] - Missing connection for port 'load_updated_position'.
+# Error loading design
+# End time: 12:19:09 on Oct 30,2024, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 23
+# Compile of stack.v failed with 2 errors.
+# Compile of stack_controller.v was successful.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of decoder_testbench.v was successful.
+# Compile of stacked_controller.v was successful.
+# Compile of stacked_datapath.v was successful.
+# Compile of stacked_eight_queen.v was successful.
+# Compile of increamenter.v was successful.
+# Compile of stacked_eight_queen_testbench.v was successful.
+# 23 compiles, 1 failed with 2 errors.
+# Compile of stack.v was successful.
+# Compile of stack_controller.v was successful.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of decoder_testbench.v was successful.
+# Compile of stacked_controller.v was successful.
+# Compile of stacked_datapath.v was successful.
+# Compile of stacked_eight_queen.v was successful.
+# Compile of increamenter.v was successful.
+# Compile of stacked_eight_queen_testbench.v was successful.
+# 23 compiles, 0 failed with no errors.
+# Compile of stack.v was successful.
+# Compile of stack_controller.v was successful.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of decoder_testbench.v was successful.
+# Compile of stacked_controller.v was successful.
+# Compile of stacked_datapath.v was successful.
+# Compile of stacked_eight_queen.v was successful.
+# Compile of increamenter.v was successful.
+# Compile of stacked_eight_queen_testbench.v was successful.
+# 23 compiles, 0 failed with no errors.
+vsim -gui work.stacked_eight_queen_testbench
+# vsim -gui work.stacked_eight_queen_testbench 
+# Start time: 12:21:35 on Oct 30,2024
+# Loading work.stacked_eight_queen_testbench
+# Loading work.stacked_eight_queen
+# Loading work.stacked_datapath
+# Loading work.decoder
+# Loading work.multiplexer
+# Loading work.onehot_to_position_decoder
+# Loading work.stack
+# Loading work.stack_controller
+# Loading work.stack_datapath
+# Loading work.counter
+# Loading work.increamenter
+# Loading work.register
+# Loading work.is_safe
+# Loading work.abs
+# Loading work.stacked_controller
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[0]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[0]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[1]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[1]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[2]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[2]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[3]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[3]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[4]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[4]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[5]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[5]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[6]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[6]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[7]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[7]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/clk \
+sim:/stacked_eight_queen_testbench/start \
+sim:/stacked_eight_queen_testbench/user_reset \
+sim:/stacked_eight_queen_testbench/out_bus \
+sim:/stacked_eight_queen_testbench/ready \
+sim:/stacked_eight_queen_testbench/done \
+sim:/stacked_eight_queen_testbench/no_answer
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlftsqw13z".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftsqw13z
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/controller/present_state \
+sim:/stacked_eight_queen_testbench/eq/controller/next_state
+run
+run
+run
+run
+run
+run -all
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/register_outputs
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[0]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[0]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[1]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[1]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[2]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[2]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[3]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[3]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[4]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[4]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[5]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[5]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[6]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[6]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[7]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[7]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/last_queen_row_data
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/last_queen_column
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[0]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[0]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[1]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[1]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[2]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[2]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[3]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[3]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[4]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[4]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[5]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[5]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[6]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[6]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[7]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[7]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/last_queen_row
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/register_loads
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[0]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[0]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[1]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[1]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[2]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[2]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[3]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[3]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[4]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[4]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[5]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[5]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[6]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[6]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[7]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[7]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[0]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[0]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[1]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[1]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[2]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[2]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[3]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[3]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[4]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[4]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[5]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[5]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[6]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[6]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_in'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[7]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (8) for port 'bus_out'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/genblk1[7]/r File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_datapath.v Line: 99
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+# Compile of stack.v was successful.
+# Compile of stack_controller.v was successful.
+quit -sim
+# End time: 12:30:19 on Oct 30,2024, Elapsed time: 0:08:44
+# Errors: 0, Warnings: 18
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of decoder_testbench.v was successful.
+# Compile of stacked_controller.v was successful.
+# Compile of stacked_datapath.v was successful.
+# Compile of stacked_eight_queen.v was successful.
+# Compile of increamenter.v was successful.
+# Compile of stacked_eight_queen_testbench.v was successful.
+# 23 compiles, 0 failed with no errors.
+vsim -gui work.stacked_eight_queen_testbench
+# vsim -gui work.stacked_eight_queen_testbench 
+# Start time: 12:31:05 on Oct 30,2024
+# Loading work.stacked_eight_queen_testbench
+# Loading work.stacked_eight_queen
+# Loading work.stacked_datapath
+# Loading work.decoder
+# Loading work.multiplexer
+# Loading work.onehot_to_position_decoder
+# Loading work.stack
+# Loading work.stack_controller
+# Loading work.stack_datapath
+# Loading work.counter
+# Loading work.increamenter
+# Loading work.register
+# Loading work.is_safe
+# Loading work.abs
+# Loading work.stacked_controller
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/clk \
+sim:/stacked_eight_queen_testbench/start \
+sim:/stacked_eight_queen_testbench/user_reset \
+sim:/stacked_eight_queen_testbench/out_bus \
+sim:/stacked_eight_queen_testbench/ready \
+sim:/stacked_eight_queen_testbench/done \
+sim:/stacked_eight_queen_testbench/no_answer
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlft1fcsk3".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft1fcsk3
+run
+run
+run -all
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/register_outputs
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/controller/present_state \
+sim:/stacked_eight_queen_testbench/eq/controller/next_state
+run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/register_loads
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/last_queen_updated_position
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/last_queen_position
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+run
+# Compile of stack.v was successful.
+# Compile of stack_controller.v was successful.
+quit -sim
+# End time: 12:52:34 on Oct 30,2024, Elapsed time: 0:21:29
+# Errors: 0, Warnings: 2
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of decoder_testbench.v was successful.
+# Compile of stacked_controller.v was successful.
+# Compile of stacked_datapath.v was successful.
+# Compile of stacked_eight_queen.v was successful.
+# Compile of increamenter.v was successful.
+# Compile of stacked_eight_queen_testbench.v was successful.
+# 23 compiles, 0 failed with no errors.
+vsim -gui work.stacked_eight_queen_testbench
+# vsim -gui work.stacked_eight_queen_testbench 
+# Start time: 12:52:54 on Oct 30,2024
+# Loading work.stacked_eight_queen_testbench
+# Loading work.stacked_eight_queen
+# Loading work.stacked_datapath
+# Loading work.decoder
+# Loading work.multiplexer
+# Loading work.onehot_to_position_decoder
+# Loading work.stack
+# Loading work.stack_controller
+# Loading work.stack_datapath
+# Loading work.counter
+# Loading work.increamenter
+# Loading work.register
+# Loading work.is_safe
+# Loading work.abs
+# Loading work.stacked_controller
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/clk \
+sim:/stacked_eight_queen_testbench/start \
+sim:/stacked_eight_queen_testbench/user_reset \
+sim:/stacked_eight_queen_testbench/out_bus \
+sim:/stacked_eight_queen_testbench/ready \
+sim:/stacked_eight_queen_testbench/done \
+sim:/stacked_eight_queen_testbench/no_answer
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlft0jg3yt".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft0jg3yt
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/register_outputs
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/last_queen_row
+run
+run
+run
+run
+run
+run
+run
+run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/stack_top
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 13:18:30 on Oct 30,2024, Elapsed time: 0:25:36
+# Errors: 0, Warnings: 2
+# Compile of stack.v was successful.
+# Compile of stack_controller.v was successful.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of decoder_testbench.v was successful.
+# Compile of stacked_controller.v failed with 3 errors.
+# Compile of stacked_datapath.v was successful.
+# Compile of stacked_eight_queen.v was successful.
+# Compile of increamenter.v was successful.
+# Compile of stacked_eight_queen_testbench.v was successful.
+# 23 compiles, 1 failed with 3 errors.
+# Compile of stack.v was successful.
+# Compile of stack_controller.v was successful.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of decoder_testbench.v was successful.
+# Compile of stacked_controller.v was successful.
+# Compile of stacked_datapath.v was successful.
+# Compile of stacked_eight_queen.v was successful.
+# Compile of increamenter.v was successful.
+# Compile of stacked_eight_queen_testbench.v was successful.
+# 23 compiles, 0 failed with no errors.
+# Compile of stack.v was successful.
+# Compile of stack_controller.v was successful.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of decoder_testbench.v was successful.
+# Compile of stacked_controller.v was successful.
+# Compile of stacked_datapath.v was successful.
+# Compile of stacked_eight_queen.v was successful.
+# Compile of increamenter.v was successful.
+# Compile of stacked_eight_queen_testbench.v was successful.
+# 23 compiles, 0 failed with no errors.
+vsim -gui work.stacked_eight_queen_testbench
+# vsim -gui work.stacked_eight_queen_testbench 
+# Start time: 13:26:40 on Oct 30,2024
+# Loading work.stacked_eight_queen_testbench
+# Loading work.stacked_eight_queen
+# Loading work.stacked_datapath
+# Loading work.decoder
+# Loading work.multiplexer
+# Loading work.onehot_to_position_decoder
+# Loading work.stack
+# Loading work.stack_controller
+# Loading work.stack_datapath
+# Loading work.counter
+# Loading work.increamenter
+# Loading work.register
+# Loading work.is_safe
+# Loading work.abs
+# Loading work.stacked_controller
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/clk \
+sim:/stacked_eight_queen_testbench/start \
+sim:/stacked_eight_queen_testbench/user_reset \
+sim:/stacked_eight_queen_testbench/out_bus \
+sim:/stacked_eight_queen_testbench/ready \
+sim:/stacked_eight_queen_testbench/done \
+sim:/stacked_eight_queen_testbench/no_answer
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlftcm7t1f".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftcm7t1f
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/register_outputs
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/controller/present_state
+run
+run
+run
+run
+run
+run
+# Compile of stack.v was successful.
+# Compile of stack_controller.v was successful.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Load canceled
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.decoder
+# Loading work.multiplexer
+# Loading work.onehot_to_position_decoder
+# Loading work.stack
+# Loading work.stack_controller
+# Loading work.stack_datapath
+# Loading work.is_safe
+# Loading work.abs
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+# **** Error: RestartQ cmd: QObjects::Restart .main_pane.objects sim
+# ****        Bad sequence in.main_pane.objects.interior.cs.body.tree.lwchildsite.clipper.canvas.sfchildsite.tree, aborting query. (1)
+# Bad sequence in.main_pane.objects.interior.cs.body.tree.lwchildsite.clipper.canvas.sfchildsite.tree, aborting query. (1)
+#     while executing
+# "$itk_component(tree) insertquery end """
+#     (object "::.main_pane.objects.interior.cs.body.tree" method "::vsimwidgets::Hierarchy::requery" body line 3)
+#     invoked from within
+# "requery"
+#     (while configuring option "-querycommand" for widget "::.main_pane.objects.interior.cs.body.tree")
+#     (object "::.main_pane.objects.interior.cs.body.tree" method "::itk::Archetype::configure" )
+#     invoked from within
+# "$tree configure                                          -qsizecommand    "ObjectsTreeView::Qsize %n"		 -querycommand    "ObjectsTreeView::Query %n %i..."
+#     (procedure "QObjects::Restart" line 21)
+#     invoked from within
+# "QObjects::Restart .main_pane.objects sim"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $p $tankNamespace "
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of stack_testbench.v was successful.
+run
+# Compile of register.v was successful.
+# Compile of decoder_testbench.v was successful.
+run
+# Compile of stacked_controller.v was successful.
+# Compile of stacked_datapath.v was successful.
+# Compile of stacked_eight_queen.v was successful.
+# Compile of increamenter.v was successful.
+# Compile of stacked_eight_queen_testbench.v was successful.
+# 23 compiles, 0 failed with no errors.
+run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.stacked_eight_queen_testbench
+# Loading work.stacked_eight_queen
+# Loading work.stacked_datapath
+# Loading work.counter
+# Loading work.increamenter
+# Loading work.register
+# Loading work.stacked_controller
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+quit -sim
+# End time: 13:30:39 on Oct 30,2024, Elapsed time: 0:03:59
+# Errors: 0, Warnings: 2
+vsim -gui work.stacked_eight_queen_testbench
+# vsim -gui work.stacked_eight_queen_testbench 
+# Start time: 13:30:46 on Oct 30,2024
+# Loading work.stacked_eight_queen_testbench
+# Loading work.stacked_eight_queen
+# Loading work.stacked_datapath
+# Loading work.decoder
+# Loading work.multiplexer
+# Loading work.onehot_to_position_decoder
+# Loading work.stack
+# Loading work.stack_controller
+# Loading work.stack_datapath
+# Loading work.counter
+# Loading work.increamenter
+# Loading work.register
+# Loading work.is_safe
+# Loading work.abs
+# Loading work.stacked_controller
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/clk \
+sim:/stacked_eight_queen_testbench/start \
+sim:/stacked_eight_queen_testbench/user_reset \
+sim:/stacked_eight_queen_testbench/out_bus \
+sim:/stacked_eight_queen_testbench/ready \
+sim:/stacked_eight_queen_testbench/done \
+sim:/stacked_eight_queen_testbench/no_answer
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlftv1g2rk".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftv1g2rk
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/register_outputs
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/controller/present_state \
+sim:/stacked_eight_queen_testbench/eq/controller/next_state
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/controller/safe
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/controller/down_counter_zero
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/controller/last_column
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/is_safe_instance/row1 \
+sim:/stacked_eight_queen_testbench/eq/datapath/is_safe_instance/column1 \
+sim:/stacked_eight_queen_testbench/eq/datapath/is_safe_instance/row2 \
+sim:/stacked_eight_queen_testbench/eq/datapath/is_safe_instance/column2
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+run
+run
+add wave -position insertpoint sim:/stacked_eight_queen_testbench/eq/datapath/other_queen_row_counter/*
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/other_queen_row_data
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+# Compile of stack.v was successful.
+# Compile of stack_controller.v was successful.
+# Compile of stack_datapath.v was successful.
+quit -sim
+# End time: 13:38:25 on Oct 30,2024, Elapsed time: 0:07:39
+# Errors: 0, Warnings: 2
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of decoder_testbench.v was successful.
+# Compile of stacked_controller.v was successful.
+# Compile of stacked_datapath.v was successful.
+# Compile of stacked_eight_queen.v was successful.
+# Compile of increamenter.v was successful.
+# Compile of stacked_eight_queen_testbench.v was successful.
+# 23 compiles, 0 failed with no errors.
+vsim -gui work.stacked_eight_queen_testbench
+# vsim -gui work.stacked_eight_queen_testbench 
+# Start time: 13:39:35 on Oct 30,2024
+# Loading work.stacked_eight_queen_testbench
+# Loading work.stacked_eight_queen
+# Loading work.stacked_datapath
+# Loading work.decoder
+# Loading work.multiplexer
+# Loading work.onehot_to_position_decoder
+# Loading work.stack
+# Loading work.stack_controller
+# Loading work.stack_datapath
+# Loading work.counter
+# Loading work.increamenter
+# Loading work.register
+# Loading work.is_safe
+# Loading work.abs
+# Loading work.stacked_controller
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/clk \
+sim:/stacked_eight_queen_testbench/start \
+sim:/stacked_eight_queen_testbench/user_reset \
+sim:/stacked_eight_queen_testbench/out_bus \
+sim:/stacked_eight_queen_testbench/ready \
+sim:/stacked_eight_queen_testbench/done \
+sim:/stacked_eight_queen_testbench/no_answer
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlft8gct96".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft8gct96
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/controller/present_state
+run
+run
+run
+run
+run
+run
+run
+run
+run -all
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/register_outputs
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/stack_input
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/register_loads
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/stack_top
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/row_zero
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/row_zero
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+# Compile of stack.v was successful.
+# Compile of stack_controller.v was successful.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of decoder_testbench.v was successful.
+# Compile of stacked_controller.v was successful.
+# Compile of stacked_datapath.v was successful.
+# Compile of stacked_eight_queen.v was successful.
+# Compile of increamenter.v was successful.
+# Compile of stacked_eight_queen_testbench.v was successful.
+# 23 compiles, 0 failed with no errors.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/last_queen_row
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.stacked_eight_queen_testbench
+# Loading work.stacked_eight_queen
+# Loading work.stacked_datapath
+# Loading work.decoder
+# Loading work.multiplexer
+# Loading work.onehot_to_position_decoder
+# Loading work.stack
+# Loading work.stack_controller
+# Loading work.stack_datapath
+# Loading work.counter
+# Loading work.increamenter
+# Loading work.register
+# Loading work.is_safe
+# Loading work.abs
+# Loading work.stacked_controller
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+# Compile of stack.v was successful.
+# Compile of stack_controller.v was successful.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of decoder_testbench.v was successful.
+# Compile of stacked_controller.v was successful.
+# Compile of stacked_datapath.v was successful.
+# Compile of stacked_eight_queen.v was successful.
+# Compile of increamenter.v was successful.
+# Compile of stacked_eight_queen_testbench.v was successful.
+# 23 compiles, 0 failed with no errors.
+run
+run
+run
+quit -sim
+# End time: 13:59:48 on Oct 30,2024, Elapsed time: 0:20:13
+# Errors: 0, Warnings: 3
+# Compile of stack.v was successful.
+# Compile of stack_controller.v was successful.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of decoder_testbench.v was successful.
+# Compile of stacked_controller.v was successful.
+# Compile of stacked_datapath.v was successful.
+# Compile of stacked_eight_queen.v was successful.
+# Compile of increamenter.v was successful.
+# Compile of stacked_eight_queen_testbench.v was successful.
+# 23 compiles, 0 failed with no errors.
+vsim -gui work.stacked_eight_queen_testbench
+# vsim -gui work.stacked_eight_queen_testbench 
+# Start time: 14:00:11 on Oct 30,2024
+# Loading work.stacked_eight_queen_testbench
+# Loading work.stacked_eight_queen
+# Loading work.stacked_datapath
+# Loading work.decoder
+# Loading work.multiplexer
+# Loading work.onehot_to_position_decoder
+# Loading work.stack
+# Loading work.stack_controller
+# Loading work.stack_datapath
+# Loading work.counter
+# Loading work.increamenter
+# Loading work.register
+# Loading work.is_safe
+# Loading work.abs
+# Loading work.stacked_controller
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/clk \
+sim:/stacked_eight_queen_testbench/start \
+sim:/stacked_eight_queen_testbench/user_reset \
+sim:/stacked_eight_queen_testbench/out_bus \
+sim:/stacked_eight_queen_testbench/ready \
+sim:/stacked_eight_queen_testbench/done \
+sim:/stacked_eight_queen_testbench/no_answer
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlftn2hcdh".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftn2hcdh
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/stack_top
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/controller/present_state
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/register_outputs
+run -all
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/register_outputs
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+run
+# Compile of stack.v was successful.
+# Compile of stack_controller.v was successful.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+quit -sim
+# End time: 14:42:21 on Oct 30,2024, Elapsed time: 0:42:10
+# Errors: 0, Warnings: 2
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of decoder_testbench.v was successful.
+# Compile of stacked_controller.v was successful.
+# Compile of stacked_datapath.v was successful.
+# Compile of stacked_eight_queen.v was successful.
+# Compile of increamenter.v was successful.
+# Compile of stacked_eight_queen_testbench.v was successful.
+# 23 compiles, 0 failed with no errors.
+vsim -gui work.stacked_eight_queen_testbench
+# vsim -gui work.stacked_eight_queen_testbench 
+# Start time: 14:43:13 on Oct 30,2024
+# Loading work.stacked_eight_queen_testbench
+# Loading work.stacked_eight_queen
+# Loading work.stacked_datapath
+# Loading work.decoder
+# Loading work.multiplexer
+# Loading work.onehot_to_position_decoder
+# Loading work.stack
+# Loading work.stack_controller
+# Loading work.stack_datapath
+# Loading work.counter
+# Loading work.increamenter
+# Loading work.register
+# Loading work.is_safe
+# Loading work.abs
+# Loading work.stacked_controller
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/clk \
+sim:/stacked_eight_queen_testbench/start \
+sim:/stacked_eight_queen_testbench/user_reset \
+sim:/stacked_eight_queen_testbench/out_bus \
+sim:/stacked_eight_queen_testbench/ready \
+sim:/stacked_eight_queen_testbench/done \
+sim:/stacked_eight_queen_testbench/no_answer
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlfthx5gca".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfthx5gca
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/controller/present_state
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/stack_top
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/register_outputs
+run
+run
+run
+run
+run
+run
+run
+run
+run -next
+run
+run -all
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/register_outputs
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/push_pointer \
+sim:/stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/pop_pointer
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of stack.v was successful.
+# Compile of stack_controller.v was successful.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+quit -sim
+# End time: 15:03:16 on Oct 30,2024, Elapsed time: 0:20:03
+# Errors: 0, Warnings: 2
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of decoder_testbench.v was successful.
+# Compile of stacked_controller.v failed with 1 errors.
+# Compile of stacked_datapath.v was successful.
+# Compile of stacked_eight_queen.v was successful.
+# Compile of increamenter.v was successful.
+# Compile of stacked_eight_queen_testbench.v was successful.
+# 23 compiles, 1 failed with 1 error.
+# Compile of stacked_controller.v was successful.
+vsim -gui work.stacked_eight_queen_testbench
+# vsim -gui work.stacked_eight_queen_testbench 
+# Start time: 15:04:01 on Oct 30,2024
+# Loading work.stacked_eight_queen_testbench
+# Loading work.stacked_eight_queen
+# Loading work.stacked_datapath
+# Loading work.decoder
+# Loading work.multiplexer
+# Loading work.onehot_to_position_decoder
+# Loading work.stack
+# Loading work.stack_controller
+# Loading work.stack_datapath
+# Loading work.counter
+# Loading work.increamenter
+# Loading work.register
+# Loading work.is_safe
+# Loading work.abs
+# Loading work.stacked_controller
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/clk \
+sim:/stacked_eight_queen_testbench/start \
+sim:/stacked_eight_queen_testbench/user_reset \
+sim:/stacked_eight_queen_testbench/out_bus \
+sim:/stacked_eight_queen_testbench/ready \
+sim:/stacked_eight_queen_testbench/done \
+sim:/stacked_eight_queen_testbench/no_answer
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlftd78g0h".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftd78g0h
+run -all
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/register_outputs
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/stack_top
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/controller/present_state
+run -all
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/stack_input
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Load canceled
+quit -sim
+# End time: 15:12:51 on Oct 30,2024, Elapsed time: 0:08:50
+# Errors: 0, Warnings: 2
+# Compile of stack.v was successful.
+# Compile of stack_controller.v was successful.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of decoder_testbench.v was successful.
+# Compile of stacked_controller.v was successful.
+# Compile of stacked_datapath.v was successful.
+# Compile of stacked_eight_queen.v was successful.
+# Compile of increamenter.v was successful.
+# Compile of stacked_eight_queen_testbench.v was successful.
+# 23 compiles, 0 failed with no errors.
+# Compile of stack.v was successful.
+# Compile of stack_controller.v was successful.
+# Compile of stack_datapath.v was successful.
+# Compile of onehot_to_position_decoder.v was successful.
+# Compile of is_safe.v was successful.
+# Compile of abs.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of eight_queen.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of decoder.v was successful.
+# Compile of counter.v was successful.
+# Compile of eight_queen_testbench.v was successful.
+# Compile of abs_testbench.v was successful.
+# Compile of stack_testbench.v was successful.
+# Compile of register.v was successful.
+# Compile of decoder_testbench.v was successful.
+# Compile of stacked_controller.v was successful.
+# Compile of stacked_datapath.v was successful.
+# Compile of stacked_eight_queen.v was successful.
+# Compile of increamenter.v was successful.
+# Compile of stacked_eight_queen_testbench.v was successful.
+# 23 compiles, 0 failed with no errors.
+vsim -gui work.stacked_eight_queen_testbench
+# vsim -gui work.stacked_eight_queen_testbench 
+# Start time: 15:14:59 on Oct 30,2024
+# Loading work.stacked_eight_queen_testbench
+# Loading work.stacked_eight_queen
+# Loading work.stacked_datapath
+# Loading work.decoder
+# Loading work.multiplexer
+# Loading work.onehot_to_position_decoder
+# Loading work.stack
+# Loading work.stack_controller
+# Loading work.stack_datapath
+# Loading work.counter
+# Loading work.increamenter
+# Loading work.register
+# Loading work.is_safe
+# Loading work.abs
+# Loading work.stacked_controller
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/clk \
+sim:/stacked_eight_queen_testbench/start \
+sim:/stacked_eight_queen_testbench/user_reset \
+sim:/stacked_eight_queen_testbench/out_bus \
+sim:/stacked_eight_queen_testbench/ready \
+sim:/stacked_eight_queen_testbench/done \
+sim:/stacked_eight_queen_testbench/no_answer
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
+#           Attempting to use alternate WLF file "./wlftn8v3a6".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftn8v3a6
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/datapath/register_outputs
+add wave -position insertpoint  \
+sim:/stacked_eight_queen_testbench/eq/controller/present_state
+run
+run -all
