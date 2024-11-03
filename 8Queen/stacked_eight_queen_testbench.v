@@ -27,19 +27,19 @@ module stacked_eight_queen_testbench ();
 
     initial begin
         user_reset = 0;
+        # 50 user_reset = 1;
+        # 50 user_reset = 0;
         # 50;
-        user_reset = 1;
-        # 50;
-        user_reset = 0;
-        # 50;
-
         start = 1;
+        #200 start = 0;
+        
+        #100000 start = 1;
+        #50 start = 0;
     end
 
     always @(posedge clk) begin
         if (done == 1) begin
-            #100;
-            $display("Simulation stopped at time %0t because DONE signal is high.", $time);
+            #200;
             $stop; 
         end
     end

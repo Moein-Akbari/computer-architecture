@@ -25,7 +25,7 @@
 # 24 compiles, 0 failed with no errors.
 vsim -gui work.stacked_eight_queen_testbench
 # vsim -gui work.stacked_eight_queen_testbench 
-# Start time: 16:33:22 on Oct 30,2024
+# Start time: 09:44:49 on Oct 31,2024
 # Loading work.stacked_eight_queen_testbench
 # Loading work.stacked_eight_queen
 # Loading work.stacked_datapath
@@ -53,15 +53,25 @@ sim:/stacked_eight_queen_testbench/done \
 sim:/stacked_eight_queen_testbench/no_answer
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 11848
-#           Attempting to use alternate WLF file "./wlftcrgi0z".
+#           Attempting to use alternate WLF file "./wlft3xg662".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftcrgi0z
-add wave -position insertpoint  \
-sim:/stacked_eight_queen_testbench/eq/datapath/reset_to_seven
+#           Using alternate file: ./wlft3xg662
 run -all
-# Simulation stopped at time 99770 because DONE signal is high.
 # ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen_testbench.v(43)
-#    Time: 99770 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench
+#    Time: 99870 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench
 # Break in Module stacked_eight_queen_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen_testbench.v line 43
-# End time: 16:35:54 on Oct 30,2024, Elapsed time: 0:02:32
-# Errors: 0, Warnings: 5
+run -all
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen_testbench.v(43)
+#    Time: 200070 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench
+# Break in Module stacked_eight_queen_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen_testbench.v line 43
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'value'. The port definition is at: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/counter.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench/eq/datapath/last_queen_stack/stack_datapath_instance/stack_counter File: C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stack_datapath.v Line: 31
+run -all
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen_testbench.v(43)
+#    Time: 99870 ps  Iteration: 0  Instance: /stacked_eight_queen_testbench
+# Break in Module stacked_eight_queen_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/8Queen/stacked_eight_queen_testbench.v line 43
+quit -sim
+# End time: 10:10:49 on Oct 31,2024, Elapsed time: 0:26:00
+# Errors: 0, Warnings: 2
