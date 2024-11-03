@@ -1,4 +1,3 @@
-
 .data
 array: .word 10, 25, 3, 40, 7
 
@@ -11,7 +10,6 @@ addi x9, x0, 0
 loop1:
     slti x5, x9, 76
     beq x5, x0, end_loop1
-
     
     addi x18, x0, 0 
     
