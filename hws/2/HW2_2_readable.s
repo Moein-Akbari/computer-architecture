@@ -1,46 +1,48 @@
 main:
 # Init array
+# The array is [7, 25, -17, -15, 4, -14, 7, -32, -30, 13, 11, 10, 22, -18, 17, -1, -14, -6, -12, 12]
+# Expected result: [-32, -30, -18, -17, -15, -14, -14, -12, -6, -1, 4, 7, 7, 10, 11, 12, 13, 17, 22, 25]
     addi sp, sp, -80
 
-    li t0, 20
-    sw t0, 0(sp)
-    li t0, 19
-    sw t0, 4(sp)
-    li t0, 18
-    sw t0, 8(sp)
-    li t0, 17
-    sw t0, 12(sp)
-    li t0, 16
-    sw t0, 16(sp)
-    li t0, 15
-    sw t0, 20(sp)
-    li t0, 14
-    sw t0, 24(sp)
-    li t0, 13
-    sw t0, 28(sp)
-    li t0, 12
-    sw t0, 32(sp)
-    li t0, 11
-    sw t0, 36(sp)
-    li t0, 10
-    sw t0, 40(sp)
-    li t0, 9
-    sw t0, 44(sp)
-    li t0, 8
-    sw t0, 48(sp)
     li t0, 7
-    sw t0, 52(sp)
-    li t0, 6
-    sw t0, 56(sp)
-    li t0, 5
-    sw t0, 60(sp)
+    sw t0, 0(sp)
+    li t0, 25
+    sw t0, 4(sp)
+    li t0, -17
+    sw t0, 8(sp)
+    li t0, -15
+    sw t0, 12(sp)
     li t0, 4
+    sw t0, 16(sp)
+    li t0, -14
+    sw t0, 20(sp)
+    li t0, 7
+    sw t0, 24(sp)
+    li t0, -32
+    sw t0, 28(sp)
+    li t0, -30
+    sw t0, 32(sp)
+    li t0, 13
+    sw t0, 36(sp)
+    li t0, 11
+    sw t0, 40(sp)
+    li t0, 10
+    sw t0, 44(sp)
+    li t0, 22
+    sw t0, 48(sp)
+    li t0, -18
+    sw t0, 52(sp)
+    li t0, 17
+    sw t0, 56(sp)
+    li t0, -1
+    sw t0, 60(sp)
+    li t0, -14
     sw t0, 64(sp)
-    li t0, 3
+    li t0, -6
     sw t0, 68(sp)
-    li t0, 2
+    li t0, -12
     sw t0, 72(sp)
-    li t0, 1
+    li t0, 12
     sw t0, 76(sp)
 
 
@@ -67,7 +69,7 @@ loop1:
         
         bge t1, t0, end_if
         # swap
-        sw t1, 0(t3) # TODO: Check from the notes
+        sw t1, 0(t3)
         sw t0, 4(t3)
         end_if:
             addi s2, s2, 4 
