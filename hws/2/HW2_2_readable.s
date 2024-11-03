@@ -1,3 +1,4 @@
+main:
 # Init array
     addi sp, sp, -80
 
@@ -76,4 +77,4 @@ loop1:
         j loop1
 end_loop1:
     # This line is just for putting breakpoint.
-    addi s11, zero, 0x7FFFFFA0
+    addi s11, zero, 0 #0x7FFFFFA0
