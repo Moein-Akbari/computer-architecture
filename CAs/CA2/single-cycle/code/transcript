@@ -1,16 +1,4 @@
-# Compile of datapath.v was successful.
-# Compile of controller.v was successful.
-# Compile of register.v was successful.
-# Compile of rom.v failed with 2 errors.
-# Compile of memory.v failed with 1 errors.
-# Compile of alu.v was successful.
-# Compile of adder.v was successful.
-# Compile of immediate_extender.v failed with 1 errors.
-# Compile of multiplexer.v was successful.
-# Compile of register_file.v failed with 1 errors.
-# 10 compiles, 4 failed with 5 errors.
-# Compile of memory.v was successful.
-# Compile of datapath.v was successful.
+# Compile of datapath.v failed with 1 errors.
 # Compile of controller.v was successful.
 # Compile of register.v was successful.
 # Compile of rom.v was successful.
@@ -20,4 +8,8 @@
 # Compile of immediate_extender.v was successful.
 # Compile of multiplexer.v was successful.
 # Compile of register_file.v was successful.
-# 10 compiles, 0 failed with no errors.
+# 10 compiles, 1 failed with 1 error.
+# Compile of datapath.v failed with 2 errors.
+# Compile of datapath.v failed with 2 errors.
+# Compile of datapath.v failed with 2 errors.
+# Compile of datapath.v was successful.
