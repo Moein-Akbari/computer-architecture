@@ -18,5 +18,6 @@ module alu (
         (alu_function == 3'b010) ? input_a & input_b :
         (alu_function == 3'b011) ? input_a | input_b :
         (alu_function == 3'b100) ? input_a < input_b :
+        (alu_function == 3'b101) ? input_a ^ input_b :
         32'b0;
 endmodule
