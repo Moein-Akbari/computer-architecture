@@ -137,13 +137,12 @@ module datapath (
         .carry_out()
     );
 
-    wire [31:0] pc_mux_inputs [0:1];
+    wire [31:0] pc_mux_inputs [0:2];
     assign pc_mux_inputs[0] = next_pc;
     assign pc_mux_inputs[1] = jump_address;
+    assign pc_mux_inputs[2] = write_data;
 
-    wire [31:0] pc_mux2_inputs [0:1];
-    
-    multiplexer pc_mux (
+    multiplexer #(2, 32) pc_mux (
         .select(pc_src),
         .inputs(pc_mux_inputs),
         .out(next_pc)

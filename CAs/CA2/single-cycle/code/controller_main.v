@@ -4,24 +4,25 @@ module controller_main (
     // Datapath inputs
     reg_write,
     imm_src,
-    alu_src, 
+    alu_src,
     mem_write,
     result_src,
 
     // Other contollers inputs
     branch,
     alu_op,
-    jump
+    jump,
+    jalr
 );
     input [6:0] opcode;
 
-    output reg_write;
-    output [2:0] imm_src;
-    output alu_src;
-    output mem_write;
-    output [1:0] result_src;
+    output reg reg_write;
+    output reg [2:0] imm_src;
+    output reg alu_src;
+    output reg mem_write;
+    output reg [1:0] result_src;
 
-    output branch, alu_op, jump;
+    output reg branch, alu_op, jump, jalr;
 
     always @(opcode) begin
         reg_write = 0;
@@ -32,6 +33,7 @@ module controller_main (
         branch = 0;
         alu_op = 0;
         jump = 0;
+        jalr = 0;
         
         case (opcode)
             // R-Type
@@ -43,67 +45,85 @@ module controller_main (
                 branch = 1'b0;
                 alu_op = 2'b10;
                 jump = 1'b0;
+                jalr = 1'b0;
             end
-            // lw
+            // I-Type(lw)
             7'd3: begin
                 reg_write = 1'b1;
-                immediate_source = 3'b000;
+                imm_src = 3'b000;
                 alu_src = 1'b1;
                 mem_write = 1'b0;
                 result_src = 2'b01;
                 branch = 1'b0;
                 alu_op = 2'b00;
                 jump = 1'b0;
+                jalr = 1'b0;
             end
             // I-Type
             7'd19: begin
                 reg_write = 1'b1;
-                immediate_source = 3'b000;
+                imm_src = 3'b000;
                 alu_src = 1'b1;
                 mem_write = 1'b0;
                 result_src = 2'b00;
                 branch = 1'b0;
                 alu_op = 2'b11;
                 jump = 1'b0;
+                jalr = 1'b0;
             end
             // S-Type (sw)
             7'd35: begin
                 reg_write = 1'b0;
-                immediate_source = 3'b001;
+                imm_src = 3'b001;
                 alu_src = 1'b1;
                 mem_write = 1'b1;
                 branch = 1'b0;
                 alu_op = 2'b00;
                 jump = 1'b0;
+                jalr = 1'b0;
             end
-            // J-Type (jalr)
+            // J-Type
             7'd111: begin
                 reg_write = 1'b1;
-                immediate_source = 3'b011;
+                imm_src = 3'b011;
                 mem_write = 1'b0;
                 result_src = 2'b10;
                 branch = 1'b0;
                 jump = 1'b1;
+                jalr = 1'b0;
             end
             // B-Type
             7'd99: begin
                 reg_write = 1'b0;
-                immediate_source = 3'b010;
+                imm_src = 3'b010;
                 alu_src = 1'b0;
                 mem_write = 1'b0;
                 branch = 1'b1;
                 jump = 1'b0;
+                jalr = 1'b0;
             end
             // U-Type
             7'd55: begin
                 reg_write = 1'b1;
-                immediate_source = 3'b100;
+                imm_src = 3'b100;
                 mem_write = 1'b0;
                 result_src = 2'b11;
                 branch = 1'b0;
                 jump = 1'b0;
+                jalr = 1'b0;
             end
-            default: 
+            // I-Type (jalr)
+            7'd103: begin
+                reg_write = 1'b1;
+                imm_src = 3'b000;
+                alu_src = 1'b1;
+                mem_write = 1'b0;
+                result_src = 2'b00;
+                branch = 1'b0;
+                alu_op = 2'b11;
+                jump = 1'b0;
+                jalr = 1'b1;
+            end
         endcase
     end
 endmodule

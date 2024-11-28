@@ -1,9 +1,30 @@
-C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/rom.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/rom.v
+C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/register.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/register.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module rom
+-- Compiling module register
 
 Top level modules:
-	rom
+	register
+
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/immediate_extender.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/immediate_extender.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module immediate_extender
+
+Top level modules:
+	immediate_extender
+
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/controller_alu.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/controller_alu.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module controller_alu
+
+Top level modules:
+	controller_alu
+
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/controller_pc_source.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/controller_pc_source.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module controller_pc_source
+
+Top level modules:
+	controller_pc_source
 
 } {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/alu.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/alu.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -21,13 +42,10 @@ Top level modules:
 
 } {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/controller.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/controller.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-
-} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/adder.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/adder.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module adder
+-- Compiling module controller
 
 Top level modules:
-	adder
+	controller
 
 } {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/register_file.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/register_file.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -36,19 +54,33 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	register_file
 
-} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/register.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/register.v
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/rom.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/rom.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module register
+-- Compiling module rom
 
 Top level modules:
-	register
+	rom
 
-} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/immediate_extender.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/immediate_extender.v
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/datapath.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/datapath.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module immediate_extender
+-- Compiling module datapath
 
 Top level modules:
-	immediate_extender
+	datapath
+
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/adder.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/adder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/controller_main.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/controller_main.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module controller_main
+
+Top level modules:
+	controller_main
 
 } {} {}} C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/memory.v {1 {vlog -work work -stats=none C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/memory.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
