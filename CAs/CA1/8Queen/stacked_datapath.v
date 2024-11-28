@@ -101,9 +101,22 @@ module stacked_datapath (
 
     assign column_increamenter_input = reset_column ? 3'b000 : last_queen_column; 
 
+    wire reset2;
+    assign reset2 = reset || register_loads[0];
+    wire bus_in2;
+    assign bus_in2 = reset ? 8'b00000001 : last_queen_row_data;
+
+    register #(8) r0 (
+        .clk(clk),
+        .reset(reset),
+        .load(reset2),
+        .bus_in(bus_in2),
+        .bus_out(register_outputs[0])
+    );
+
     genvar i;
     generate
-        for (i = 0; i < 8; i = i + 1) begin
+        for (i = 1; i < 8; i = i + 1) begin
             register #(8) r (
                 .clk(clk),
                 .reset(reset),
