@@ -1,0 +1,195 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vadder
+Z0 !s110 1732785819
+!i10b 1
+!s100 WoYg;BSXcVno8G1=9Q_[82
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I5k:E2Nfh05AbLT3bB1oDM2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code
+w1732779943
+8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/adder.v
+FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/adder.v
+!i122 9
+L0 1 11
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1732785819.000000
+!s107 C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/adder.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+valu
+R0
+!i10b 1
+!s100 Eh[M]8b<N;fe;VJm50N[:0
+R1
+I@=D?aIkAbP8CO29W6Te6I1
+R2
+R3
+w1732785396
+8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/alu.v
+FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/alu.v
+!i122 8
+L0 1 22
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/alu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/alu.v|
+!i113 1
+R6
+R7
+vimmediate_extender
+R0
+!i10b 1
+!s100 7keiIgNbSXEC_^mg7>FiC1
+R1
+I57E<0R5H=0E:gZWD<@aeJ1
+R2
+R3
+w1732785542
+8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/immediate_extender.v
+FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/immediate_extender.v
+!i122 10
+L0 1 41
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/immediate_extender.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/immediate_extender.v|
+!i113 1
+R6
+R7
+vmemory
+R0
+!i10b 1
+!s100 6HFNok`Vc<g4^=`S?h<3n2
+R1
+I=nVXd`Zhl9h_j71dGmeU23
+R2
+R3
+w1732785744
+8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/memory.v
+FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/memory.v
+!i122 7
+L0 1 32
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/memory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/memory.v|
+!i113 1
+R6
+R7
+vmultiplexer
+R0
+!i10b 1
+!s100 jmbN7AH5Fl_1_4>BI2N[h2
+R1
+Io17BMD9XW;GT6_:h7N0IU2
+R2
+R3
+w1732780163
+8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/multiplexer.v
+FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/multiplexer.v
+!i122 11
+L0 1 13
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/multiplexer.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/multiplexer.v|
+!i113 1
+R6
+R7
+vregister
+R0
+!i10b 1
+!s100 E1acz4l>?zW9Y3G5PMR>Y2
+R1
+IY3SCPeejHFKHiFVk;k@AV3
+R2
+R3
+w1732783561
+8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/register.v
+FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/register.v
+!i122 5
+L0 1 18
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/register.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/register.v|
+!i113 1
+R6
+R7
+vregister_file
+!s110 1732785820
+!i10b 1
+!s100 mP>9`MLHYN=OoJjH3zaD93
+R1
+IOk>5=M_9gRNA`<O1TNjWX0
+R2
+R3
+w1732785761
+8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/register_file.v
+FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/register_file.v
+!i122 12
+L0 1 38
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/register_file.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/register_file.v|
+!i113 1
+R6
+R7
+vrom
+R0
+!i10b 1
+!s100 7ahR4@X3L6HHPf>Yi@c4d0
+R1
+ILTUhMH]_SD^a4LkgHY7Ff2
+R2
+R3
+w1732785814
+8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/rom.v
+FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/rom.v
+!i122 6
+L0 1 17
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/rom.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA2/single-cycle/code/rom.v|
+!i113 1
+R6
+R7
