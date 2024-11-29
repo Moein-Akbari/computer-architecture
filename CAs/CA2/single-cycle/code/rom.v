@@ -13,6 +13,9 @@ module rom (
     initial begin
         $readmemh("instructions.hex", rom_data);
     end
-
-    assign data = rom_data[(address >> 1)]; // TODO: Should we do same for main memory?
+    
+    // TODO: Should we do same for main memory?
+    wire [29:0] shifted_address;
+    assign shifted_address = address[31:2];
+    assign data = rom_data[shifted_address];
 endmodule
