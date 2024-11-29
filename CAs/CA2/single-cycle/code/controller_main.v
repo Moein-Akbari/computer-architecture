@@ -41,7 +41,7 @@ module controller_main (
                 reg_write = 1'b1;
                 alu_src = 1'b0;
                 mem_write = 1'b0;
-                result_src = 2'b01;
+                result_src = 2'b00;
                 branch = 1'b0;
                 alu_op = 2'b10;
                 jump = 1'b0;
