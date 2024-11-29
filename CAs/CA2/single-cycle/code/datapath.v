@@ -39,6 +39,11 @@ module datapath (
     );
 
     wire [31:0] instruction;
+    
+    assign opcode = instruction[6:0];
+    assign f3 = instruction[14:12];
+    assign f7 = instruction[31:25];
+
     rom instruction_memory (
         .address(instruction_address),
         .data(instruction)
@@ -142,9 +147,10 @@ module datapath (
     assign pc_mux_inputs[1] = jump_address;
     assign pc_mux_inputs[2] = write_data;
 
+    // Selecting between jal, jalr, and pc+4
     multiplexer #(2, 32) pc_mux (
         .select(pc_src),
         .inputs(pc_mux_inputs),
-        .out(next_pc)
+        .out(pc_input)
     );
 endmodule
