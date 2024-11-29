@@ -8,7 +8,7 @@ module controller_pc_source (
 );
     input branch, jump, jalr, zero;
     input [2:0] f3;
-    output reg pc_src;
+    output reg [1:0] pc_src;
     
     always @(*) begin
         pc_src = 2'b00;

@@ -112,7 +112,7 @@ module datapath (
 
     multiplexer #(2, 32) result_mux (
         .select(result_src),
-        .inputs(alu_mux_inputs),
+        .inputs(result_mux_inputs),
         .out(write_data)
     );
 
@@ -137,7 +137,7 @@ module datapath (
         .carry_out()
     );
 
-    wire [31:0] pc_mux_inputs [0:2];
+    wire [31:0] pc_mux_inputs [0:3];
     assign pc_mux_inputs[0] = next_pc;
     assign pc_mux_inputs[1] = jump_address;
     assign pc_mux_inputs[2] = write_data;
