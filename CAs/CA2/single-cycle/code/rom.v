@@ -14,5 +14,5 @@ module rom (
         $readmemh("instructions.hex", rom_data);
     end
 
-    assign data = rom_data[address];
+    assign data = rom_data[(address >> 1)]; // TODO: Should we do same for main memory?
 endmodule
