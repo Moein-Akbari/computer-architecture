@@ -100,6 +100,7 @@ module controller_main (
                 alu_src = 1'b0;
                 mem_write = 1'b0;
                 branch = 1'b1;
+                alu_op = 2'b01;
                 jump = 1'b0;
                 jalr = 1'b0;
             end

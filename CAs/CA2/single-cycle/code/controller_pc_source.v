@@ -14,8 +14,8 @@ module controller_pc_source (
         pc_src = 2'b00;
         if (jump) pc_src = 2'b01;
         else if (branch) begin
-            if (f3 == 3'b000 && zero) pc_src = 2'b01;
-            else if (f3 == 3'b001 && ~zero) pc_src = 2'b01;
+            if (f3 == 3'b000 & zero) pc_src = 2'b01;
+            else if (f3 == 3'b001 & ~zero) pc_src = 2'b01;
         end 
         else if (jalr) pc_src = 2'b10;
     end
