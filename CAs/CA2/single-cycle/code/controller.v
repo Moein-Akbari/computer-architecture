@@ -30,7 +30,7 @@ module controller (
     wire branch;
     wire jalr;
     wire jump;
-    wire alu_op;
+    wire [1:0] alu_op;
 
     controller_main cm (
         .opcode(opcode),

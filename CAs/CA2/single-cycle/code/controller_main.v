@@ -22,7 +22,8 @@ module controller_main (
     output reg mem_write;
     output reg [1:0] result_src;
 
-    output reg branch, alu_op, jump, jalr;
+    output reg branch, jump, jalr;
+    output reg [1:0] alu_op;
 
     always @(opcode) begin
         reg_write = 0;

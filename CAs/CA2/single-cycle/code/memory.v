@@ -8,7 +8,7 @@ module memory (
     
     read_data
 );
-    parameter SIZE = 1024;
+    parameter SIZE = 256;
     reg [31:0] memory_data [0:SIZE-1];
 
     input clk, reset;
