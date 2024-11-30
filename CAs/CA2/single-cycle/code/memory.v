@@ -15,9 +15,11 @@ module memory (
 
     input mem_write;
     input [31:0] address, write_data;
+    wire [29:0] shifted_address;
+    assign shifted_address = address[31:2];
 
     output [31:0] read_data;
-    assign read_data = memory_data[address];
+    assign read_data = memory_data[shifted_address];
 
     integer i; //TODO: probable issue
     always @(posedge clk) begin
@@ -26,7 +28,7 @@ module memory (
                 memory_data[i] <= {32{1'b0}};
             end
         end else if (mem_write) begin
-            memory_data[address] <= write_data;
+            memory_data[shifted_address] <= write_data;
         end
     end
 endmodule
