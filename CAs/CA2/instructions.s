@@ -23,6 +23,9 @@ slt x8, x5, x6
 slt x8, x6, x5
 slt x8, x6, x6
 
+slti x8, x5, 20
+slti x8, x6, 49
+slti x8, x6, 20
 
 # Storing x1 to x7 
 addi x8, x0, 64
@@ -90,11 +93,25 @@ addi x3, x0, 400
 
 bne x2, x3, BNE_SHOULD_HAPPEN
 
-BNE_SHOULDNT_HAPPEN: # Must be unreachable
+BNE_SHOULD_NOT_HAPPEN: # Must be unreachable
 addi x2, x0, 1000 # Must be unreachable
 jal BNE_END # Must be unreachable
 
 BNE_SHOULD_HAPPEN:
 addi x3, x0, 500 # now x2 == x3
-bne x2, x3, BNE_SHOULDNT_HAPPEN
+bne x2, x3, BNE_SHOULD_NOT_HAPPEN
 BNE_END:
+
+addi x20, x0, 200
+addi x21, x0, 200
+
+beq x20, x21, BEQ_SHOULD_HAPPEN
+
+BEQ_SHOULD_NOT_HAPPEN:
+addi x20, x0, 1001 # Must be unreachable
+jal BEQ_END # Must be unreachable
+
+BEQ_SHOULD_HAPPEN:
+addi x21, x0, 201 # now x20 != x21
+beq x20, x21, BEQ_SHOULD_NOT_HAPPEN
+BEQ_END:
