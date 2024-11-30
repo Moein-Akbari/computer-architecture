@@ -27,7 +27,7 @@ slt x8, x6, x6
 
 slti x8, x5, 20
 slti x8, x6, 49
-slti x8, x6, 20
+slti x8, x6, 0
 
 # Storing x1 to x7 
 addi x8, x0, 64

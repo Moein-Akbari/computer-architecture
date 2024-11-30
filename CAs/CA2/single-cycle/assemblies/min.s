@@ -27,7 +27,7 @@
 main:
     addi s0, zero, 0 # 0 is the start of array 
     lw s1, 0(s0)
-    addi s2, zero, 0
+    addi s2, zero, 1
     addi s0, s0, 4
 loop:
     slti t0, s2, 10
