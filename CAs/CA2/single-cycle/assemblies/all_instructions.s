@@ -18,6 +18,8 @@ xori x7, x6, 49 # 100101 = 37
 
 lui x8, 524287 # 2**19-1
 
+addi x5, zero, -20
+addi x6, zero, 5
 addi x8, x0, 123
 slt x8, x5, x6
 slt x8, x6, x5

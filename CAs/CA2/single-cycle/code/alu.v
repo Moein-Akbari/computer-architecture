@@ -5,7 +5,7 @@ module alu (
     alu_output, 
     zero
 );
-    input [31:0] input_a, input_b;
+    input signed [31:0] input_a, input_b;
     input [2:0] alu_function;
 
     output [31:0] alu_output;
