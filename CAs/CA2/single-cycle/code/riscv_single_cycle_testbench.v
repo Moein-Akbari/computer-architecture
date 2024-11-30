@@ -17,7 +17,7 @@ module riscv_single_cycle_testbench();
         # 50 reset = 1;
         # 50 reset = 0;
         # 50;
-        #1000;
+        #1500;
         $stop;
     end
 endmodule
