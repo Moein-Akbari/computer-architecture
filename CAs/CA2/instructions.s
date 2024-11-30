@@ -71,10 +71,30 @@ addi x9, x9, -4
 lw x1, 0(x9)
 addi x9, x9, -4
 
-jal x1, 
+jal x1, ADDER
 # These things will be executed after JUMPING section
-addi x2, zero, 1000
-addi x3, zero, 1001
-addi x4, zero, 1002
+addi x2, x0, 1000
+addi x3, x0, 1001
+addi x4, x0, 1002
+jal END_ADDER
 
-JUMPING:
+ADDER:
+addi x2, x0, -1000
+addi x3, x0, -1001
+addi x4, x0, -1002
+jalr ra
+END_ADDER:
+
+addi x2, x0, 500
+addi x3, x0, 400
+
+bne x2, x3, BNE_SHOULD_HAPPEN
+
+BNE_SHOULDNT_HAPPEN: # Must be unreachable
+addi x2, x0, 1000 # Must be unreachable
+jal BNE_END # Must be unreachable
+
+BNE_SHOULD_HAPPEN:
+addi x3, x0, 500 # now x2 == x3
+bne x2, x3, BNE_SHOULDNT_HAPPEN
+BNE_END:
