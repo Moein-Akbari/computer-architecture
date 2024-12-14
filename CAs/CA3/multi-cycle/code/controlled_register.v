@@ -6,7 +6,7 @@ module register (
     enable
 );
     parameter SIZE = 32;
-    input clk, reset;
+    input clk, reset, enable;
     input [SIZE-1:0] data_in;
     output reg [SIZE-1:0] data_out;
     always @(posedge clk) begin
