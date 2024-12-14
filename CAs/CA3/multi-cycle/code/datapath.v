@@ -19,6 +19,15 @@ module datapath (
     opcode, f3, f7,
     zero
 );
+    input clk, reset;
+
+    input adr_src;
+    input mem_write, ir_write, reg_write, pc_write, old_pc_write;
+    input [2:0] imm_src;
+    input [31:0] alu_src_a, alu_src_b;
+    input [2:0] alu_function;
+    input [1:0] result_src
+    
     controlled_register pc (
         .clk(clk), 
         .reset(reset),
