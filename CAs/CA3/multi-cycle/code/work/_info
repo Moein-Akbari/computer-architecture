@@ -32,6 +32,29 @@ Z5 !s108 1734158679.000000
 !i113 1
 Z6 o-work work
 Z7 tCvgOpt 0
+vdatapath
+!s110 1734172372
+!i10b 1
+!s100 zKT2^Z]EjAU>3:LJJJ^]J1
+R1
+IWWk;G=[4Mba^4;c;n[hcJ1
+R2
+R3
+w1734172366
+8C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/datapath.v
+FC:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/datapath.v
+!i122 13
+L0 1 188
+R4
+r1
+!s85 0
+31
+!s108 1734172372.000000
+!s107 C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/datapath.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/datapath.v|
+!i113 1
+R6
+R7
 vimmediate_extender
 R0
 !i10b 1

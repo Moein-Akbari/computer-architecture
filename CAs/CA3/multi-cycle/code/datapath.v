@@ -13,7 +13,7 @@ module datapath (
     result_src,
     reg_write,
     pc_write,
-    old_pc_write
+    old_pc_write,
 
     // Controller inputs
     opcode, f3, f7,
@@ -26,114 +26,163 @@ module datapath (
     input [2:0] imm_src;
     input [31:0] alu_src_a, alu_src_b;
     input [2:0] alu_function;
-    input [1:0] result_src
-    
+    input [1:0] result_src;
+
+    output [6:0] opcode;
+    output [14:12] f3;
+    output [31:25] f7;
+    output zero;
+
+    wire [31:0] result;
+    wire [31:0] pc_out;
     controlled_register pc (
         .clk(clk), 
         .reset(reset),
-        .data_in(data_in),
-        .data_out(data_out),
-        .enable(enable)
+        .data_in(result),
+        .data_out(pc_out),
+        .enable(pc_write)
     );
 
+    wire [31:0] old_pc_out;
     controlled_register old_pc (
         .clk(clk), 
         .reset(reset),
-        .data_in(data_in),
-        .data_out(data_out),
-        .enable(enable)
+        .data_in(pc_out),
+        .data_out(old_pc_out),
+        .enable(old_pc_write)
     );
     
+
+    wire [31:0] memory_address;
     multiplexer memory_src_mux (
-        .select(),
-        .inputs(),
-        .out()
+        .select(adr_src),
+        .inputs({
+            pc_out,
+            result
+        }),
+        .out(memory_address)
     );
 
+    wire [31:0] B_out;
+    wire [31:0] memory_output;
     memory mem (
         .clk(clk),
         .reset(reset),
-        .address(address),
-        .write_data(write_data),
+        .address(memory_address),
+        .write_data(B_out),
         .mem_write(mem_write),
-        .read_data(read_data)
+        .read_data(memory_output)
     );
 
+    wire [31:0] instruction;
     controlled_register ir (
-        clk, 
-        reset,
-        data_in,
-        data_out,
-        enable
+        .clk(clk), 
+        .reset(reset),
+        .data_in(memory_output),
+        .data_out(instruction),
+        .enable(ir_write)
     );
 
+    wire [31:0] memory_data;
     register mdr (
-        clk, 
-        reset,
-        data_in,
-        data_out
+        .clk(clk), 
+        .reset(reset),
+        .data_in(memory_output),
+        .data_out(memory_data)
     );
+
+
+
+    wire [31:0] write_data;
+    wire [31:0] reg1_data;
+    wire [31:0] reg2_data;
 
     register_file rf (
-        clk,
-        reset,
-        reg1_address,
-        reg2_address,
-        write_reg_address,
-        write_data,
-        reg_write,
-        reg1_data,
-        reg2_data
+        .clk(clk),
+        .reset(reset),
+        .reg1_address(instruction[19:15]),
+        .reg2_address(instruction[24:20]),
+        .write_reg_address(instruction[11:7]),
+        .write_data(result),
+        .reg_write(reg_write),
+        .reg1_data(reg1_data),
+        .reg2_data(reg2_data)
     );
 
+    wire [31:0] reg_a_out;
     register A (
-        clk, 
-        reset,
-        data_in,
-        data_out
+        .clk(clk), 
+        .reset(reset),
+        .data_in(reg1_data),
+        .data_out(reg_a_out)
     );
 
+    wire [31:0] reg_b_out;
     register B (
-        clk, 
-        reset,
-        data_in,
-        data_out
+        .clk(clk), 
+        .reset(reset),
+        .data_in(reg2_data),
+        .data_out(reg_b_out)
     );
 
-    multiplexer #(3, 32) alu_src_a_mux (
-        select,
-        inputs,
-        out
+    wire [31:0] alu_a_mux_output;
+
+    wire [31:0] alu_src_a_mux_inputs [0:2];
+    assign alu_src_a_mux_inputs[0] = pc_out;
+    assign alu_src_a_mux_inputs[1] = old_pc_out;
+    assign alu_src_a_mux_inputs[2] = reg_a_out;
+
+    multiplexer #(2, 32) alu_src_a_mux (
+        .select(alu_src_a),
+        .inputs(alu_src_a_mux_inputs),
+        .out(alu_a_mux_output)
     );
 
-    multiplexer #(3, 32) alu_src_b_mux (
-        select,
-        inputs,
-        out
+    wire [31:0] alu_b_mux_output;
+    wire [31:0] immediate_extender_output;
+    wire [31:0] alu_src_b_mux_inputs [0:2];
+    assign alu_src_b_mux_inputs[0] = reg_b_out;
+    assign alu_src_b_mux_inputs[1] = 32'd4;
+    assign alu_src_b_mux_inputs[2] = immediate_extender_output;
+
+    multiplexer #(2, 32) alu_src_b_mux (
+        .select(alu_src_b),
+        .inputs(alu_src_b_mux_inputs),
+        .out(alu_b_mux_output)
     );
 
     immediate_extender ie (
-        .immediate_source(),
-        .instruction(),
-        .out()
+        .immediate_source(imm_src),
+        .instruction(instruction[31:7]),
+        .out(immediate_extender_output)
     );
 
+    wire [31:0] alu_output;
     alu alu_instance (
-        .input_a(reg1_data),
-        .input_b(alu_input_b),
+        .input_a(alu_a_mux_output),
+        .input_b(alu_b_mux_output),
         .alu_function(alu_function),
-        .alu_output(alu_output), 
+        .alu_output(alu_output),
         .zero(zero)
     );
 
-    register alu_out (
-        clk, 
-        reset,
-        data_in,
-        data_out
+    wire [31:0] alu_register_output;
+    register alu_out_register (
+        .clk(clk), 
+        .reset(reset),
+        .data_in(alu_out),
+        .data_out(alu_register_output)
     );
 
-    multiplexer #(2, 32) result_src_mux (
+    wire [31:0] result_mux_output [0:3];
+    assign result_mux_output[0] = alu_register_output;
+    assign result_mux_output[1] = memory_data;
+    assign result_mux_output[2] = alu_out;
+    assign result_mux_output[3] = immediate_extender_output;
 
+    multiplexer #(2, 32) result_mux (
+        .select(result_src),
+        .inputs(result_mux_output),
+        .out(result)
     );
 endmodule
