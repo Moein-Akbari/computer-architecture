@@ -1,0 +1,9 @@
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of register.v was successful.
+# Compile of memory.v was successful.
+# Compile of register_file.v was successful.
+# Compile of alu.v was successful.
+# Compile of immediate_extender.v was successful.
+# 8 compiles, 0 failed with no errors.

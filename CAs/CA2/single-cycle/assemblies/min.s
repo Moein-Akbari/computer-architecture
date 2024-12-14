@@ -17,7 +17,7 @@
     sw t0, 20(s0)
     li t0, 7
     sw t0, 24(s0)
-    li t0, -32
+    li t0, 0
     sw t0, 28(s0)
     li t0, -30
     sw t0, 32(s0)
