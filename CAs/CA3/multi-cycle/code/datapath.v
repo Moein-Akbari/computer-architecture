@@ -64,19 +64,21 @@ module datapath (
         .out(memory_address)
     );
 
-    wire [31:0] B_out;
     wire [31:0] memory_output;
+    wire [31:0] reg_b_out;
     memory mem (
         .clk(clk),
         .reset(reset),
         .address(memory_address),
-        .write_data(B_out),
+        .write_data(reg_b_out),
         .mem_write(mem_write),
         .read_data(memory_output)
     );
 
     wire [31:0] instruction;
     assign opcode = instruction[6:0];
+    assign f3 = instruction[14:12];
+    assign f7 = instruction[31:25];
     controlled_register ir (
         .clk(clk), 
         .reset(reset),
@@ -99,12 +101,19 @@ module datapath (
     wire [31:0] reg1_data;
     wire [31:0] reg2_data;
 
+    wire [4:0] reg1_address;
+    assign reg1_address = instruction[19:15];
+    wire [4:0] reg2_address;
+    assign reg2_address = instruction[24:20];
+    wire [4:0] write_reg_address;
+    assign write_reg_address = instruction[11:7];
+
     register_file rf (
         .clk(clk),
         .reset(reset),
-        .reg1_address(instruction[19:15]),
-        .reg2_address(instruction[24:20]),
-        .write_reg_address(instruction[11:7]),
+        .reg1_address(reg1_address),
+        .reg2_address(reg2_address),
+        .write_reg_address(write_reg_address),
         .write_data(result),
         .reg_write(reg_write),
         .reg1_data(reg1_data),
@@ -119,7 +128,6 @@ module datapath (
         .data_out(reg_a_out)
     );
 
-    wire [31:0] reg_b_out;
     register B (
         .clk(clk), 
         .reset(reset),

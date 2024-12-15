@@ -150,7 +150,7 @@ module controller_main (
             MEM_REF: begin
                 alu_src_a = 2'b10;
                 alu_src_b = 2'b01;
-                imm_src = (opcode == OPCODE_SAVE_WORD) ? 3'b000 : 3'b010;
+                imm_src = (opcode == OPCODE_SAVE_WORD) ? 3'b001 : 3'b000;
             end
             MEM_READ: begin
                 result_src = 2'b00;

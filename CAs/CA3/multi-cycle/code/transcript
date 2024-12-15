@@ -886,3 +886,570 @@ run -all
 #    Time: 1650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
 # Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
 run -all
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/rsc/c/cm/present_state
+restart -f
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 1650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/rsc/dp/adr_src
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/rsc/dp/alu_register_output
+restart -f
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 1650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/rsc/dp/rf/register_file_data
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/rsc/dp/result
+restart -f
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 1650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/rsc/dp/immediate_extender_output
+restart -f
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 1650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of register.v was successful.
+# Compile of memory.v was successful.
+# Compile of register_file.v was successful.
+# Compile of alu.v was successful.
+# Compile of immediate_extender.v was successful.
+# Compile of controlled_register.v was successful.
+# Compile of controller_main.v was successful.
+# Compile of controller_alu.v was successful.
+# Compile of controller_pc_source.v was successful.
+# Compile of riscv_multi_cycle.v was successful.
+# Compile of riscv_multi_cycle_testbench.v was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.riscv_multi_cycle_testbench
+# Loading work.riscv_multi_cycle
+# Loading work.controller
+# Loading work.controller_main
+# Loading work.controller_pc_source
+# Loading work.controller_alu
+# Loading work.datapath
+# Loading work.controlled_register
+# Loading work.multiplexer
+# Loading work.memory
+# Loading work.register
+# Loading work.register_file
+# Loading work.immediate_extender
+# Loading work.alu
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 1650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+quit -sim
+# End time: 16:01:13 on Dec 15,2024, Elapsed time: 1:23:21
+# Errors: 0, Warnings: 1
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of register.v was successful.
+# Compile of memory.v was successful.
+# Compile of register_file.v was successful.
+# Compile of alu.v was successful.
+# Compile of immediate_extender.v was successful.
+# Compile of controlled_register.v was successful.
+# Compile of controller_main.v was successful.
+# Compile of controller_alu.v was successful.
+# Compile of controller_pc_source.v was successful.
+# Compile of riscv_multi_cycle.v was successful.
+# Compile of riscv_multi_cycle_testbench.v was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -gui work.riscv_multi_cycle_testbench
+# vsim -gui work.riscv_multi_cycle_testbench 
+# Start time: 16:01:25 on Dec 15,2024
+# Loading work.riscv_multi_cycle_testbench
+# Loading work.riscv_multi_cycle
+# Loading work.controller
+# Loading work.controller_main
+# Loading work.controller_pc_source
+# Loading work.controller_alu
+# Loading work.datapath
+# Loading work.controlled_register
+# Loading work.multiplexer
+# Loading work.memory
+# Loading work.register
+# Loading work.register_file
+# Loading work.immediate_extender
+# Loading work.alu
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/clk \
+sim:/riscv_multi_cycle_testbench/reset
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/rsc/dp/pc/data_in
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/rsc/dp/pc/data_out
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/rsc/dp/rf/register_file_data
+run -all
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 1650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/rsc/dp/memory_address
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 1650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+restart -f
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of register.v was successful.
+# Compile of memory.v was successful.
+# Compile of register_file.v was successful.
+# Compile of alu.v was successful.
+# Compile of immediate_extender.v was successful.
+# Compile of controlled_register.v was successful.
+# Compile of controller_main.v was successful.
+# Compile of controller_alu.v was successful.
+# Compile of controller_pc_source.v was successful.
+# Compile of riscv_multi_cycle.v was successful.
+# Compile of riscv_multi_cycle_testbench.v was successful.
+# 14 compiles, 0 failed with no errors.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 1650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+quit -sim
+# End time: 16:05:03 on Dec 15,2024, Elapsed time: 0:03:38
+# Errors: 0, Warnings: 2
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of register.v was successful.
+# Compile of memory.v was successful.
+# Compile of register_file.v was successful.
+# Compile of alu.v was successful.
+# Compile of immediate_extender.v was successful.
+# Compile of controlled_register.v was successful.
+# Compile of controller_main.v was successful.
+# Compile of controller_alu.v was successful.
+# Compile of controller_pc_source.v was successful.
+# Compile of riscv_multi_cycle.v was successful.
+# Compile of riscv_multi_cycle_testbench.v was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -gui work.riscv_multi_cycle_testbench
+# vsim -gui work.riscv_multi_cycle_testbench 
+# Start time: 16:05:21 on Dec 15,2024
+# Loading work.riscv_multi_cycle_testbench
+# Loading work.riscv_multi_cycle
+# Loading work.controller
+# Loading work.controller_main
+# Loading work.controller_pc_source
+# Loading work.controller_alu
+# Loading work.datapath
+# Loading work.controlled_register
+# Loading work.multiplexer
+# Loading work.memory
+# Loading work.register
+# Loading work.register_file
+# Loading work.immediate_extender
+# Loading work.alu
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/clk \
+sim:/riscv_multi_cycle_testbench/reset
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/rsc/dp/pc/data_out
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/rsc/dp/memory_address
+run -all
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 1650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/rsc/dp/mem/memory_data
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 1650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+# Compile of controller.v was successful.
+# Compile of datapath.v failed with 1 errors.
+# Compile of multiplexer.v was successful.
+# Compile of register.v was successful.
+# Compile of memory.v was successful.
+# Compile of register_file.v was successful.
+# Compile of alu.v was successful.
+# Compile of immediate_extender.v was successful.
+# Compile of controlled_register.v was successful.
+# Compile of controller_main.v was successful.
+# Compile of controller_alu.v was successful.
+# Compile of controller_pc_source.v was successful.
+# Compile of riscv_multi_cycle.v was successful.
+# Compile of riscv_multi_cycle_testbench.v was successful.
+# 14 compiles, 1 failed with 1 error.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.riscv_multi_cycle_testbench
+# Loading work.riscv_multi_cycle
+# Loading work.controller
+# Loading work.controller_main
+# Loading work.controller_pc_source
+# Loading work.controller_alu
+# Loading work.controlled_register
+# Loading work.multiplexer
+# Loading work.memory
+# Loading work.register
+# Loading work.register_file
+# Loading work.immediate_extender
+# Loading work.alu
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 1650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/rsc/dp/reg_b_out
+restart -f
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 1650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/rsc/dp/reg2_data
+restart -f
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 1650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+restart -f
+# Compile of controller.v was successful.
+# Compile of datapath.v failed with 1 errors.
+# Compile of multiplexer.v was successful.
+# Compile of register.v was successful.
+# Compile of memory.v was successful.
+# Compile of register_file.v was successful.
+# Compile of alu.v was successful.
+# Compile of immediate_extender.v was successful.
+# Compile of controlled_register.v was successful.
+# Compile of controller_main.v was successful.
+# Compile of controller_alu.v was successful.
+# Compile of controller_pc_source.v was successful.
+# Compile of riscv_multi_cycle.v was successful.
+# Compile of riscv_multi_cycle_testbench.v was successful.
+# 14 compiles, 1 failed with 1 error.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 1650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+quit -sim
+# End time: 16:15:04 on Dec 15,2024, Elapsed time: 0:09:43
+# Errors: 0, Warnings: 2
+# Load canceled
+# Compile of controller.v was successful.
+# Compile of datapath.v failed with 1 errors.
+# Compile of multiplexer.v was successful.
+# Compile of register.v was successful.
+# Compile of memory.v was successful.
+# Compile of register_file.v was successful.
+# Compile of alu.v was successful.
+# Compile of immediate_extender.v was successful.
+# Compile of controlled_register.v was successful.
+# Compile of controller_main.v was successful.
+# Compile of controller_alu.v was successful.
+# Compile of controller_pc_source.v was successful.
+# Compile of riscv_multi_cycle.v was successful.
+# Compile of riscv_multi_cycle_testbench.v was successful.
+# 14 compiles, 1 failed with 1 error.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of register.v was successful.
+# Compile of memory.v was successful.
+# Compile of register_file.v was successful.
+# Compile of alu.v was successful.
+# Compile of immediate_extender.v was successful.
+# Compile of controlled_register.v was successful.
+# Compile of controller_main.v was successful.
+# Compile of controller_alu.v was successful.
+# Compile of controller_pc_source.v was successful.
+# Compile of riscv_multi_cycle.v was successful.
+# Compile of riscv_multi_cycle_testbench.v was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -gui work.riscv_multi_cycle_testbench
+# vsim -gui work.riscv_multi_cycle_testbench 
+# Start time: 16:16:08 on Dec 15,2024
+# Loading work.riscv_multi_cycle_testbench
+# Loading work.riscv_multi_cycle
+# Loading work.controller
+# Loading work.controller_main
+# Loading work.controller_pc_source
+# Loading work.controller_alu
+# Loading work.datapath
+# Loading work.controlled_register
+# Loading work.multiplexer
+# Loading work.memory
+# Loading work.register
+# Loading work.register_file
+# Loading work.immediate_extender
+# Loading work.alu
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/clk \
+sim:/riscv_multi_cycle_testbench/reset
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/rsc/dp/mem/memory_data
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/rsc/dp/pc/data_out
+run -all
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 1650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+quit -sim
+vsim -gui work.riscv_multi_cycle_testbench
+# End time: 16:19:05 on Dec 15,2024, Elapsed time: 0:02:57
+# Errors: 0, Warnings: 3
+# vsim -gui work.riscv_multi_cycle_testbench 
+# Start time: 16:19:05 on Dec 15,2024
+# Loading work.riscv_multi_cycle_testbench
+# Loading work.riscv_multi_cycle
+# Loading work.controller
+# Loading work.controller_main
+# Loading work.controller_pc_source
+# Loading work.controller_alu
+# Loading work.datapath
+# Loading work.controlled_register
+# Loading work.multiplexer
+# Loading work.memory
+# Loading work.register
+# Loading work.register_file
+# Loading work.immediate_extender
+# Loading work.alu
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/clk \
+sim:/riscv_multi_cycle_testbench/reset
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/rsc/dp/pc/data_out
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/rsc/dp/mem/memory_data
+add wave -position insertpoint  \
+sim:/riscv_multi_cycle_testbench/rsc/dp/rf/register_file_data
+run -all
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 1650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+run -all
+restart -f
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 1650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+run -all
+restart -f
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 1650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+run -all
+restart -f
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of register.v was successful.
+# Compile of memory.v was successful.
+# Compile of register_file.v was successful.
+# Compile of alu.v was successful.
+# Compile of immediate_extender.v was successful.
+# Compile of controlled_register.v was successful.
+# Compile of controller_main.v was successful.
+# Compile of controller_alu.v was successful.
+# Compile of controller_pc_source.v was successful.
+# Compile of riscv_multi_cycle.v was successful.
+# Compile of riscv_multi_cycle_testbench.v was successful.
+# 14 compiles, 0 failed with no errors.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of register.v was successful.
+# Compile of memory.v was successful.
+# Compile of register_file.v was successful.
+# Compile of alu.v was successful.
+# Compile of immediate_extender.v was successful.
+# Compile of controlled_register.v was successful.
+# Compile of controller_main.v was successful.
+# Compile of controller_alu.v was successful.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 1650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+# Compile of controller_pc_source.v was successful.
+# Compile of riscv_multi_cycle.v was successful.
+# Compile of riscv_multi_cycle_testbench.v was successful.
+# 14 compiles, 0 failed with no errors.
+run -all
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.riscv_multi_cycle_testbench
+# Loading work.riscv_multi_cycle
+# Loading work.controller
+# Loading work.controller_main
+# Loading work.controller_pc_source
+# Loading work.controller_alu
+# Loading work.datapath
+# Loading work.controlled_register
+# Loading work.multiplexer
+# Loading work.memory
+# Loading work.register
+# Loading work.register_file
+# Loading work.immediate_extender
+# Loading work.alu
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 4650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+add wave -position insertpoint sim:/riscv_multi_cycle_testbench/rsc/c/cm/*
+restart -f
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 4650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of register.v was successful.
+# Compile of memory.v was successful.
+# Compile of register_file.v was successful.
+# Compile of alu.v was successful.
+# Compile of immediate_extender.v was successful.
+# Compile of controlled_register.v was successful.
+# Compile of controller_main.v was successful.
+# Compile of controller_alu.v was successful.
+# Compile of controller_pc_source.v was successful.
+# Compile of riscv_multi_cycle.v was successful.
+# Compile of riscv_multi_cycle_testbench.v was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.riscv_multi_cycle_testbench
+# Loading work.riscv_multi_cycle
+# Loading work.controller
+# Loading work.controller_main
+# Loading work.controller_pc_source
+# Loading work.controller_alu
+# Loading work.datapath
+# Loading work.controlled_register
+# Loading work.multiplexer
+# Loading work.memory
+# Loading work.register
+# Loading work.register_file
+# Loading work.immediate_extender
+# Loading work.alu
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 4650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+restart -f
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 4650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+restart -f
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: (vsim-PLI-3406) Too many digits (10) in data on line 1 of file "instructions.hex". (Max is 8.)    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/memory.v(31)
+#    Time: 50 ps  Iteration: 1  Instance: /riscv_multi_cycle_testbench/rsc/dp/mem
+# ** Warning: (vsim-PLI-3406) Too many digits (10) in data on line 1 of file "instructions.hex". (Max is 8.)    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/memory.v(31)
+#    Time: 60 ps  Iteration: 1  Instance: /riscv_multi_cycle_testbench/rsc/dp/mem
+# ** Warning: (vsim-PLI-3406) Too many digits (10) in data on line 1 of file "instructions.hex". (Max is 8.)    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/memory.v(31)
+#    Time: 70 ps  Iteration: 1  Instance: /riscv_multi_cycle_testbench/rsc/dp/mem
+# ** Warning: (vsim-PLI-3406) Too many digits (10) in data on line 1 of file "instructions.hex". (Max is 8.)    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/memory.v(31)
+#    Time: 80 ps  Iteration: 1  Instance: /riscv_multi_cycle_testbench/rsc/dp/mem
+# ** Warning: (vsim-PLI-3406) Too many digits (10) in data on line 1 of file "instructions.hex". (Max is 8.)    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/memory.v(31)
+#    Time: 90 ps  Iteration: 1  Instance: /riscv_multi_cycle_testbench/rsc/dp/mem
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 4650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 4650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+restart -f
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
+#    Time: 4650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
+# Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
