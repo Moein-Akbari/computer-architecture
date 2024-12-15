@@ -1453,3 +1453,5 @@ run -all
 # ** Note: $stop    : C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v(21)
 #    Time: 4650 ps  Iteration: 0  Instance: /riscv_multi_cycle_testbench
 # Break in Module riscv_multi_cycle_testbench at C:/Users/Lenovo/Desktop/T5/ComputerArchitecture/computer-architecture/CAs/CA3/multi-cycle/code/riscv_multi_cycle_testbench.v line 21
+# End time: 17:10:01 on Dec 15,2024, Elapsed time: 0:50:56
+# Errors: 0, Warnings: 1
