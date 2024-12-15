@@ -19,19 +19,16 @@ module memory (
     assign shifted_address = address[31:2];
 
 
-    initial begin
-        $readmemh("instructions.hex", memory_data);
-    end
-
     output [31:0] read_data;
     assign read_data = memory_data[shifted_address];
 
     integer i;
     always @(posedge clk) begin
         if (reset) begin
-            for (i = 0; i < SIZE; i = i + 1) begin
-                memory_data[i] <= {32{1'b0}};
-            end
+            // for (i = 0; i < SIZE; i = i + 1) begin
+            //     memory_data[i] <= {32{1'b0}};
+            // end
+            $readmemh("instructions.hex", memory_data);
         end else if (mem_write) begin
             memory_data[shifted_address] <= write_data;
         end

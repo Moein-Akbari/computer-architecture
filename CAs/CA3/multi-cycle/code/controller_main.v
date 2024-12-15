@@ -56,19 +56,19 @@ module controller_main (
 
     // OPCODES
     localparam 
-        OPCODE_JAL       = 1101111,
-        OPCODE_JALR      = 1100111,
-        OPCODE_B_TYPE    = 1100011,
-        OPCODE_R_TYPE    = 0110011,
-        OPCODE_I_TYPE    = 0010011,
-        OPCODE_SAVE_WORD = 0100011,
-        OPCODE_LOAD_WORD = 0000011,
-        OPCODE_LUI       = 0110111;
+        OPCODE_JAL       = 7'b1101111,
+        OPCODE_JALR      = 7'b1100111,
+        OPCODE_B_TYPE    = 7'b1100011,
+        OPCODE_R_TYPE    = 7'b0110011,
+        OPCODE_I_TYPE    = 7'b0010011,
+        OPCODE_SAVE_WORD = 7'b0100011,
+        OPCODE_LOAD_WORD = 7'b0000011,
+        OPCODE_LUI       = 7'b0110111;
 
     // F3s
     localparam
-        F3_BEQ = 000,
-        F3_BNE = 001;
+        F3_BEQ = 3'b000,
+        F3_BNE = 3'b001;
 
     reg [3:0] present_state;
     reg [3:0] next_state;
@@ -128,6 +128,8 @@ module controller_main (
         alu_op = 0;
         result_src = 0;
         pc_write = 0;
+        beq = 0;
+        bne = 0;
         case (present_state)
             IF: begin
                 adr_src = 1'b0;
@@ -148,9 +150,7 @@ module controller_main (
             MEM_REF: begin
                 alu_src_a = 2'b10;
                 alu_src_b = 2'b01;
-                imm_src = (opcode == OPCODE_SAVE_WORD)
-                    ? 3'b000 
-                    : 3'b010;
+                imm_src = (opcode == OPCODE_SAVE_WORD) ? 3'b000 : 3'b010;
             end
             MEM_READ: begin
                 result_src = 2'b00;

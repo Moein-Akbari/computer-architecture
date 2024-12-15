@@ -30,7 +30,7 @@ slti x8, x6, 49
 slti x8, x6, 0
 
 # Storing x1 to x7 
-addi x8, x0, 128
+addi x8, x0, 512
 addi x9, x8, 0
 
 sw x1, 0(x9)
