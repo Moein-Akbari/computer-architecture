@@ -1,5 +1,8 @@
 module controller (
-    // Controller outputs
+    clk,
+    reset,
+
+    // Datapath inputs
     adr_src,
     mem_write,
     ir_write,
@@ -9,53 +12,61 @@ module controller (
     alu_function,
     result_src,
     reg_write,
-    pc_write,
+    pc_write_result,
     old_pc_write,
 
-    // Controller inputs
+    // Datapath outputs
     opcode, f3, f7,
     zero
 );
+    input clk, reset;
+
     input [6:0] opcode;
     input [2:0] f3;
     input [6:0] f7;
     input zero;
 
-    output [1:0] pc_src;
+    output [1:0] alu_src_a;
+    output [1:0] alu_src_b;
+    output pc_write_result;
     output [2:0] imm_src;
     output reg_write;
-    output alu_src;
     output [2:0] alu_function;
     output mem_write;
     output [1:0] result_src;
-
-    wire branch;
-    wire jalr;
-    wire jump;
+    output ir_write;
+    output old_pc_write;
+    output adr_src;
+    
+    wire pc_write, bne, beq;
     wire [1:0] alu_op;
 
     controller_main cm (
+        .clk(clk),
+        .reset(reset),
         .opcode(opcode),
-
+        .f3(f3),
+        .adr_src(adr_src),
+        .mem_write(mem_write),
+        .ir_write(ir_write),
+        .old_pc_write(old_pc_write),
         .reg_write(reg_write),
         .imm_src(imm_src),
-        .alu_src(alu_src),
-        .mem_write(mem_write),
+        .alu_src_a(alu_src_a),
+        .alu_src_b(alu_src_b),
         .result_src(result_src),
-
-        .branch(branch),
         .alu_op(alu_op),
-        .jump(jump),
-        .jalr(jalr)
+        .pc_write(pc_write),
+        .beq(beq),
+        .bne(bne)
     );
 
     controller_pc_source cps (
-        .branch(branch),
-        .jump(jump),
-        .jalr(jalr),
+        .pc_write(pc_write),
         .zero(zero),
-        .f3(f3),
-        .pc_src(pc_src)
+        .beq(beq),
+        .bne(bne),
+        .pc_write_result(pc_write_result)
     );
 
     controller_alu ca (

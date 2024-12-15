@@ -1,4 +1,4 @@
-module register (
+module controlled_register (
     clk, 
     reset,
     data_in,

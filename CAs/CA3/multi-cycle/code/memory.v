@@ -18,10 +18,15 @@ module memory (
     wire [29:0] shifted_address;
     assign shifted_address = address[31:2];
 
+
+    initial begin
+        $readmemh("instructions.hex", memory_data);
+    end
+
     output [31:0] read_data;
     assign read_data = memory_data[shifted_address];
 
-    integer i; //TODO: probable issue
+    integer i;
     always @(posedge clk) begin
         if (reset) begin
             for (i = 0; i < SIZE; i = i + 1) begin

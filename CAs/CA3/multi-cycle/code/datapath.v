@@ -24,7 +24,7 @@ module datapath (
     input adr_src;
     input mem_write, ir_write, reg_write, pc_write, old_pc_write;
     input [2:0] imm_src;
-    input [31:0] alu_src_a, alu_src_b;
+    input [1:0] alu_src_a, alu_src_b;
     input [2:0] alu_function;
     input [1:0] result_src;
 
@@ -54,12 +54,13 @@ module datapath (
     
 
     wire [31:0] memory_address;
+    wire [31:0] memory_src_mux_inputs [0:1];
+    assign memory_src_mux_inputs[0] = pc_out;
+    assign memory_src_mux_inputs[1] = result;
+
     multiplexer memory_src_mux (
         .select(adr_src),
-        .inputs({
-            pc_out,
-            result
-        }),
+        .inputs(memory_src_mux_inputs),
         .out(memory_address)
     );
 
@@ -127,7 +128,7 @@ module datapath (
 
     wire [31:0] alu_a_mux_output;
 
-    wire [31:0] alu_src_a_mux_inputs [0:2];
+    wire [31:0] alu_src_a_mux_inputs [0:3];
     assign alu_src_a_mux_inputs[0] = pc_out;
     assign alu_src_a_mux_inputs[1] = old_pc_out;
     assign alu_src_a_mux_inputs[2] = reg_a_out;
@@ -140,10 +141,10 @@ module datapath (
 
     wire [31:0] alu_b_mux_output;
     wire [31:0] immediate_extender_output;
-    wire [31:0] alu_src_b_mux_inputs [0:2];
+    wire [31:0] alu_src_b_mux_inputs [0:3];
     assign alu_src_b_mux_inputs[0] = reg_b_out;
-    assign alu_src_b_mux_inputs[1] = 32'd4;
-    assign alu_src_b_mux_inputs[2] = immediate_extender_output;
+    assign alu_src_b_mux_inputs[1] = immediate_extender_output;
+    assign alu_src_b_mux_inputs[2] = 32'd4;
 
     multiplexer #(2, 32) alu_src_b_mux (
         .select(alu_src_b),
