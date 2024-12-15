@@ -76,6 +76,7 @@ module datapath (
     );
 
     wire [31:0] instruction;
+    assign opcode = instruction[6:0];
     controlled_register ir (
         .clk(clk), 
         .reset(reset),
@@ -171,14 +172,14 @@ module datapath (
     register alu_out_register (
         .clk(clk), 
         .reset(reset),
-        .data_in(alu_out),
+        .data_in(alu_output),
         .data_out(alu_register_output)
     );
 
     wire [31:0] result_mux_output [0:3];
     assign result_mux_output[0] = alu_register_output;
     assign result_mux_output[1] = memory_data;
-    assign result_mux_output[2] = alu_out;
+    assign result_mux_output[2] = alu_output;
     assign result_mux_output[3] = immediate_extender_output;
 
     multiplexer #(2, 32) result_mux (
