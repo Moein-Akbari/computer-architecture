@@ -7,7 +7,7 @@ module controlled_register (
     enable
 );
     parameter SIZE = 32;
-    input clk, reset, enable;
+    input clk, reset, enable, clear;
     input [SIZE-1:0] data_in;
     output reg [SIZE-1:0] data_out;
     always @(posedge clk) begin

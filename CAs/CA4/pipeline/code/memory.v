@@ -1,11 +1,9 @@
 module memory (
     clk,
     reset,
-
     address,
     write_data,
     mem_write,
-    
     read_data
 );
     parameter SIZE = 256;
