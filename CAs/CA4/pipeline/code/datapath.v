@@ -23,7 +23,7 @@ module datapath (
 
     ResultSrcW,
     // Controller inputs
-    op,
+    opcode,
     funct3,
     funct7,
     ZeroE,
@@ -55,7 +55,7 @@ module datapath (
     input [1:0] ForwardAE, ForwardBE;
 
 
-    output [6:0] op;
+    output [6:0] opcode;
     output [14:12] funct3; 
     output [31:25] funct7;
     output [19:15] Rs1D;
@@ -166,7 +166,7 @@ module datapath (
         .out(ExtImmD)
     );
 
-    assign op = instructionD[6:0];
+    assign opcode = instructionD[6:0];
     assign funct3 = instructionD[14:12];
     assign funct7 = instructionD[31:25];
     
@@ -256,11 +256,11 @@ module datapath (
     );
 
     wire [31:0] SrcAE;
-    wire [31:0] ALUResultE;
+    wire [31:0] ALUResultM;
     wire [31:0] SrcAE_mux_inputs [0:3];
     assign SrcAE_mux_inputs[0] = RD1E;
     assign SrcAE_mux_inputs[1] = ResultW;
-    assign SrcAE_mux_inputs[2] = ALUResultE;
+    assign SrcAE_mux_inputs[2] = ALUResultM;
     multiplexer #(3, 32) SrcAE_mux (
         .select(ForwardAE),
         .inputs(SrcAE_mux_inputs),
@@ -315,7 +315,6 @@ module datapath (
     );
 
     // Memory
-    wire [31:0] ALUResultM;
     controlled_register MReg_AluResultM (
         .clk(clk), 
         .reset(reset),

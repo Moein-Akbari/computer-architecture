@@ -35,6 +35,8 @@ module single_cycle_controller (
 
     controller_main cm (
         .opcode(opcode),
+        .f3(f3),
+        .f7(f7),
 
         .reg_write(reg_write),
         .imm_src(imm_src),

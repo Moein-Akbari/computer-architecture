@@ -1,8 +1,7 @@
 module controller_main (
-    clk,
-    reset,
-
     opcode,
+    f3,
+    f7,
 
     // Datapath inputs
     reg_write,
@@ -19,6 +18,8 @@ module controller_main (
     jalr
 );
     input [6:0] opcode;
+    input [14:12] f3;
+    input [31:25] f7;
 
     output reg reg_write;
     output reg [2:0] imm_src;

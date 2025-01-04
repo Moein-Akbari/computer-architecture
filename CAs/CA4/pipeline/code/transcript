@@ -6,9 +6,13 @@
 # Compile of register_file.v was successful.
 # Compile of register.v was successful.
 # Compile of rom.v was successful.
-# Compile of controlled_register.sv failed with 3 errors.
-# Compile of datapath.v failed with 10 errors.
-# 10 compiles, 2 failed with 13 errors.
+# Compile of controlled_register.sv was successful.
+# Compile of datapath.v failed with 3 errors.
+# Compile of controller.v was successful.
+# Compile of controller_main.v failed with 5 errors.
+# Compile of controller_alu.sv was successful.
+# Compile of single_cycle_controller.v was successful.
+# 14 compiles, 2 failed with 8 errors.
 # Compile of adder.v was successful.
 # Compile of alu.v was successful.
 # Compile of immediate_extender.v was successful.
@@ -18,8 +22,13 @@
 # Compile of register.v was successful.
 # Compile of rom.v was successful.
 # Compile of controlled_register.sv was successful.
-# Compile of datapath.v failed with 10 errors.
-# 10 compiles, 1 failed with 10 errors.
+# Compile of datapath.v failed with 3 errors.
+# Compile of controller.v was successful.
+# Compile of controller_main.v failed with 6 errors.
+# Compile of controller_alu.sv was successful.
+# Compile of single_cycle_controller.v was successful.
+# 14 compiles, 2 failed with 9 errors.
+# Compile of controller_main.v was successful.
 # Compile of adder.v was successful.
 # Compile of alu.v was successful.
 # Compile of immediate_extender.v was successful.
@@ -29,40 +38,87 @@
 # Compile of register.v was successful.
 # Compile of rom.v was successful.
 # Compile of controlled_register.sv was successful.
-# Compile of datapath.v failed with 8 errors.
-# 10 compiles, 1 failed with 8 errors.
-# Compile of adder.v was successful.
-# Compile of alu.v was successful.
-# Compile of immediate_extender.v was successful.
-# Compile of memory.v was successful.
-# Compile of multiplexer.v was successful.
-# Compile of register_file.v was successful.
-# Compile of register.v was successful.
-# Compile of rom.v was successful.
-# Compile of controlled_register.sv was successful.
-# Compile of datapath.v failed with 6 errors.
-# 10 compiles, 1 failed with 6 errors.
-# Compile of adder.v was successful.
-# Compile of alu.v was successful.
-# Compile of immediate_extender.v was successful.
-# Compile of memory.v was successful.
-# Compile of multiplexer.v was successful.
-# Compile of register_file.v was successful.
-# Compile of register.v was successful.
-# Compile of rom.v was successful.
-# Compile of controlled_register.sv was successful.
-# Compile of datapath.v failed with 6 errors.
-# 10 compiles, 1 failed with 6 errors.
-# Compile of adder.v was successful.
-# Compile of alu.v was successful.
-# Compile of immediate_extender.v was successful.
-# Compile of memory.v was successful.
-# Compile of multiplexer.v was successful.
-# Compile of register_file.v was successful.
-# Compile of register.v was successful.
-# Compile of rom.v was successful.
-# Compile of controlled_register.sv was successful.
-# Compile of datapath.v failed with 4 errors.
-# 10 compiles, 1 failed with 4 errors.
-# Compile of datapath.v failed with 4 errors.
+# Compile of datapath.v failed with 3 errors.
+# Compile of controller.v was successful.
+# Compile of controller_main.v was successful.
+# Compile of controller_alu.sv was successful.
+# Compile of single_cycle_controller.v was successful.
+# 14 compiles, 1 failed with 3 errors.
 # Compile of datapath.v failed with 1 errors.
+# Compile of datapath.v failed with 1 errors.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of immediate_extender.v was successful.
+# Compile of memory.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of register_file.v was successful.
+# Compile of register.v was successful.
+# Compile of rom.v was successful.
+# Compile of controlled_register.sv was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of controller_main.v was successful.
+# Compile of controller_alu.sv was successful.
+# Compile of single_cycle_controller.v was successful.
+# Compile of hazard_unit.v failed with 2 errors.
+# 15 compiles, 1 failed with 2 errors.
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of immediate_extender.v was successful.
+# Compile of memory.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of register_file.v was successful.
+# Compile of register.v was successful.
+# Compile of rom.v was successful.
+# Compile of controlled_register.sv was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of controller_main.v was successful.
+# Compile of controller_alu.sv was successful.
+# Compile of single_cycle_controller.v was successful.
+# Compile of hazard_unit.v failed with 2 errors.
+# 15 compiles, 1 failed with 2 errors.
+# Compile of hazard_unit.v failed with 8 errors.
+# Compile of hazard_unit.v failed with 2 errors.
+# Compile of hazard_unit.v failed with 16 errors.
+# Compile of hazard_unit.v failed with 14 errors.
+# Compile of hazard_unit.v failed with 17 errors.
+# Compile of hazard_unit.v failed with 4 errors.
+# Compile of hazard_unit.v was successful.
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of immediate_extender.v was successful.
+# Compile of memory.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of register_file.v was successful.
+# Compile of register.v was successful.
+# Compile of rom.v was successful.
+# Compile of controlled_register.sv was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of controller_main.v was successful.
+# Compile of controller_alu.sv was successful.
+# Compile of single_cycle_controller.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of riscv_pipeline.v failed with 9 errors.
+# 16 compiles, 1 failed with 9 errors.
+# Compile of riscv_pipeline.v failed with 1 errors.
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of immediate_extender.v was successful.
+# Compile of memory.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of register_file.v was successful.
+# Compile of register.v was successful.
+# Compile of rom.v was successful.
+# Compile of controlled_register.sv was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of controller_main.v was successful.
+# Compile of controller_alu.sv was successful.
+# Compile of single_cycle_controller.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of riscv_pipeline.v was successful.
+# 16 compiles, 0 failed with no errors.
