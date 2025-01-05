@@ -69,7 +69,7 @@ module datapath (
     wire [31:0] PCPlus4F;
     wire [31:0] PCTargetE;
     assign pc_source_mux_inputs[0] = PCPlus4F;
-    assign pc_source_mux_inputs[1] = PCTargetE; 
+    assign pc_source_mux_inputs[1] = PCTargetE;
     
     wire [31:0] PCF_in, PCF;
 
@@ -261,7 +261,7 @@ module datapath (
     assign SrcAE_mux_inputs[0] = RD1E;
     assign SrcAE_mux_inputs[1] = ResultW;
     assign SrcAE_mux_inputs[2] = ALUResultM;
-    multiplexer #(3, 32) SrcAE_mux (
+    multiplexer #(2, 32) SrcAE_mux (
         .select(ForwardAE),
         .inputs(SrcAE_mux_inputs),
         .out(SrcAE)
@@ -271,8 +271,8 @@ module datapath (
     assign WriteDataE_mux_inputs[0] = RD2E;
     assign WriteDataE_mux_inputs[1] = ResultW;
     assign WriteDataE_mux_inputs[2] = ALUResultM;
-    wire WriteDataE;
-    multiplexer #(3, 32) WriteDataE_mux (
+    wire [31:0] WriteDataE;
+    multiplexer #(2, 32) WriteDataE_mux (
         .select(ForwardBE),
         .inputs(WriteDataE_mux_inputs),
         .out(WriteDataE)
@@ -334,7 +334,7 @@ module datapath (
         .enable(GND)
     );
 
-    controlled_register MReg_RdM (
+    controlled_register #(5) MReg_RdM (
         .clk(clk), 
         .reset(reset),
         .clear(),
@@ -354,7 +354,7 @@ module datapath (
     );
 
     wire [31:0] ReadDataM;
-    memory (
+    memory memory_instance (
         .clk(clk),
         .reset(reset),
         .address(ALUResultM),
@@ -385,7 +385,7 @@ module datapath (
     );
 
     wire [11:7] RdW;
-    controlled_register WReg_RdW (
+    controlled_register #(5) WReg_RdW (
         .clk(clk), 
         .reset(reset),
         .clear(),
@@ -408,7 +408,7 @@ module datapath (
     assign ResultW_mux_inputs[0] = ALUResultW;
     assign ResultW_mux_inputs[1] = ReadDataW;
     assign ResultW_mux_inputs[2] = PCPlus4W;
-    multiplexer #(3, 32) ResultW_mux (
+    multiplexer #(2, 32) ResultW_mux (
         .select(ResultSrcW),
         .inputs(ResultW_mux_inputs),
         .out(RegWriteW)

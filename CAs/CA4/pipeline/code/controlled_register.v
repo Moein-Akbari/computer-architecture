@@ -18,3 +18,4 @@ module controlled_register (
     end
     
 endmodule
+
