@@ -390,7 +390,7 @@ module datapath (
         .clk(clk), 
         .reset(reset),
         .clear(),
-        .data_in(ReadDataE),
+        .data_in(ReadDataM),
         .data_out(ReadDataW),
         .enable(GND)
     );
