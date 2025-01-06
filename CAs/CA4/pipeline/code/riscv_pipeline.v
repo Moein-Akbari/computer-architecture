@@ -39,12 +39,14 @@ module riscv_pipeline (
         .f7(f7),
         .ZeroE(ZeroE),
         .FlushD(FlushD),
+        .ImmSrcD(ImmSrcD),
         .PCSrcE(PCSrcE),
         .ALUControlE(ALUControlE),
         .jalrE(jalrE),
         .ALUSrcE(ALUSrcE),
         .MemWriteM(MemWriteM),
-        .ResultSrcW(ResultSrcW)
+        .ResultSrcW(ResultSrcW),
+        .RegWriteW(RegWriteW)
     );
 
     datapath riscv_pipeline_datapath(

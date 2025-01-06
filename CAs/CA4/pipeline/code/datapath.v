@@ -144,6 +144,7 @@ module datapath (
     assign RdD = instructionD[11:7];
     assign Rs1D = instructionD[19:15];
     assign Rs2D = instructionD[24:20];
+    wire [11:7] RdW;
 
     register_file rf (
         .clk(clk),
@@ -285,7 +286,7 @@ module datapath (
     multiplexer SrcBE_mux (
         .select(ALUSrcE),
         .inputs(SrcBE_mux_inputs),
-        .out(WriteDataE)
+        .out(SrcBE)
     );
 
     wire [31:0] jump_offset;
@@ -384,7 +385,6 @@ module datapath (
         .enable(GND)
     );
 
-    wire [11:7] RdW;
     controlled_register #(5) WReg_RdW (
         .clk(clk), 
         .reset(reset),
@@ -411,7 +411,7 @@ module datapath (
     multiplexer #(2, 32) ResultW_mux (
         .select(ResultSrcW),
         .inputs(ResultW_mux_inputs),
-        .out(RegWriteW)
+        .out(ResultW)
     ); 
 
 endmodule

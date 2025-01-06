@@ -12,12 +12,14 @@ module controller (
     FlushD,
 
     // DataPath input
+    ImmSrcD,
     ALUControlE,
     PCSrcE,
     jalrE,
     ALUSrcE,
     MemWriteM,
-    ResultSrcW
+    ResultSrcW,
+    RegWriteW
 );
     input clk, reset;
     input [6:0] opcode;
@@ -26,12 +28,14 @@ module controller (
     input ZeroE;
     input FlushD;
 
+    output [2:0] ImmSrcD;
     output PCSrcE;
     output jalrE;
     output [2:0] ALUControlE;
     output ALUSrcE;
     output MemWriteM;
     output [1:0] ResultSrcW;
+    output RegWriteW;
     
 
     // Decode
@@ -44,7 +48,6 @@ module controller (
     wire [2:0] ALUControlD;
     wire ALUSrcD;
     wire jalrD;
-    wire [2:0] ImmSrcD;
 
     single_cycle_controller scc (
         .opcode(opcode),
@@ -199,7 +202,6 @@ module controller (
     );
 
     // WriteBack
-    wire RegWriteW;
     controlled_register #(1) EReg_RegWriteW (
         .clk(clk), 
         .reset(reset),
