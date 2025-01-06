@@ -10,7 +10,7 @@ z2
 cModel Technology
 dC:/intelFPGA/20.1
 vadder
-Z0 !s110 1736066070
+Z0 !s110 1736145067
 !i10b 1
 !s100 WoYg;BSXcVno8G1=9Q_[82
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -20,13 +20,13 @@ Z3 dC:/Repos/computer-architecture/CAs/CA4/pipeline/code
 Z4 w1735996976
 8C:/Repos/computer-architecture/CAs/CA4/pipeline/code/adder.v
 FC:/Repos/computer-architecture/CAs/CA4/pipeline/code/adder.v
-!i122 305
+!i122 322
 L0 1 11
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1736066070.000000
+Z6 !s108 1736145067.000000
 !s107 C:/Repos/computer-architecture/CAs/CA4/pipeline/code/adder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Repos/computer-architecture/CAs/CA4/pipeline/code/adder.v|
 !i113 1
@@ -43,7 +43,7 @@ R3
 R4
 8C:/Repos/computer-architecture/CAs/CA4/pipeline/code/alu.v
 FC:/Repos/computer-architecture/CAs/CA4/pipeline/code/alu.v
-!i122 306
+!i122 323
 Z9 L0 1 23
 R5
 r1
@@ -56,7 +56,7 @@ R6
 R7
 R8
 vcontrolled_register
-Z10 !s110 1736066073
+!s110 1736145071
 !i10b 1
 !s100 [R9>C^[LAoMne9c6FJhIT3
 R1
@@ -66,43 +66,43 @@ R3
 w1735997592
 8C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v
 FC:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v
-!i122 320
-Z11 L0 1 20
+!i122 337
+Z10 L0 1 20
 R5
 r1
 !s85 0
 31
-Z12 !s108 1736066073.000000
+Z11 !s108 1736145071.000000
 !s107 C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v|
 !i113 1
 R7
 R8
 vcontroller
-Z13 !s110 1736066072
+Z12 !s110 1736145068
 !i10b 1
-!s100 oUkd[bWNBM@ABOnFI?6Z_1
+!s100 1Pco]gD88G4mKGz^=j_of2
 R1
-I`f4zkCLfRH2Uk]UX1?cKK3
+IN`nS9EeZIgCGFj7nC1UBS2
 R2
 R3
-Z14 w1735997115
+w1736145043
 8C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controller.v
 FC:/Repos/computer-architecture/CAs/CA4/pipeline/code/controller.v
-!i122 314
-L0 1 220
+!i122 331
+L0 1 221
 R5
 r1
 !s85 0
 31
-Z15 !s108 1736066072.000000
+Z13 !s108 1736145068.000000
 !s107 C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controller.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controller.v|
 !i113 1
 R7
 R8
 vcontroller_alu
-R10
+!s110 1736145070
 !i10b 1
 !s100 fWKX6]5z]=R>RaBakSidC3
 R1
@@ -112,43 +112,43 @@ R3
 w1735997674
 8C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controller_alu.v
 FC:/Repos/computer-architecture/CAs/CA4/pipeline/code/controller_alu.v
-!i122 319
+!i122 336
 L0 1 43
 R5
 r1
 !s85 0
 31
-R15
+Z14 !s108 1736145069.000000
 !s107 C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controller_alu.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controller_alu.v|
 !i113 1
 R7
 R8
 vcontroller_main
-R13
+R12
 !i10b 1
 !s100 @DEd0<RXeoMdDf4VdBa:e1
 R1
 ICkKMa1I[ORQO]bic0M60Q0
 R2
 R3
-R14
+Z15 w1735997115
 8C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controller_main.v
 FC:/Repos/computer-architecture/CAs/CA4/pipeline/code/controller_main.v
-!i122 315
+!i122 332
 L0 1 147
 R5
 r1
 !s85 0
 31
-R15
+R13
 !s107 C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controller_main.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controller_main.v|
 !i113 1
 R7
 R8
 vdatapath
-R13
+R12
 !i10b 1
 !s100 lBRNSUHYlhzaX=66a4H@A2
 R1
@@ -158,43 +158,43 @@ R3
 w1736000252
 8C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v
 FC:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v
-!i122 313
+!i122 330
 L0 1 417
 R5
 r1
 !s85 0
 31
-Z16 !s108 1736066071.000000
+R13
 !s107 C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v|
 !i113 1
 R7
 R8
 vhazard_uint
-R13
+Z16 !s110 1736145069
 !i10b 1
 !s100 W5NS0F]6oB5JKGMa@OjcO3
 R1
 ISUAEOH2CEBXUoGg_a7]fK1
 R2
 R3
-R14
+R15
 8C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v
 FC:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v
-!i122 317
+!i122 334
 L0 1 86
 R5
 r1
 !s85 0
 31
-R15
+R14
 !s107 C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v|
 !i113 1
 R7
 R8
 vimmediate_extender
-Z17 !s110 1736066071
+R0
 !i10b 1
 !s100 7keiIgNbSXEC_^mg7>FiC1
 R1
@@ -204,7 +204,7 @@ R3
 R4
 8C:/Repos/computer-architecture/CAs/CA4/pipeline/code/immediate_extender.v
 FC:/Repos/computer-architecture/CAs/CA4/pipeline/code/immediate_extender.v
-!i122 307
+!i122 324
 L0 1 41
 R5
 r1
@@ -217,7 +217,7 @@ R6
 R7
 R8
 vmemory
-R17
+R0
 !i10b 1
 !s100 ;@<QgfBI``KJ]kJ>g@C8F2
 R1
@@ -227,20 +227,20 @@ R3
 R4
 8C:/Repos/computer-architecture/CAs/CA4/pipeline/code/memory.v
 FC:/Repos/computer-architecture/CAs/CA4/pipeline/code/memory.v
-!i122 308
+!i122 325
 L0 1 32
 R5
 r1
 !s85 0
 31
-R16
+R6
 !s107 C:/Repos/computer-architecture/CAs/CA4/pipeline/code/memory.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Repos/computer-architecture/CAs/CA4/pipeline/code/memory.v|
 !i113 1
 R7
 R8
 vmultiplexer
-R17
+R12
 !i10b 1
 !s100 jmbN7AH5Fl_1_4>BI2N[h2
 R1
@@ -250,20 +250,20 @@ R3
 R4
 8C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v
 FC:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v
-!i122 309
+!i122 326
 L0 1 13
 R5
 r1
 !s85 0
 31
-R16
+R6
 !s107 C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v|
 !i113 1
 R7
 R8
 vregister
-R17
+R12
 !i10b 1
 !s100 E1acz4l>?zW9Y3G5PMR>Y2
 R1
@@ -273,20 +273,20 @@ R3
 R4
 8C:/Repos/computer-architecture/CAs/CA4/pipeline/code/register.v
 FC:/Repos/computer-architecture/CAs/CA4/pipeline/code/register.v
-!i122 311
+!i122 328
 L0 1 18
 R5
 r1
 !s85 0
 31
-R16
+R13
 !s107 C:/Repos/computer-architecture/CAs/CA4/pipeline/code/register.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Repos/computer-architecture/CAs/CA4/pipeline/code/register.v|
 !i113 1
 R7
 R8
 vregister_file
-R17
+R12
 !i10b 1
 !s100 o^cHCh>LXfmcal^48mJ2>3
 R1
@@ -296,43 +296,43 @@ R3
 R4
 8C:/Repos/computer-architecture/CAs/CA4/pipeline/code/register_file.v
 FC:/Repos/computer-architecture/CAs/CA4/pipeline/code/register_file.v
-!i122 310
+!i122 327
 L0 1 38
 R5
 r1
 !s85 0
 31
-R16
+R13
 !s107 C:/Repos/computer-architecture/CAs/CA4/pipeline/code/register_file.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Repos/computer-architecture/CAs/CA4/pipeline/code/register_file.v|
 !i113 1
 R7
 R8
 vriscv_pipeline
-R13
+R16
 !i10b 1
-!s100 f?Q3Bjn_V_H<68GcL52>z0
+!s100 3KnTgaoIOU^n`o>c]=:oG3
 R1
-I<Mc>E]X5c_?zmObDX^<RZ3
+I@@zfh7VZmz<?D@hnf@9Y?3
 R2
 R3
-R14
+w1736145064
 8C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v
 FC:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v
-!i122 318
-L0 1 97
+!i122 335
+L0 1 98
 R5
 r1
 !s85 0
 31
-R15
+R14
 !s107 C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v|
 !i113 1
 R7
 R8
 vriscv_pipeline_testbench
-R10
+!s110 1736145072
 !i10b 1
 !s100 6Sa=gKzWL[`=UzgA87<S^3
 R1
@@ -342,20 +342,20 @@ R3
 w1735998157
 8C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v
 FC:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v
-!i122 321
+!i122 338
 R9
 R5
 r1
 !s85 0
 31
-R12
+R11
 !s107 C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v|
 !i113 1
 R7
 R8
 vrom
-R17
+R12
 !i10b 1
 !s100 RIRWh`9zkQkTme@GU0a0M1
 R1
@@ -365,36 +365,36 @@ R3
 R4
 8C:/Repos/computer-architecture/CAs/CA4/pipeline/code/rom.v
 FC:/Repos/computer-architecture/CAs/CA4/pipeline/code/rom.v
-!i122 312
-R11
+!i122 329
+R10
 R5
 r1
 !s85 0
 31
-R16
+R13
 !s107 C:/Repos/computer-architecture/CAs/CA4/pipeline/code/rom.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Repos/computer-architecture/CAs/CA4/pipeline/code/rom.v|
 !i113 1
 R7
 R8
 vsingle_cycle_controller
-R13
+R16
 !i10b 1
 !s100 io`C9@>[R5zD3jWPnKYAd2
 R1
 I7nP@>Qn6R0ff]BdC5K0gL0
 R2
 R3
-R14
+R15
 8C:/Repos/computer-architecture/CAs/CA4/pipeline/code/single_cycle_controller.v
 FC:/Repos/computer-architecture/CAs/CA4/pipeline/code/single_cycle_controller.v
-!i122 316
+!i122 333
 L0 1 60
 R5
 r1
 !s85 0
 31
-R15
+R13
 !s107 C:/Repos/computer-architecture/CAs/CA4/pipeline/code/single_cycle_controller.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Repos/computer-architecture/CAs/CA4/pipeline/code/single_cycle_controller.v|
 !i113 1

@@ -13,6 +13,7 @@ module controller (
 
     // DataPath input
     ALUControlE,
+    PCSrcE,
     jalrE,
     ALUSrcE,
     MemWriteM,
@@ -25,6 +26,7 @@ module controller (
     input ZeroE;
     input FlushD;
 
+    output PCSrcE;
     output jalrE;
     output [2:0] ALUControlE;
     output ALUSrcE;
@@ -162,7 +164,6 @@ module controller (
     );
 
     // PC controller logic:
-    wire PCSrcE;
     assign PCSrcE = JumpE || jalrE 
                     || (ZeroE && BeqE) 
                     || (~ZeroE && BneE);

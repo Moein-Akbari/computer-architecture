@@ -4,7 +4,7 @@ module datapath (
 
     // Controller outputs
     clear,
-    stallF,
+    StallF,
     
     FlushD,
     StallD,
@@ -40,7 +40,7 @@ module datapath (
     ForwardBE
 );
     input clk, reset;
-    input clear, stallF; 
+    input clear, StallF; 
     input PCSrcE;
     input RegWriteW;
     input [2:0] ImmSrcD;
@@ -85,7 +85,7 @@ module datapath (
         .clear(clear),
         .data_in(PCF_in),
         .data_out(PCF),
-        .enable(stallF)
+        .enable(StallF)
     );
 
     wire [31:0] instructionF;
