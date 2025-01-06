@@ -5,8 +5,6 @@ module riscv_pipeline (
     input clk, reset;
 
     wire [6:0] opcode;
-    wire [14:12] f3;
-    wire [31:25] f7;
     wire ZeroE;
     wire FlushD;
 
@@ -35,8 +33,8 @@ module riscv_pipeline (
         .clk(clk),
         .reset(reset),
         .opcode(opcode),
-        .f3(f3),
-        .f7(f7),
+        .f3(funct3),
+        .f7(funct7),
         .ZeroE(ZeroE),
         .FlushD(FlushD),
         .ImmSrcD(ImmSrcD),

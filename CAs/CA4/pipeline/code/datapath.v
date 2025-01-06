@@ -22,6 +22,7 @@ module datapath (
     MemWriteM,
 
     ResultSrcW,
+    
     // Controller inputs
     opcode,
     funct3,
