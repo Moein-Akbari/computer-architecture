@@ -11,6 +11,9 @@ module controller (
     // Hazard Unit outputs
     FlushD,
 
+    // Hazard Unit inputs
+    ResultSrcE,
+
     // DataPath input
     ImmSrcD,
     ALUControlE,
@@ -31,12 +34,13 @@ module controller (
     output [2:0] ImmSrcD;
     output PCSrcE;
     output jalrE;
+    output [1:0] ResultSrcE;
     output [2:0] ALUControlE;
     output ALUSrcE;
     output MemWriteM;
     output [1:0] ResultSrcW;
     output RegWriteW;
-    
+
 
     // Decode
     wire RegWriteD;
@@ -79,7 +83,6 @@ module controller (
         .enable(GND)
     );
 
-    wire [1:0] ResultSrcE;
     controlled_register #(2) EReg_ResultSrcE (
         .clk(clk), 
         .reset(reset),

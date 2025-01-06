@@ -10,7 +10,7 @@ module hazard_uint (
     Rs2D,
     RdE,
     PCSrcE,
-    ResultSrcE0,
+    ResultSrcE,
     
     // DataPath inputs
     ForwardAE,
@@ -31,7 +31,7 @@ module hazard_uint (
     input [19:15] Rs1D;
     input [24:20] Rs2D;
     input [11:7] RdE;
-    input ResultSrcE0;
+    input [1:0] ResultSrcE;
 
     output reg [1:0] ForwardAE;
     output reg [1:0] ForwardBE;
@@ -66,7 +66,7 @@ module hazard_uint (
         FlushE = 1'b0;
         StallD = 1'b0;
         StallF = 1'b0;
-        if (ResultSrcE0 & (Rs1D == RdE || Rs2D == RdE) & (RdE != 0)) begin
+        if ((ResultSrcE == 01) & (Rs1D == RdE || Rs2D == RdE) & (RdE != 0)) begin
             FlushE = 1'b1;
             StallD = 1'b0;
             StallF = 1'b0;

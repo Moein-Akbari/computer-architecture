@@ -88,7 +88,7 @@ module riscv_pipeline (
         .Rs2D(Rs2D),
         .RdE(RdE),
         .PCSrcE(PCSrcE),
-        .ResultSrcE0(ResultSrcE0),
+        .ResultSrcE(ResultSrcE),
         .ForwardAE(ForwardAE),
         .ForwardBE(ForwardBE),
         .StallD(StallD),

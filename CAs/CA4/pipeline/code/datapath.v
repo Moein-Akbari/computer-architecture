@@ -344,6 +344,16 @@ module datapath (
         .enable(GND)
     );
 
+    wire [31:0] ExtImmM;
+    controlled_register EReg_ExtImmM (
+        .clk(clk), 
+        .reset(reset),
+        .clear(),
+        .data_in(ExtImmE),
+        .data_out(ExtImmM),
+        .enable(GND)
+    );
+
     wire [31:0] PCPlus4M;
     controlled_register EReg_PCPlus4M (
         .clk(clk), 
@@ -394,6 +404,16 @@ module datapath (
         .enable(GND)
     );
 
+    wire [31:0] ExtImmW;
+    controlled_register WReg_ExtImmW (
+        .clk(clk),
+        .reset(reset),
+        .clear(),
+        .data_in(ExtImmM),
+        .data_out(ExtImmW),
+        .enable(GND)
+    );
+
     wire [31:0] PCPlus4W;
     controlled_register WReg_PCPlus4W (
         .clk(clk),
@@ -408,6 +428,7 @@ module datapath (
     assign ResultW_mux_inputs[0] = ALUResultW;
     assign ResultW_mux_inputs[1] = ReadDataW;
     assign ResultW_mux_inputs[2] = PCPlus4W;
+    assign ResultW_mux_inputs[3] = ExtImmW;
     multiplexer #(2, 32) ResultW_mux (
         .select(ResultSrcW),
         .inputs(ResultW_mux_inputs),
