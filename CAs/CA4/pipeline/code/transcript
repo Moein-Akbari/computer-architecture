@@ -1,1262 +1,6 @@
 vsim -gui work.riscv_pipeline_testbench
 # vsim -gui work.riscv_pipeline_testbench 
-# Start time: 09:48:38 on Jan 06,2025
-# Loading work.riscv_pipeline_testbench
-# Loading work.riscv_pipeline
-# Loading work.controller
-# Loading work.single_cycle_controller
-# Loading work.controller_main
-# Loading work.controller_alu
-# Loading work.controlled_register
-# Loading work.datapath
-# Loading work.multiplexer
-# Loading work.rom
-# Loading work.adder
-# Loading work.register_file
-# Loading work.immediate_extender
-# Loading work.alu
-# Loading work.memory
-# Loading work.hazard_uint
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 378
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 411
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 77
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 77
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 77
-add wave -position insertpoint sim:/riscv_pipeline_testbench/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 6904
-#           Attempting to use alternate WLF file "./wlfttb5x89".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfttb5x89
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/rf/register_file_data
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/pc/data_in
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/pc_source_mux/inputs
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/pc_source_mux/select
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 378
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 411
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 77
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 77
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 77
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_controller/PCSrcE
-# Compile of adder.v was successful.
-# Compile of alu.v was successful.
-# Compile of immediate_extender.v was successful.
-# Compile of memory.v was successful.
-# Compile of multiplexer.v was successful.
-# Compile of register_file.v was successful.
-# Compile of register.v was successful.
-# Compile of rom.v was successful.
-# Compile of datapath.v was successful.
-# Compile of controller.v was successful.
-# Compile of controller_main.v was successful.
-# Compile of single_cycle_controller.v was successful.
-# Compile of hazard_unit.v was successful.
-# Compile of riscv_pipeline.v was successful.
-quit -sim
-# End time: 10:01:11 on Jan 06,2025, Elapsed time: 0:12:33
-# Errors: 0, Warnings: 6
-# Compile of controller_alu.v was successful.
-# Compile of controlled_register.v was successful.
-# Compile of riscv_pipeline_testbench.v was successful.
-# 17 compiles, 0 failed with no errors.
-vsim -gui work.riscv_pipeline_testbench
-# vsim -gui work.riscv_pipeline_testbench 
-# Start time: 10:01:21 on Jan 06,2025
-# Loading work.riscv_pipeline_testbench
-# Loading work.riscv_pipeline
-# Loading work.controller
-# Loading work.single_cycle_controller
-# Loading work.controller_main
-# Loading work.controller_alu
-# Loading work.controlled_register
-# Loading work.datapath
-# Loading work.multiplexer
-# Loading work.rom
-# Loading work.adder
-# Loading work.register_file
-# Loading work.immediate_extender
-# Loading work.alu
-# Loading work.memory
-# Loading work.hazard_uint
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 378
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 411
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/clk \
-sim:/riscv_pipeline_testbench/reset
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 6904
-#           Attempting to use alternate WLF file "./wlftnenxb5".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftnenxb5
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/rf/register_file_data
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/pc/data_in
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/pc_source_mux/select
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/pc_source_mux/inputs
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 378
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 411
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 378
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 411
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/pc/data_out
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 378
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 411
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/stallF
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 378
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 411
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# Compile of adder.v was successful.
-# Compile of alu.v was successful.
-# Compile of immediate_extender.v was successful.
-# Compile of memory.v was successful.
-# Compile of multiplexer.v was successful.
-# Compile of register_file.v was successful.
-# Compile of register.v was successful.
-# Compile of rom.v was successful.
-# Compile of datapath.v was successful.
-# Compile of controller.v was successful.
-# Compile of controller_main.v was successful.
-# Compile of single_cycle_controller.v was successful.
-# Compile of hazard_unit.v was successful.
-# Compile of riscv_pipeline.v was successful.
-# Compile of controller_alu.v was successful.
-# Compile of controlled_register.v was successful.
-# Compile of riscv_pipeline_testbench.v was successful.
-# 17 compiles, 0 failed with no errors.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-quit -sim
-vsim -gui work.riscv_pipeline_testbench
-# End time: 10:56:15 on Jan 06,2025, Elapsed time: 0:54:54
-# Errors: 0, Warnings: 7
-# vsim -gui work.riscv_pipeline_testbench 
-# Start time: 10:56:15 on Jan 06,2025
-# Loading work.riscv_pipeline_testbench
-# Loading work.riscv_pipeline
-# Loading work.controller
-# Loading work.single_cycle_controller
-# Loading work.controller_main
-# Loading work.controller_alu
-# Loading work.controlled_register
-# Loading work.datapath
-# Loading work.multiplexer
-# Loading work.rom
-# Loading work.adder
-# Loading work.register_file
-# Loading work.immediate_extender
-# Loading work.alu
-# Loading work.memory
-# Loading work.hazard_uint
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 378
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 411
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/clk \
-sim:/riscv_pipeline_testbench/reset
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 6904
-#           Attempting to use alternate WLF file "./wlft0nceeh".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft0nceeh
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/rf/register_file_data
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/PCD
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/PCPlus4D
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/PCF
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/instructionD
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 378
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 411
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 378
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 411
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-# Compile of adder.v was successful.
-# Compile of alu.v was successful.
-# Compile of immediate_extender.v was successful.
-# Compile of memory.v was successful.
-# Compile of multiplexer.v was successful.
-# Compile of register_file.v was successful.
-# Compile of register.v was successful.
-# Compile of rom.v was successful.
-# Compile of datapath.v was successful.
-# Compile of controller.v was successful.
-# Compile of controller_main.v was successful.
-# Compile of single_cycle_controller.v was successful.
-# Compile of hazard_unit.v was successful.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.riscv_pipeline
-# Loading work.controller
-# Loading work.single_cycle_controller
-# Loading work.controller_main
-# Loading work.datapath
-# Loading work.multiplexer
-# Loading work.rom
-# Loading work.adder
-# Loading work.register_file
-# Loading work.immediate_extender
-# Loading work.alu
-# Loading work.memory
-# Loading work.hazard_uint
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 379
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 411
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# Compile of riscv_pipeline.v was successful.
-# Compile of controller_alu.v was successful.
-# Compile of controlled_register.v was successful.
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-# Compile of riscv_pipeline_testbench.v was successful.
-# 17 compiles, 0 failed with no errors.
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ALUResultE
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.riscv_pipeline_testbench
-# Loading work.controller_alu
-# Loading work.controlled_register
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 379
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 411
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/SrcAE
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 379
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 411
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/SrcBE
-run -all
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 379
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 411
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 379
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 411
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_controller/ALUSrcE
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 379
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 411
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/SrcBE_mux/inputs
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ForwardAE
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ForwardBE
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 379
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 411
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-# Compile of adder.v was successful.
-# Compile of alu.v was successful.
-# Compile of immediate_extender.v was successful.
-# Compile of memory.v was successful.
-# Compile of multiplexer.v was successful.
-# Compile of register_file.v was successful.
-# Compile of register.v was successful.
-# Compile of rom.v was successful.
-# Compile of datapath.v was successful.
-# Compile of controller.v was successful.
-# Compile of controller_main.v was successful.
-# Compile of single_cycle_controller.v was successful.
-# Compile of hazard_unit.v was successful.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.controller
-# Loading work.single_cycle_controller
-# Loading work.controller_main
-# Loading work.datapath
-# Loading work.multiplexer
-# Loading work.rom
-# Loading work.adder
-# Loading work.register_file
-# Loading work.immediate_extender
-# Loading work.alu
-# Loading work.memory
-# Loading work.hazard_uint
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 379
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 411
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# Compile of riscv_pipeline.v was successful.
-# Compile of controller_alu.v was successful.
-# Compile of controlled_register.v was successful.
-# Compile of riscv_pipeline_testbench.v was successful.
-# 17 compiles, 0 failed with no errors.
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ExtImmD
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.riscv_pipeline_testbench
-# Loading work.riscv_pipeline
-# Loading work.controller_alu
-# Loading work.controlled_register
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 379
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 411
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ImmSrcD
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 379
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 411
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-# Compile of adder.v was successful.
-# Compile of alu.v was successful.
-# Compile of immediate_extender.v was successful.
-# Compile of memory.v was successful.
-# Compile of multiplexer.v was successful.
-# Compile of register_file.v was successful.
-# Compile of register.v was successful.
-# Compile of rom.v was successful.
-# Compile of datapath.v was successful.
-# Compile of controller.v was successful.
-# Compile of controller_main.v was successful.
-# Compile of single_cycle_controller.v was successful.
-# Compile of hazard_unit.v was successful.
-# Compile of riscv_pipeline.v was successful.
-# Compile of controller_alu.v was successful.
-# Compile of controlled_register.v was successful.
-# Compile of riscv_pipeline_testbench.v was successful.
-# 17 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.riscv_pipeline_testbench
-# Loading work.riscv_pipeline
-# Loading work.controller
-# Loading work.single_cycle_controller
-# Loading work.controller_main
-# Loading work.controller_alu
-# Loading work.controlled_register
-# Loading work.datapath
-# Loading work.multiplexer
-# Loading work.rom
-# Loading work.adder
-# Loading work.register_file
-# Loading work.immediate_extender
-# Loading work.alu
-# Loading work.memory
-# Loading work.hazard_uint
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 379
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 411
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 79
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 79
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 79
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 379
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/multiplexer.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 411
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 79
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 79
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 79
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-# Compile of adder.v was successful.
-# Compile of alu.v was successful.
-# Compile of immediate_extender.v was successful.
-# Compile of memory.v was successful.
-# Compile of multiplexer.v was successful.
-# Compile of register_file.v was successful.
-# Compile of register.v was successful.
-# Compile of rom.v was successful.
-# Compile of datapath.v was successful.
-# Compile of controller.v was successful.
-# Compile of controller_main.v was successful.
-# Compile of single_cycle_controller.v was successful.
-# Compile of hazard_unit.v was successful.
-# Compile of riscv_pipeline.v was successful.
-# Compile of controller_alu.v was successful.
-# Compile of controlled_register.v was successful.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.riscv_pipeline_testbench
-# Loading work.riscv_pipeline
-# Loading work.controller
-# Loading work.single_cycle_controller
-# Loading work.controller_main
-# Loading work.controller_alu
-# Loading work.controlled_register
-# Loading work.datapath
-# Loading work.multiplexer
-# Loading work.rom
-# Loading work.adder
-# Loading work.register_file
-# Loading work.immediate_extender
-# Loading work.alu
-# Loading work.memory
-# Loading work.hazard_uint
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 379
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 79
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 79
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 79
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-# Compile of riscv_pipeline_testbench.v was successful.
-# 17 compiles, 0 failed with no errors.
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/RdW
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 379
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 79
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 79
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 79
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/rf/*
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 379
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 79
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 79
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 79
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 379
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 79
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 79
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 79
-# Compile of adder.v was successful.
-# Compile of alu.v was successful.
-# Compile of immediate_extender.v was successful.
-# Compile of memory.v was successful.
-# Compile of multiplexer.v was successful.
-# Compile of register_file.v was successful.
-# Compile of register.v was successful.
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-# Compile of rom.v was successful.
-# Compile of datapath.v was successful.
-# Compile of controller.v was successful.
-# Compile of controller_main.v was successful.
-# Compile of single_cycle_controller.v was successful.
-# Compile of hazard_unit.v was successful.
-# Compile of riscv_pipeline.v was successful.
-# Compile of controller_alu.v was successful.
-# Compile of controlled_register.v was successful.
-# Compile of riscv_pipeline_testbench.v was successful.
-# 17 compiles, 0 failed with no errors.
-# Compile of adder.v was successful.
-# Compile of alu.v was successful.
-# Compile of immediate_extender.v was successful.
-# Compile of memory.v was successful.
-# Compile of multiplexer.v was successful.
-# Compile of register_file.v was successful.
-# Compile of register.v was successful.
-# Compile of rom.v was successful.
-# Compile of datapath.v was successful.
-# Compile of controller.v was successful.
-# Compile of controller_main.v was successful.
-# Compile of single_cycle_controller.v was successful.
-# Compile of hazard_unit.v was successful.
-# Compile of riscv_pipeline.v was successful.
-# Compile of controller_alu.v was successful.
-# Compile of controlled_register.v was successful.
-# Compile of riscv_pipeline_testbench.v was successful.
-# 17 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.riscv_pipeline_testbench
-# Loading work.riscv_pipeline
-# Loading work.controller
-# Loading work.single_cycle_controller
-# Loading work.controller_main
-# Loading work.controller_alu
-# Loading work.controlled_register
-# Loading work.datapath
-# Loading work.multiplexer
-# Loading work.rom
-# Loading work.adder
-# Loading work.register_file
-# Loading work.immediate_extender
-# Loading work.alu
-# Loading work.memory
-# Loading work.hazard_uint
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 379
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 379
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-quit -sim
-# Compile of adder.v was successful.
-# Compile of alu.v was successful.
-# Compile of immediate_extender.v was successful.
-# Compile of memory.v was successful.
-# Compile of multiplexer.v was successful.
-# Compile of register_file.v was successful.
-# Compile of register.v was successful.
-# Compile of rom.v was successful.
-# Compile of datapath.v was successful.
-# Compile of controller.v was successful.
-# Compile of controller_main.v was successful.
-# Compile of single_cycle_controller.v was successful.
-# Compile of hazard_unit.v was successful.
-# Compile of riscv_pipeline.v was successful.
-# Compile of controller_alu.v was successful.
-# Compile of controlled_register.v was successful.
-# Compile of riscv_pipeline_testbench.v was successful.
-# 17 compiles, 0 failed with no errors.
-# End time: 12:34:02 on Jan 06,2025, Elapsed time: 1:37:47
-# Errors: 0, Warnings: 6
-vsim -gui work.single_cycle_controller
-# vsim -gui work.single_cycle_controller 
-# Start time: 12:34:10 on Jan 06,2025
-# Loading work.single_cycle_controller
-# Loading work.controller_main
-# Loading work.controller_alu
-quit -sim
-vsim -gui work.riscv_pipeline_testbench
-# End time: 12:34:28 on Jan 06,2025, Elapsed time: 0:00:18
-# Errors: 0, Warnings: 1
-# vsim -gui work.riscv_pipeline_testbench 
-# Start time: 12:34:28 on Jan 06,2025
-# Loading work.riscv_pipeline_testbench
-# Loading work.riscv_pipeline
-# Loading work.controller
-# Loading work.single_cycle_controller
-# Loading work.controller_main
-# Loading work.controller_alu
-# Loading work.controlled_register
-# Loading work.datapath
-# Loading work.multiplexer
-# Loading work.rom
-# Loading work.adder
-# Loading work.register_file
-# Loading work.immediate_extender
-# Loading work.alu
-# Loading work.memory
-# Loading work.hazard_uint
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 34
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(34): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 389
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/clk \
-sim:/riscv_pipeline_testbench/reset
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 6904
-#           Attempting to use alternate WLF file "./wlftbhfj0i".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftbhfj0i
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/rf/register_file_data
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 34
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(34): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 389
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-# WARNING: No extended dataflow license exists
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-add wave -position insertpoint sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/memory_instance/*
-add wave -position insertpoint sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/memory_instance/*
-add wave -position 0  sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/memory_instance/clk
-add wave -position 1  sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/memory_instance/reset
-add wave -position 2  sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/memory_instance/mem_write
-add wave -position 3  sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/memory_instance/address
-add wave -position 4  sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/memory_instance/write_data
-add wave -position 5  sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/memory_instance/shifted_address
-add wave -position 6  sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/memory_instance/read_data
-add wave -position 7  sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/memory_instance/i
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 34
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(34): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 389
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ReadDataW
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 34
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(34): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 389
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 34
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(34): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_in'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controlled_register.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WReg_ReadDataW File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/datapath.v Line: 389
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# Compile of adder.v was successful.
-# Compile of alu.v was successful.
-# Compile of immediate_extender.v was successful.
-# Compile of memory.v was successful.
-# Compile of multiplexer.v was successful.
-# Compile of register_file.v was successful.
-# Compile of register.v was successful.
-# Compile of rom.v was successful.
-# Compile of datapath.v was successful.
-# Compile of controller.v was successful.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-# Compile of controller_main.v was successful.
-# Compile of single_cycle_controller.v was successful.
-# Compile of hazard_unit.v was successful.
-# Compile of riscv_pipeline.v was successful.
-# Compile of controller_alu.v was successful.
-# Compile of controlled_register.v was successful.
-# Compile of riscv_pipeline_testbench.v was successful.
-# 17 compiles, 0 failed with no errors.
-quit -sim
-# End time: 14:33:19 on Jan 06,2025, Elapsed time: 1:58:51
-# Errors: 0, Warnings: 9
-vsim -gui work.riscv_pipeline_testbench
-# vsim -gui work.riscv_pipeline_testbench 
-# Start time: 14:33:37 on Jan 06,2025
-# Loading work.riscv_pipeline_testbench
-# Loading work.riscv_pipeline
-# Loading work.controller
-# Loading work.single_cycle_controller
-# Loading work.controller_main
-# Loading work.controller_alu
-# Loading work.controlled_register
-# Loading work.datapath
-# Loading work.multiplexer
-# Loading work.rom
-# Loading work.adder
-# Loading work.register_file
-# Loading work.immediate_extender
-# Loading work.alu
-# Loading work.memory
-# Loading work.hazard_uint
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 34
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(34): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/clk \
-sim:/riscv_pipeline_testbench/reset
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 6904
-#           Attempting to use alternate WLF file "./wlftir4qvd".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftir4qvd
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/rf/register_file_data
-run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 34
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(34): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 34
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(34): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ResultW_mux/inputs
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 34
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(34): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/the_alu/input_a \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/the_alu/input_b \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/the_alu/alu_function \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/the_alu/alu_output
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 34
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(34): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_controller/ALUControlD
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 34
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(34): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_controller/f3 \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_controller/f7
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 34
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(34): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-# Compile of adder.v was successful.
-# Compile of alu.v was successful.
-# Compile of immediate_extender.v was successful.
-# Compile of memory.v was successful.
-# Compile of multiplexer.v was successful.
-# Compile of register_file.v was successful.
-# Compile of register.v was successful.
-# Compile of rom.v was successful.
-# Compile of datapath.v was successful.
-# Compile of controller.v was successful.
-run -all
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.controller
-# Loading work.controller_main
-# Loading work.datapath
-# Loading work.multiplexer
-# Loading work.rom
-# Loading work.adder
-# Loading work.register_file
-# Loading work.immediate_extender
-# Loading work.alu
-# Loading work.memory
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 34
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(34): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 34
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(34): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 34
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(34): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 80
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-# Compile of controller_main.v was successful.
-# Compile canceled.
-# 11 out of 17 compiles, 0 failed with no errors.
-quit -sim
-# End time: 14:53:02 on Jan 06,2025, Elapsed time: 0:19:25
-# Errors: 0, Warnings: 8
-# Compile of adder.v was successful.
-# Compile of alu.v was successful.
-# Compile of immediate_extender.v was successful.
-# Compile of memory.v was successful.
-# Compile of multiplexer.v was successful.
-# Compile of register_file.v was successful.
-# Compile of register.v was successful.
-# Compile of rom.v was successful.
-# Compile of datapath.v was successful.
-# Compile of controller.v was successful.
-# Compile of controller_main.v was successful.
-# Compile of single_cycle_controller.v was successful.
-# Compile of hazard_unit.v was successful.
-# Compile of riscv_pipeline.v was successful.
-# Compile of controller_alu.v was successful.
-# Compile of controlled_register.v was successful.
-# Compile of riscv_pipeline_testbench.v was successful.
-# 17 compiles, 0 failed with no errors.
-vsim -gui work.riscv_pipeline_testbench
-# vsim -gui work.riscv_pipeline_testbench 
-# Start time: 14:53:33 on Jan 06,2025
+# Start time: 08:46:27 on Jan 08,2025
 # Loading work.riscv_pipeline_testbench
 # Loading work.riscv_pipeline
 # Loading work.controller
@@ -1289,199 +33,12 @@ sim:/riscv_pipeline_testbench/clk \
 sim:/riscv_pipeline_testbench/reset
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Lenovo  Hostname: DESKTOP-32OPIDI  ProcessID: 6904
-#           Attempting to use alternate WLF file "./wlftx88anx".
+#           Attempting to use alternate WLF file "./wlftce7jqq".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftx88anx
+#           Using alternate file: ./wlftce7jqq
 add wave -position insertpoint  \
 sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/rf/register_file_data
 run -all
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 32
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(32): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 32
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(32): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_controller/scc/f3 \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_controller/scc/f7
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 32
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(32): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_controller/scc/ca/f3 \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_controller/scc/ca/f7
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_controller/scc/cm/opcode \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_controller/scc/cm/f3 \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_controller/scc/cm/f7
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_controller/scc/ca/f3 \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_controller/scc/ca/f7 \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_controller/scc/ca/alu_op
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 32
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(32): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ALUResultE
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 32
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(32): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_controller/ALUControlE
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 32
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(32): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/SrcAE
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/SrcBE
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 32
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(32): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
-#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
-# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/SrcAE_mux_inputs
-add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/RD1E \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/RD2E
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 32
-# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(32): [TFMPC] - Missing connection for port 'ResultSrcE'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
 # ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
 #    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
 # Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
@@ -1502,15 +59,13 @@ restart -f
 # ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
 #    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
 run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
 # ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
 #    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
 # Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
 add wave -position insertpoint  \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/reg1_address \
-sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/reg2_address
+sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/SrcAE
+add wave -position insertpoint  \
+sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/SrcBE
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
@@ -1525,11 +80,245 @@ restart -f
 # ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
 #    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
 run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
 # ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
 #    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
 # Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
-# End time: 15:20:21 on Jan 06,2025, Elapsed time: 0:26:48
-# Errors: 0, Warnings: 7
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 32
+# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(32): [TFMPC] - Missing connection for port 'ResultSrcE'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+run -all
+# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
+#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
+# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 32
+# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(32): [TFMPC] - Missing connection for port 'ResultSrcE'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+add wave -position insertpoint  \
+sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/WriteDataE_mux_inputs
+add wave -position insertpoint  \
+sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ForwardAE \
+sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ForwardBE
+add wave -position insertpoint  \
+sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/SrcAE_mux_inputs
+run -all
+# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
+#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
+# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
+add wave -position insertpoint  \
+sim:/riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit/RegWriteW
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 32
+# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(32): [TFMPC] - Missing connection for port 'ResultSrcE'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+run -all
+# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
+#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
+# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
+add wave -position insertpoint  \
+sim:/riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit/Rs1E
+add wave -position insertpoint  \
+sim:/riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit/RdM
+add wave -position insertpoint  \
+sim:/riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit/RdM
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 32
+# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(32): [TFMPC] - Missing connection for port 'ResultSrcE'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+run -all
+# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
+#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
+# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of immediate_extender.v was successful.
+# Compile of memory.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of register_file.v was successful.
+# Compile of register.v was successful.
+# Compile of rom.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of controller_main.v was successful.
+# Compile of single_cycle_controller.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of riscv_pipeline.v was successful.
+# Compile of controller_alu.v was successful.
+# Compile of controlled_register.v was successful.
+# Compile of riscv_pipeline_testbench.v was successful.
+# 17 compiles, 0 failed with no errors.
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of immediate_extender.v was successful.
+# Compile of memory.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of register_file.v was successful.
+# Compile of register.v was successful.
+# Compile of rom.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of controller_main.v was successful.
+# Compile of single_cycle_controller.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of riscv_pipeline.v was successful.
+# Compile of controller_alu.v was successful.
+# Compile of controlled_register.v was successful.
+# Compile of riscv_pipeline_testbench.v was successful.
+# 17 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.riscv_pipeline_testbench
+# Loading work.riscv_pipeline
+# Loading work.controller
+# Loading work.single_cycle_controller
+# Loading work.controller_main
+# Loading work.controller_alu
+# Loading work.controlled_register
+# Loading work.datapath
+# Loading work.multiplexer
+# Loading work.rom
+# Loading work.adder
+# Loading work.register_file
+# Loading work.immediate_extender
+# Loading work.alu
+# Loading work.memory
+# Loading work.hazard_uint
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 32
+# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(32): [TFMPC] - Missing connection for port 'ResultSrcE'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+run -all
+# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
+#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
+# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
+add wave -position insertpoint  \
+sim:/riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit/Rs1E \
+sim:/riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit/Rs2E \
+sim:/riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit/RdM \
+sim:/riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit/RdW
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 32
+# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(32): [TFMPC] - Missing connection for port 'ResultSrcE'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+run -all
+# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
+#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
+# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
+add wave -position insertpoint  \
+sim:/riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit/RdE
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 32
+# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(32): [TFMPC] - Missing connection for port 'ResultSrcE'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs1E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Rs2E'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 78
+run -all
+# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
+#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
+# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
+# Compile of adder.v was successful.
+# Compile of alu.v was successful.
+# Compile of immediate_extender.v was successful.
+# Compile of memory.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of register_file.v was successful.
+# Compile of register.v was successful.
+# Compile of rom.v was successful.
+# Compile of datapath.v was successful.
+# Compile of controller.v was successful.
+# Compile of controller_main.v was successful.
+# Compile of single_cycle_controller.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of riscv_pipeline.v was successful.
+# Compile of controller_alu.v was successful.
+# Compile of controlled_register.v was successful.
+# Compile of riscv_pipeline_testbench.v was successful.
+# 17 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.riscv_pipeline_testbench
+# Loading work.riscv_pipeline
+# Loading work.controller
+# Loading work.single_cycle_controller
+# Loading work.controller_main
+# Loading work.controller_alu
+# Loading work.controlled_register
+# Loading work.datapath
+# Loading work.multiplexer
+# Loading work.rom
+# Loading work.adder
+# Loading work.register_file
+# Loading work.immediate_extender
+# Loading work.alu
+# Loading work.memory
+# Loading work.hazard_uint
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 35
+# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(35): [TFMPC] - Missing connection for port 'ResultSrcE'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 84
+run -all
+# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
+#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
+# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
+# WARNING: No extended dataflow license exists

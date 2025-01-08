@@ -44,13 +44,14 @@ module hazard_uint (
     // Non-lw
     always @(*) begin
         // ALU A input
-        ForwardAE = 0;
-        ForwardBE = 0;
         if ((RegWriteM == 1'b1) && (Rs1E == RdM) && (RdM != 0)) begin
             ForwardAE = 2'b10;
         end
         else if ((RegWriteW == 1'b1) && (Rs1E == RdW) && (RdM != 0)) begin
             ForwardAE = 2'b01;
+        end 
+        else begin
+            ForwardAE = 2'b00;
         end
 
         // ALU B input
@@ -60,7 +61,11 @@ module hazard_uint (
         else if ((RegWriteW == 1'b1) && (Rs2E == RdW) && (RdM != 0)) begin
             ForwardBE = 2'b01;
         end
+        else begin
+            ForwardBE = 2'b00;
+        end
     end
+
     //lw
     always @(*) begin
         FlushE = 1'b0;

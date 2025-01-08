@@ -26,6 +26,9 @@ module riscv_pipeline (
     wire [31:25] funct7;
     wire [19:15] Rs1D;
     wire [24:20] Rs2D;
+    wire [19:15] Rs1E;
+    wire [24:20] Rs2E;
+    wire [11:7] RdE;
     wire [11:7] RdM;
     wire [11:7] RdW;
 
@@ -68,6 +71,9 @@ module riscv_pipeline (
         .ZeroE(ZeroE),
         .Rs1D(Rs1D),
         .Rs2D(Rs2D),
+        .Rs1E(Rs1E),
+        .Rs2E(Rs2E),
+        .RdE(RdE),
         .RdM(RdM),
         .RdW(RdW),
         .FlushE(FlushE),

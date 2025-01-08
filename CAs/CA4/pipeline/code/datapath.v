@@ -32,6 +32,9 @@ module datapath (
     // Hazard Unit Inputs
     Rs1D,
     Rs2D,
+    Rs1E,
+    Rs2E,
+    RdE,
     RdM,
     RdW,
 
@@ -61,6 +64,11 @@ module datapath (
     output [31:25] funct7;
     output [19:15] Rs1D;
     output [24:20] Rs2D;
+
+    output [19:15] Rs1E;
+    output [24:20] Rs2E;
+    output [11:7] RdE;
+
     output ZeroE;
     output [11:7] RdM;
     output [11:7] RdW;
