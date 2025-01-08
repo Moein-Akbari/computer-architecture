@@ -7,7 +7,7 @@ module riscv_pipeline (
     wire [6:0] opcode;
     wire ZeroE;
     wire FlushD;
-
+    wire [1:0] ResultSrcE;
     wire jalrE;
     wire [2:0] ALUControlE;
     wire ALUSrcE;
@@ -44,7 +44,9 @@ module riscv_pipeline (
         .ImmSrcD(ImmSrcD),
         .PCSrcE(PCSrcE),
         .ALUControlE(ALUControlE),
+        .ResultSrcE(ResultSrcE),
         .jalrE(jalrE),
+        .RegWriteM(RegWriteM),
         .ALUSrcE(ALUSrcE),
         .MemWriteM(MemWriteM),
         .ResultSrcW(ResultSrcW),
@@ -59,7 +61,6 @@ module riscv_pipeline (
         .FlushD(FlushD),
         .StallD(StallD),
         .PCSrcE(PCSrcE),
-        .RegWriteM(RegWriteM),
         .RegWriteW(RegWriteW),
         .ImmSrcD(ImmSrcD),
         .ALUSrcE(ALUSrcE),
