@@ -16,6 +16,7 @@ module riscv_pipeline (
 
     wire clear, StallF; 
     wire PCSrcE;
+    wire RegWriteM;
     wire RegWriteW;
     wire [2:0] ImmSrcD;
     wire StallD;
@@ -58,6 +59,7 @@ module riscv_pipeline (
         .FlushD(FlushD),
         .StallD(StallD),
         .PCSrcE(PCSrcE),
+        .RegWriteM(RegWriteM),
         .RegWriteW(RegWriteW),
         .ImmSrcD(ImmSrcD),
         .ALUSrcE(ALUSrcE),

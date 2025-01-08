@@ -82,13 +82,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	multiplexer
 
-} {} {}} C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v {1 {vlog -work work -stats=none C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module riscv_pipeline
-
-Top level modules:
-	riscv_pipeline
-
 } {} {}} C:/Repos/computer-architecture/CAs/CA4/pipeline/code/register_file.v {1 {vlog -work work -stats=none C:/Repos/computer-architecture/CAs/CA4/pipeline/code/register_file.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module register_file
@@ -102,12 +95,5 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	single_cycle_controller
-
-} {} {}} C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controller.v {1 {vlog -work work -stats=none C:/Repos/computer-architecture/CAs/CA4/pipeline/code/controller.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module controller
-
-Top level modules:
-	controller
 
 } {} {}}

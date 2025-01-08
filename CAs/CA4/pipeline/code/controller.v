@@ -22,6 +22,7 @@ module controller (
     ALUSrcE,
     MemWriteM,
     ResultSrcW,
+    RegWriteM,
     RegWriteW
 );
     input clk, reset;
@@ -38,6 +39,7 @@ module controller (
     output [2:0] ALUControlE;
     output ALUSrcE;
     output MemWriteM;
+    output RegWriteM;
     output [1:0] ResultSrcW;
     output RegWriteW;
 
