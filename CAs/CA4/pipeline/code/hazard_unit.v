@@ -73,8 +73,8 @@ module hazard_uint (
         StallF = 1'b0;
         if ((ResultSrcE == 01) & (Rs1D == RdE || Rs2D == RdE) & (RdE != 0)) begin
             FlushE = 1'b1;
-            StallD = 1'b0;
-            StallF = 1'b0;
+            StallD = 1'b1;
+            StallF = 1'b1;
         end
     end
 
