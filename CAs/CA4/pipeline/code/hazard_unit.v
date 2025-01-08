@@ -41,13 +41,13 @@ module hazard_uint (
     output reg FlushE;
 
     // Data Hazard:
-    // Non-lw
+    // Non-lw 
     always @(*) begin
         // ALU A input
         if ((RegWriteM == 1'b1) && (Rs1E == RdM) && (RdM != 0)) begin
             ForwardAE = 2'b10;
         end
-        else if ((RegWriteW == 1'b1) && (Rs1E == RdW) && (RdM != 0)) begin
+        else if ((RegWriteW == 1'b1) && (Rs1E == RdW) && (RdW != 0)) begin
             ForwardAE = 2'b01;
         end 
         else begin
@@ -58,7 +58,7 @@ module hazard_uint (
         if ((RegWriteM == 1'b1) && (Rs2E == RdM) && (RdM != 0)) begin
             ForwardBE = 2'b10;
         end
-        else if ((RegWriteW == 1'b1) && (Rs2E == RdW) && (RdM != 0)) begin
+        else if ((RegWriteW == 1'b1) && (Rs2E == RdW) && (RdW != 0)) begin
             ForwardBE = 2'b01;
         end
         else begin

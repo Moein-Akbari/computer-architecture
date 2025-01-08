@@ -322,3 +322,35 @@ run -all
 #    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
 # Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
 # WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 35
+# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(35): [TFMPC] - Missing connection for port 'ResultSrcE'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 84
+run -all
+# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
+#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
+# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
+add wave -position insertpoint  \
+sim:/riscv_pipeline_testbench/rp/riscv_pipeline_datapath/ALUResultE
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'riscv_pipeline_controller'.  Expected 16, found 15.
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_controller File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 35
+# ** Warning: (vsim-3722) C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v(35): [TFMPC] - Missing connection for port 'ResultSrcE'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrcE'. The port definition is at: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/hazard_unit.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /riscv_pipeline_testbench/rp/riscv_pipeline_hazard_unit File: C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline.v Line: 84
+run -all
+# ** Note: $stop    : C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v(21)
+#    Time: 4650 ps  Iteration: 0  Instance: /riscv_pipeline_testbench
+# Break in Module riscv_pipeline_testbench at C:/Repos/computer-architecture/CAs/CA4/pipeline/code/riscv_pipeline_testbench.v line 21
