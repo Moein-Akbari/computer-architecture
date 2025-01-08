@@ -1,8 +1,5 @@
 addi x1, x0, 1337
 addi x2, x0, 85
-nop
-nop
-nop
 add x3, x1, x2
 
 addi x4, x3, 1342
